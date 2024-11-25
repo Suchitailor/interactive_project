@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/d3.v7.js"></script>
+    <title>Natural Disasters 1970-2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="section">
+        <div class="container">
+        <h1 class="title">
+            Natural Disasters 1970-2024
+        </h1>
+        <script>
+            try {
+                const data = d3.csv("data/1970-2021_DISASTERS.csv");
+                console.log(data);
+            } catch (error) {
+                console.error(error);
+            };
+        </script>
+        </div>
+    </section>
+    </body>
+</html>
