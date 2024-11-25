@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   </head>
   <body>
-    <section class="section">
-        <div class="container">
+    <section class="title">
         <h1 class="title">
             Natural Disasters 1970-2024
         </h1>
+    </section>
+    <section class = "data-load">
         <script>
             try {
-                const data = d3.csv("data/1970-2021_DISASTERS.csv");
-                console.log(data);
+                const disasters = d3.csv("data/1970-2021_DISASTERS.csv");
+                console.log(disasters);
+            } catch (error) {
+                console.error(error);
+            };
+
+            try {
+                const url = "https://ourworldindata.org/grapher/economic-damage-from-natural-disasters.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=table&time=1970..2021"
+                const damages = d3.csv(url);
+                console.log(damages);
             } catch (error) {
                 console.error(error);
             };
         </script>
-        </div>
+    </section>
+    <section class = "country-breakdown">
+        <h2 class="subheader">
+            Country Breakdown 
+        </h1>
+        <script>
+
+
+        </script>
     </section>
     </body>
 </html>
