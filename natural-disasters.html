@@ -10,7 +10,7 @@
   <body>
     <section class="title">
         <h1 class="title">
-            Natural Disasters 1970-2024
+            Natural Disasters 1970-2021
         </h1>
     </section>
     <section class = "data-load">
@@ -31,12 +31,160 @@
             };
         </script>
     </section>
-    <section class = "country-breakdown">
+    <section>
         <h2 class="subheader">
             Country Breakdown 
-        </h1>
+        </h2>
+        <select id="countryselectButton"></select>
+        <div id="countryBreakdown"></div>
         <script>
+            fetch('data/cleaned/annual_country_freq.csv') 
+                .then(response => response.text()) 
+                .then(csvString => {
+                    const country_freq = d3.csvParse(csvString, (d) => { 
+                        return {
+                        year: new Date(d.Year), 
+                        country: d.Country,
+                        disasterType: d.disasterType,
+                        frequency: +d.len
+                        }}
+                    )
 
+
+                        // Specify the chart’s dimensions.
+                        const width= 928;
+                        const height = 600;
+                        const marginTop = 20;
+                        const marginRight = 20;
+                        const marginBottom = 30;
+                        const marginLeft = 30;
+
+                        // Create the positional scales.
+                        const x = d3.scaleUtc()
+                        .domain(d3.extent(country_freq, d => d.year))
+                        .range([marginLeft, width - marginRight]);
+
+                        const y = d3.scaleLinear()
+                        .domain([0, d3.max(country_freq, d => d.frequency)]).nice()
+                        .range([height - marginBottom, marginTop]);
+                        
+                        console.log(d3.extent(country_freq, d => d.year)); // Should output [minDate, maxDate]
+                        console.log([0, d3.max(country_freq, d => d.frequency)]); // Should output [0, maxFrequency]
+
+                        
+                        // Create the SVG container.
+                        let div1 = d3
+                            .select("#countryBreakdown")
+                            .append("svg")
+                            .attr("width", width)
+                            .attr("height", height)
+                            .attr("viewBox", [0, 0, width, height])
+                            .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
+
+                        // Add the horizontal axis.
+                        div1.append("g")
+                            .attr("transform", `translate(0,${height - marginBottom})`)
+                            .call(d3.axisBottom(x));
+
+                        // Add the vertical axis.
+                        div1.append("g")
+                            .attr("transform", `translate(${marginLeft},0)`)
+                            .call(d3.axisLeft(y))
+                            .call(g => g.append("text")
+                                .attr("x", -marginLeft)
+                                .attr("y", 10)
+                                .attr("fill", "currentColor")
+                                .attr("text-anchor", "start")
+                                .text("Number of Disasters"));
+                        
+                        let options = [...new Set(country_freq.map(d => d.country))].sort(); 
+                        let disType = [...new Set(country_freq.map(d => d.disasterType))].sort(); 
+                        console.log(options)
+
+                        d3.select("#countryselectButton")
+                            .selectAll('myOptions')
+                            .data(options)
+                            .enter()
+                            .append('option')
+                            .text(function (d) {
+                                return d; }) // text showed in the menu
+                            .attr("value", function (d) { return d; }); // corresponding value returned by the button
+                        
+                        // A color scale: one color for each group
+                        var myColor = d3.scaleOrdinal()
+                            .domain(disType)
+                            .range(d3.schemeSet2);
+                       
+                        // Declare the line generator.
+                        const line = d3.line()
+                            .x((d) => x(d.year))
+                            .y((d) => y(d.frequency));
+                            
+                            // console.log(country_freq)
+                            // console.log(line(country_freq))
+
+                        d3
+                            .select("#countryselectButton")
+                            .on("change", function(d) {
+                                // remove all existing lines
+                                d3.selectAll(`#countryline`).remove()
+
+                                // recover the option that has been chosen
+                                var selectedCountry = d3.select(this).property("value")
+                                console.log(selectedCountry)
+                                countrydata = country_freq.filter(d => d.country === selectedCountry)
+                                console.log(countrydata)
+
+                                div1.append("path")
+                                    .attr("d", line(countrydata))
+                                    .attr("fill", "none")
+                                    .attr("stroke", "steelblue")
+                                    .attr("stroke-width", 1.5)
+                                    .attr("id", `countryline`)
+                            })
+                                
+
+
+
+                })
+
+
+
+
+                .catch(error => console.error('Error fetching CSV:', error)); 
+            
+
+
+            // d3.csv("data/cleaned/annual_country_freq.csv",
+            // ).then((data) => {
+            //     const years = data.objects
+            //     // const countries = data.objects.Country
+            //     // const disasterType = data.objects[2]
+            //     // const frequencies = data.objects.len
+
+            //     console.log(data[0].Country)
+            // })
+
+            // const svg = d3.create("svg")
+            //     .attr("viewBox", [0, 0, width, height])
+            //     .attr("width", width)
+            //     .attr("height", height)
+            //     .attr("style", "max-width: 100%; height: auto; height: intrinsic; font: 10px sans-serif;")
+            //     .style("-webkit-tap-highlight-color", "transparent")
+            //     .style("overflow", "visible")
+            //     .on("pointerenter pointermove", pointermoved)
+            //     .on("pointerleave", pointerleft)
+            //     .on("touchstart", event => event.preventDefault());
+            
+            // select button 
+
+            // d3.select("#selectButton")
+            //     .selectAll('myOptions')
+            //     .data(country_freq.Country)
+            //     .enter()
+            //     .append('option')
+            //     .text(function (d) { return d; }) // text showed in the menu
+            //     .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
         </script>
     </section>
