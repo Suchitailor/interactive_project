@@ -53,7 +53,7 @@
 
 
                         // Specify the chart’s dimensions.
-                        const width= 928;
+                        const width= 1300;
                         const height = 600;
                         const marginTop = 20;
                         const marginRight = 20;
@@ -100,7 +100,8 @@
                         
                         let options = [...new Set(country_freq.map(d => d.country))].sort(); 
                         let disType = [...new Set(country_freq.map(d => d.disasterType))].sort(); 
-                        // console.log(options)
+                        let allYears = [...new Set(country_freq.map(d => d.year))].sort(); 
+                        options.unshift("Select Country")
 
                         d3.select("#countryselectButton")
                             .selectAll('myOptions')
@@ -129,17 +130,17 @@
                                 .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
                                 (d3.index(countrydata, d => d.year, d => d.disasterType)); // group by stack then series key
                             
-                            console.log(series)
-                            console.log(d3.groupSort(series, D => -d3.sum(D, d => d.frequency), d => d.year))
+
                         // Prepare the scales for positional and color encodings.
                             const x = d3.scaleBand()
-                                .domain(countrydata.map(d => d.year))
+                                //.domain(countrydata.map(d => d.year))
+                                .domain(allYears)
                                 .range([marginLeft, width - marginRight])
-                                // .padding(0.1);
+                                .padding(0.1);
                             
                             console.log(x.domain());
                             const y = d3.scaleLinear()
-                                .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
+                                .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
                                 .rangeRound([height - marginBottom, marginTop]);
 
                             const color = d3.scaleOrdinal()
@@ -180,43 +181,52 @@
                                 .attr("width", x.bandwidth())
                                 .attr("id", 'countrybars')
                                 .append("title")
-                                //.text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key).frequency)}`);
+                                .text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key).frequency)}`);
 
                                 })
-                        // A color scale: one color for each group
-                        // var myColor = d3.scaleOrdinal()
-                        //     .domain(disType)
-                        //     .range(d3.schemeSet2);
 
+                                let legend = d3
+                                    .select("#countryBreakdown")
+                                    .append("svg")
+                                    .attr("width", 200)
+                                    .attr("height", 200)
+                                    .attr("viewBox", "0 -20 200 200")
+                                    .attr("transform", "translate(800,-400)")
+                                    .attr("id", "legend");
 
-                        // Declare the line generator.
-                //         const line = d3.line()
-                //             .x((d) => x(d.year))
-                //             .y((d) => y(d.frequency));
-                            
-                //             // console.log(country_freq)
-                //             // console.log(line(country_freq))
+                                    const titlePadding = 14;  // padding between title and entries
+                                    const entrySpacing = 16;  // spacing between legend entries
+                                    const labelOffset = 2;    // additional horizontal offset of text labels
+                                    const baselineOffset = 8; // text baseline offset, depends on height and font size
 
-                //         d3
-                //             .select("#countryselectButton")
-                //             .on("change", function(d) {
-                //                 // remove all existing lines
-                //                 d3.selectAll(`#countryline`).remove()
+                                    const title = legend.append('text')
+                                    .attr('x', 0)
+                                    .attr('y', 0)
+                                    .attr('fill', 'white')
+                                    .attr('font-family', 'Helvetica Neue, Arial')
+                                    .attr('font-weight', 'bold')
+                                    .attr('font-size', '10px')
+                                    .text('Disaster Type');
 
-                //                 // recover the option that has been chosen
-                //                 var selectedCountry = d3.select(this).property("value")
-                //                 console.log(selectedCountry)
-                //                 countrydata = country_freq.filter(d => d.country === selectedCountry)
-                //                 console.log(countrydata)
+                                    const entries = legend
+                                    .selectAll('g')
+                                    .data(d3.schemeSpectral[disType.length])
+                                    .join('g')
+                                    .attr('transform', (d, i) => `translate(800, ${titlePadding + i * entrySpacing})`);
 
-                //                 div1.append("path")
-                //                     .attr("d", line(countrydata))
-                //                     .attr("fill", "none")
-                //                     .attr("stroke", "steelblue")
-                //                     .attr("stroke-width", 1.5)
-                //                     .attr("id", `countryline`)
-                //             })
-                                
+                                    const symbols = entries.append('rect')
+                                    .attr('width', 10) // <-- offset symbol x-position by radius
+                                    .attr('height', 10)
+                                    .attr('fill', d => d);
+
+                                    const labels = entries.append('text')
+                                    .attr('x', 20 + labelOffset) // <-- place labels to the left of symbols
+                                    .attr('y', baselineOffset) // <-- adjust label y-position for proper alignment
+                                    // .attr('fill', 'White')
+                                    // .attr('font-family', 'Helvetica Neue, Arial')
+                                    // .attr('font-size', '11px')
+                                    // exclude "All"
+                                    .text((d,i) => disType[i]);              
 
 
 
