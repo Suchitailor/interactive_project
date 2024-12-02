@@ -70,7 +70,7 @@
                             .rangeRound([height - marginBottom, marginTop]);
 
                         // const color = d3.scaleOrdinal()
-                        //     .domain(series.map(d => d.key))
+                        //     .domain(disType)
                         //     .range(d3.schemeSpectral[disType.length])
                         //     .unknown("#ccc");
 
@@ -92,6 +92,38 @@
                             .call(d3.axisLeft(y).ticks(null, "s"))
                             .call(g => g.selectAll(".domain").remove());
                         
+                        // ----------------
+                        // Create a tooltip
+                        // ----------------
+                        var tooltip = d3.select("#globalOverview")
+                            .append("div")
+                            .style("opacity", 0)
+                            .attr("class", "tooltip")
+                            .style("background-color", "white")
+                            .style("border", "solid")
+                            .style("border-width", "1px")
+                            .style("border-radius", "5px")
+                            .style("padding", "10px")
+
+                        // Three function that change the tooltip when user hover / move / leave a cell
+                        var mouseover = function(d) {
+                            var disasterType = d3.select(this.parentNode).datum().key;
+                            var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
+                            //var value = this
+                            tooltip
+                                // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+                                .html(`${disasterType}: ${frequency}`)
+                                .style("opacity", 1)
+                        }
+                        var mousemove = function(d) {
+                            tooltip
+                            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (d3.mouse(this)[1]) + "px")
+                        }
+                        var mouseleave = function(d) {
+                            tooltip
+                            .style("opacity", 0)
+                        }
                         // Append a group for each series, and a rect for each element in the series.
                         div2.append("g")
                             .selectAll()
@@ -103,6 +135,9 @@
                             .join("rect")
                             .attr("x", d => x(d.data[0]))
                             .attr("y", d => y(d[1]))
+                            .on("mouseover", mouseover)
+                            .on("mousemove", mousemove)
+                            .on("mouseleave", mouseleave)
                             .attr("height", d => y(d[0]) - y(d[1]))
                             .attr("width", x.bandwidth())
                             .append("title")
@@ -191,8 +226,7 @@
                         let disType = [...new Set(country_freq.map(d => d.disasterType))].sort(); 
                         let allYears = [...new Set(country_freq.map(d => d.year))].sort(); 
                         
-                        // Generate legend [NOT CURRENTLY SHOWING UP, NEED HELP]
-                        // add legend
+                        // Generate legend
                         var color = d3.scaleOrdinal(d3.schemeObservable10)
                         var padding = 40
                         var legend = div1.append('g')
@@ -270,7 +304,7 @@
                                 //     .domain(series.map(d => d.key))
                                 //     .range(d3.schemeSpectral[disType.length])
                                 //     .unknown("#ccc");
-                                var color = d3.scaleOrdinal(d3.schemeObservable10)
+                               // var color = d3.scaleOrdinal(d3.schemeObservable10)
 
                                 // A function to format the value in the tooltip.
                                 const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
@@ -290,6 +324,39 @@
                                     .call(d3.axisLeft(y).ticks(null, "s"))
                                     .call(g => g.selectAll(".domain").remove());
                                 
+                                // ----------------
+                                // Create a tooltip
+                                // ----------------
+                                var tooltip = d3.select("#globalOverview")
+                                    .append("div")
+                                    .style("opacity", 0)
+                                    .attr("class", "tooltip")
+                                    .style("background-color", "white")
+                                    .style("border", "solid")
+                                    .style("border-width", "1px")
+                                    .style("border-radius", "5px")
+                                    .style("padding", "10px")
+
+                                // Three function that change the tooltip when user hover / move / leave a cell
+                                var mouseover = function(d) {
+                                    var disasterType = d3.select(this.parentNode).datum().key;
+                                    var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
+                                    //var value = this
+                                    tooltip
+                                        // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+                                        .html(`${disasterType}: ${frequency}`)
+                                        .style("opacity", 1)
+                                }
+                                var mousemove = function(d) {
+                                    tooltip
+                                    .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                    .style("top", (d3.mouse(this)[1]) + "px")
+                                }
+                                var mouseleave = function(d) {
+                                    tooltip
+                                    .style("opacity", 0)
+                                }
+                                
                                 // Append a group for each series, and a rect for each element in the series.
                                 div1.append("g")
                                     .selectAll()
@@ -301,6 +368,9 @@
                                     .join("rect")
                                     .attr("x", d => x(d.data[0]))
                                     .attr("y", d => y(d[1]))
+                                    .on("mouseover", mouseover)
+                                    .on("mousemove", mousemove)
+                                    .on("mouseleave", mouseleave)
                                     .attr("height", d => y(d[0]) - y(d[1]))
                                     .attr("width", x.bandwidth())
                                     .attr("id", 'countrybars')
