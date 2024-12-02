@@ -13,22 +13,136 @@
             Natural Disasters 1970-2021
         </h1>
     </section>
-    <section class = "data-load">
+    <section>
+        <h2 class="subheader">
+            Global Overview 
+        </h2>
+        <div id="globalOverview"></div>
         <script>
-            // try {
-            //     const disasters = d3.csv("data/1970-2021_DISASTERS.csv");
-            //     console.log(disasters);
-            // } catch (error) {
-            //     console.error(error);
-            // };
+            fetch('data/cleaned/annual_frequencies.csv')
+                .then(response => response.text()) 
+                .then(csvString => {
+                    const global_freq = d3.csvParse(csvString, (d) => { 
+                        return {
+                        year: d.Year, 
+                        disasterType: d.disasterType,
+                        frequency: +d.len,
+                        compkey: d.compkey
+                        }}
+                    )
+                        console.log(global_freq)
+                        // Specify the chart’s dimensions.
+                        const width= 1300;
+                        const height = 600;
+                        const marginTop = 20;
+                        const marginRight = 20;
+                        const marginBottom = 30;
+                        const marginLeft = 30;
+                        
+                        // Create the SVG container.
+                        let div2 = d3
+                            .select("#globalOverview")
+                            .append("svg")
+                            .attr("width", width)
+                            .attr("height", height)
+                            .attr("viewBox", [0, 0, width, height])
+                            .text("Number of Natural Disasters")
+                            .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
 
-            // try {
-            //     const url = "https://ourworldindata.org/grapher/economic-damage-from-natural-disasters.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=table&time=1970..2021"
-            //     const damages = d3.csv(url);
-            //     console.log(damages);
-            // } catch (error) {
-            //     console.error(error);
-            // };
+                        const series = d3.stack()
+                                .keys(d3.union(global_freq.map(d => d.disasterType))) // distinct series keys, in input order
+                                .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
+                                (d3.index(global_freq, d => d.year, d => d.disasterType)); // group by stack then series key
+                            
+                        console.log(series)
+                        
+                        // Prepare the scales for positional and color encodings.
+                        let allYears = [...new Set(global_freq.map(d => d.year))].sort();
+                        let disType = [...new Set(global_freq.map(d => d.disasterType))].sort(); 
+
+                        const x = d3.scaleBand()
+                            .domain(allYears)
+                            .range([marginLeft, width - marginRight])
+                            .padding(0.1);
+                        
+                        const y = d3.scaleLinear()
+                            .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
+                            .rangeRound([height - marginBottom, marginTop]);
+
+                        // const color = d3.scaleOrdinal()
+                        //     .domain(series.map(d => d.key))
+                        //     .range(d3.schemeSpectral[disType.length])
+                        //     .unknown("#ccc");
+
+                        var color = d3.scaleOrdinal(d3.schemeObservable10)
+
+                        // A function to format the value in the tooltip.
+                        const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+
+
+                        // Append the horizontal axis.
+                        div2.append("g")
+                            .attr("transform", `translate(0,${height - marginBottom})`)
+                            .call(d3.axisBottom(x).tickSizeOuter(0))
+                            .call(g => g.selectAll(".domain").remove());
+
+                        // Append the vertical axis.
+                        div2.append("g")
+                            .attr("transform", `translate(${marginLeft},0)`)
+                            .call(d3.axisLeft(y).ticks(null, "s"))
+                            .call(g => g.selectAll(".domain").remove());
+                        
+                        // Append a group for each series, and a rect for each element in the series.
+                        div2.append("g")
+                            .selectAll()
+                            .data(series)
+                            .join("g")
+                            .attr("fill", d => color(d.key))
+                            .selectAll("rect")
+                            .data(D => D.map(d => (d.key = D.key, d)))
+                            .join("rect")
+                            .attr("x", d => x(d.data[0]))
+                            .attr("y", d => y(d[1]))
+                            .attr("height", d => y(d[0]) - y(d[1]))
+                            .attr("width", x.bandwidth())
+                            .append("title")
+                        
+                        // add legend
+                        var padding = 40
+                        var legend = div2.append('g')
+                            .attr('class', 'legend')
+                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+                        
+                        
+                        legend.selectAll('rect')
+                            .data(disType)
+                            .enter()
+                            .append('rect')
+                            .attr('x', 0)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('width', 12)
+                            .attr('height', 12)
+                            .attr('fill', d => color(d) );
+                        
+                        legend.selectAll('text')
+                            .data(disType)
+                            .enter()
+                            .append('text')
+                            .text(function(d){
+                                return d;
+                            })
+                            .attr('x', 18)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('text-anchor', 'start')
+                            .attr('fill', 'white')
+                            .attr('alignment-baseline', 'hanging');
+                    })
+
+                .catch(error => console.error('Error fetching CSV:', error)); 
         </script>
     </section>
     <section>
@@ -59,19 +173,6 @@
                         const marginRight = 20;
                         const marginBottom = 30;
                         const marginLeft = 30;
-
-                        // Create the positional scales.
-                        // const x = d3.scaleUtc()
-                        // .domain(d3.extent(country_freq, d => d.year))
-                        // .range([marginLeft, width - marginRight]);
-
-                        // const y = d3.scaleLinear()
-                        // .domain([0, d3.max(country_freq, d => d.frequency)]).nice()
-                        // .range([height - marginBottom, marginTop]);
-                        
-                        // console.log(d3.extent(country_freq, d => d.year)); // Should output [minDate, maxDate]
-                        // console.log([0, d3.max(country_freq, d => d.frequency)]); // Should output [0, maxFrequency]
-
                         
                         // // Create the SVG container.
                         let div1 = d3
@@ -80,29 +181,53 @@
                             .attr("width", width)
                             .attr("height", height)
                             .attr("viewBox", [0, 0, width, height])
+                            .text("Number of Natural Disasters")
                             .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
 
-                        // // Add the horizontal axis.
-                        // div1.append("g")
-                        //     .attr("transform", `translate(0,${height - marginBottom})`)
-                        //     .call(d3.axisBottom(x));
-
-                        // // Add the vertical axis.
-                        // div1.append("g")
-                        //     .attr("transform", `translate(${marginLeft},0)`)
-                        //     .call(d3.axisLeft(y))
-                        //     .call(g => g.append("text")
-                        //         .attr("x", -marginLeft)
-                        //         .attr("y", 10)
-                        //         .attr("fill", "currentColor")
-                        //         .attr("text-anchor", "start")
-                        //         .text("Number of Disasters"));
                         
+                        // create array for column values
                         let options = [...new Set(country_freq.map(d => d.country))].sort(); 
+                        options.unshift("Select Country");
                         let disType = [...new Set(country_freq.map(d => d.disasterType))].sort(); 
                         let allYears = [...new Set(country_freq.map(d => d.year))].sort(); 
-                        options.unshift("Select Country")
+                        
+                        // Generate legend [NOT CURRENTLY SHOWING UP, NEED HELP]
+                        // add legend
+                        var color = d3.scaleOrdinal(d3.schemeObservable10)
+                        var padding = 40
+                        var legend = div1.append('g')
+                            .attr('class', 'legend')
+                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+                        
+                        
+                        legend.selectAll('rect')
+                            .data(disType)
+                            .enter()
+                            .append('rect')
+                            .attr('x', 0)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('width', 12)
+                            .attr('height', 12)
+                            .attr('fill', d => color(d) );
+                        
+                        legend.selectAll('text')
+                            .data(disType)
+                            .enter()
+                            .append('text')
+                            .text(function(d){
+                                return d;
+                            })
+                            .attr('x', 18)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('text-anchor', 'start')
+                            .attr('fill', 'white')
+                            .attr('alignment-baseline', 'hanging');
 
+                        // generate dropdown
                         d3.select("#countryselectButton")
                             .selectAll('myOptions')
                             .data(options)
@@ -115,7 +240,7 @@
                         d3
                             .select("#countryselectButton")
                             .on("change", function(d) {
-                                // remove all existing bars & axes
+                                // remove existing bars & axes
                                 d3.selectAll(`#countrybars`).remove()
                                 d3.selectAll(`#countryaxis`).remove()
 
@@ -125,113 +250,70 @@
                                 countrydata = country_freq.filter(d => d.country === selectedCountry)
                                 console.log(countrydata)
 
-                            const series = d3.stack()
-                                .keys(d3.union(countrydata.map(d => d.disasterType))) // distinct series keys, in input order
-                                .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
-                                (d3.index(countrydata, d => d.year, d => d.disasterType)); // group by stack then series key
-                            
+                                const series = d3.stack()
+                                    .keys(d3.union(countrydata.map(d => d.disasterType))) // distinct series keys, in input order
+                                    .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
+                                    (d3.index(countrydata, d => d.year, d => d.disasterType)); // group by stack then series key
+                                
 
-                        // Prepare the scales for positional and color encodings.
-                            const x = d3.scaleBand()
-                                //.domain(countrydata.map(d => d.year))
-                                .domain(allYears)
-                                .range([marginLeft, width - marginRight])
-                                .padding(0.1);
-                            
-                            console.log(x.domain());
-                            const y = d3.scaleLinear()
-                                .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
-                                .rangeRound([height - marginBottom, marginTop]);
+                                // Prepare the scales for positional and color encodings.
+                                const x = d3.scaleBand()
+                                    .domain(allYears)
+                                    .range([marginLeft, width - marginRight])
+                                    .padding(0.1);
+                                
+                                const y = d3.scaleLinear()
+                                    .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
+                                    .rangeRound([height - marginBottom, marginTop]);
 
-                            const color = d3.scaleOrdinal()
-                                .domain(series.map(d => d.key))
-                                .range(d3.schemeSpectral[disType.length])
-                                .unknown("#ccc");
+                                // const color = d3.scaleOrdinal()
+                                //     .domain(series.map(d => d.key))
+                                //     .range(d3.schemeSpectral[disType.length])
+                                //     .unknown("#ccc");
+                                var color = d3.scaleOrdinal(d3.schemeObservable10)
 
-                            // A function to format the value in the tooltip.
-                            const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+                                // A function to format the value in the tooltip.
+                                const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
 
 
-                            // Append the horizontal axis.
-                            div1.append("g")
-                                .attr("transform", `translate(0,${height - marginBottom})`)
-                                .attr("id", 'countryaxis')
-                                .call(d3.axisBottom(x).tickSizeOuter(0))
-                                .call(g => g.selectAll(".domain").remove());
+                                // Append the horizontal axis.
+                                div1.append("g")
+                                    .attr("transform", `translate(0,${height - marginBottom})`)
+                                    .attr("id", 'countryaxis')
+                                    .call(d3.axisBottom(x).tickSizeOuter(0))
+                                    .call(g => g.selectAll(".domain").remove());
 
-                            // Append the vertical axis.
-                            div1.append("g")
-                                .attr("transform", `translate(${marginLeft},0)`)
-                                .attr("id", 'countryaxis')
-                                .call(d3.axisLeft(y).ticks(null, "s"))
-                                .call(g => g.selectAll(".domain").remove());
-                            
-                             // Append a group for each series, and a rect for each element in the series.
-                            div1.append("g")
-                                .selectAll()
-                                .data(series)
-                                .join("g")
-                                .attr("fill", d => color(d.key))
-                                .selectAll("rect")
-                                .data(D => D.map(d => (d.key = D.key, d)))
-                                .join("rect")
-                                .attr("x", d => x(d.data[0]))
-                                .attr("y", d => y(d[1]))
-                                .attr("height", d => y(d[0]) - y(d[1]))
-                                .attr("width", x.bandwidth())
-                                .attr("id", 'countrybars')
-                                .append("title")
-                                .text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key).frequency)}`);
+                                // Append the vertical axis.
+                                div1.append("g")
+                                    .attr("transform", `translate(${marginLeft},0)`)
+                                    .attr("id", 'countryaxis')
+                                    .call(d3.axisLeft(y).ticks(null, "s"))
+                                    .call(g => g.selectAll(".domain").remove());
+                                
+                                // Append a group for each series, and a rect for each element in the series.
+                                div1.append("g")
+                                    .selectAll()
+                                    .data(series)
+                                    .join("g")
+                                    .attr("fill", d => color(d.key))
+                                    .selectAll("rect")
+                                    .data(D => D.map(d => (d.key = D.key, d)))
+                                    .join("rect")
+                                    .attr("x", d => x(d.data[0]))
+                                    .attr("y", d => y(d[1]))
+                                    .attr("height", d => y(d[0]) - y(d[1]))
+                                    .attr("width", x.bandwidth())
+                                    .attr("id", 'countrybars')
+                                    .append("title")
+                                    //.text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key).frequency)}`);
 
-                                })
+                                    })
 
-                                let legend = d3
-                                    .select("#countryBreakdown")
-                                    .append("svg")
-                                    .attr("width", 200)
-                                    .attr("height", 200)
-                                    .attr("viewBox", "0 -20 200 200")
-                                    .attr("transform", "translate(800,-400)")
-                                    .attr("id", "legend");
-
-                                    const titlePadding = 14;  // padding between title and entries
-                                    const entrySpacing = 16;  // spacing between legend entries
-                                    const labelOffset = 2;    // additional horizontal offset of text labels
-                                    const baselineOffset = 8; // text baseline offset, depends on height and font size
-
-                                    const title = legend.append('text')
-                                    .attr('x', 0)
-                                    .attr('y', 0)
-                                    .attr('fill', 'white')
-                                    .attr('font-family', 'Helvetica Neue, Arial')
-                                    .attr('font-weight', 'bold')
-                                    .attr('font-size', '10px')
-                                    .text('Disaster Type');
-
-                                    const entries = legend
-                                    .selectAll('g')
-                                    .data(d3.schemeSpectral[disType.length])
-                                    .join('g')
-                                    .attr('transform', (d, i) => `translate(800, ${titlePadding + i * entrySpacing})`);
-
-                                    const symbols = entries.append('rect')
-                                    .attr('width', 10) // <-- offset symbol x-position by radius
-                                    .attr('height', 10)
-                                    .attr('fill', d => d);
-
-                                    const labels = entries.append('text')
-                                    .attr('x', 20 + labelOffset) // <-- place labels to the left of symbols
-                                    .attr('y', baselineOffset) // <-- adjust label y-position for proper alignment
-                                    // .attr('fill', 'White')
-                                    // .attr('font-family', 'Helvetica Neue, Arial')
-                                    // .attr('font-size', '11px')
-                                    // exclude "All"
-                                    .text((d,i) => disType[i]);              
+            
 
 
 
                 })
-
 
 
 
