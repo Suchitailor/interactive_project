@@ -8,11 +8,13 @@ body {
   h1 {
     color: #daf1de;
     text-align: center;
+    font-weight: bold
   }
 
   h2 {
     color: #daf1de;
     text-align: left;
+    font-weight: bold;
   }
   
   p {
