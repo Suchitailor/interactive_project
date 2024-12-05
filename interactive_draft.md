@@ -18,7 +18,7 @@ Through peer review, I realized it could be beneficial to add buttons to allow t
 
 ## Include a _numbered_ list of questions for us to respond to.
 
-1. I accidentally included these in the form instead! 
+1. For my country breakdown, I struggled to make the y-axis only have whole numbers... this may be an office hour question but would love any tips you have on this. Thanks!
 
 2. 
 
