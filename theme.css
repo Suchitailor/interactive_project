@@ -30,7 +30,7 @@ body {
     display: flex; 
     grid-template-columns: 1fr 1fr; 
     grid-gap: 10px; 
-    width: 90%; 
+    width: 98%; 
 } 
 .flex-legend { 
     flex: 2;
