@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/d3.v7.js"></script>
+    <title>Natural Disasters 1970-2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="theme.css">
+  </head>
+  <body>
+    <section class="title">
+        <h1 class="title">
+            Natural Disasters 1970-2021
+        </h1>
+    </section>
+    <section>
+        <h2 class="subheader">
+            Global Overview 
+        </h2>
+        <div id="globalOverview"></div>
+        <script>
+            fetch('data/cleaned/annual_frequencies.csv')
+                .then(response => response.text()) 
+                .then(csvString => {
+                    const global_freq = d3.csvParse(csvString, (d) => { 
+                        return {
+                        year: d.Year, 
+                        disasterType: d.disasterType,
+                        frequency: +d.len,
+                        compkey: d.compkey
+                        }}
+                    )
+                        console.log(global_freq)
+                        // Specify the chart’s dimensions.
+                        const width= 1300;
+                        const height = 600;
+                        const marginTop = 20;
+                        const marginRight = 20;
+                        const marginBottom = 30;
+                        const marginLeft = 30;
+                        
+                        // Create the SVG container.
+                        let div2 = d3
+                            .select("#globalOverview")
+                            .append("svg")
+                            .attr("width", width)
+                            .attr("height", height)
+                            .attr("viewBox", [0, 0, width, height])
+                            .text("Number of Natural Disasters")
+                            .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
+
+                        const series = d3.stack()
+                                .keys(d3.union(global_freq.map(d => d.disasterType))) // distinct series keys, in input order
+                                .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
+                                (d3.index(global_freq, d => d.year, d => d.disasterType)); // group by stack then series key
+                            
+                        console.log(series)
+                        
+                        // Prepare the scales for positional and color encodings.
+                        let allYears = [...new Set(global_freq.map(d => d.year))].sort();
+                        let disType = [...new Set(global_freq.map(d => d.disasterType))].sort(); 
+
+                        const x = d3.scaleBand()
+                            .domain(allYears)
+                            .range([marginLeft, width - marginRight])
+                            .padding(0.1);
+                        
+                        const y = d3.scaleLinear()
+                            .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
+                            .rangeRound([height - marginBottom, marginTop]);
+
+                        // const color = d3.scaleOrdinal()
+                        //     .domain(disType)
+                        //     .range(d3.schemeSpectral[disType.length])
+                        //     .unknown("#ccc");
+
+                        var color = d3.scaleOrdinal(d3.schemeObservable10)
+
+                        // A function to format the value in the tooltip.
+                        const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+
+
+                        // Append the horizontal axis.
+                        div2.append("g")
+                            .attr("transform", `translate(0,${height - marginBottom})`)
+                            .call(d3.axisBottom(x).tickSizeOuter(0))
+                            .call(g => g.selectAll(".domain").remove());
+
+                        // Append the vertical axis.
+                        div2.append("g")
+                            .attr("transform", `translate(${marginLeft},0)`)
+                            .call(d3.axisLeft(y).ticks(null, "s"))
+                            .call(g => g.selectAll(".domain").remove());
+                        
+                        // ----------------
+                        // Create a tooltip
+                        // ----------------
+                        var tooltip = d3.select("#globalOverview")
+                            .append("div")
+                            .style("opacity", 0)
+                            .attr("class", "tooltip")
+                            .style("background-color", "white")
+                            .style("border", "solid")
+                            .style("border-width", "1px")
+                            .style("border-radius", "5px")
+                            .style("padding", "10px")
+
+                        // Three function that change the tooltip when user hover / move / leave a cell
+                        var mouseover = function(d) {
+                            var disasterType = d3.select(this.parentNode).datum().key;
+                            var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
+                            //var value = this
+                            tooltip
+                                // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+                                .html(`${disasterType}: ${frequency}`)
+                                .style("opacity", 1)
+                        }
+                        var mousemove = function(d) {
+                            tooltip
+                            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                            .style("top", (d3.mouse(this)[1]) + "px")
+                        }
+                        var mouseleave = function(d) {
+                            tooltip
+                            .style("opacity", 0)
+                        }
+                        // Append a group for each series, and a rect for each element in the series.
+                        div2.append("g")
+                            .selectAll()
+                            .data(series)
+                            .join("g")
+                            .attr("fill", d => color(d.key))
+                            .selectAll("rect")
+                            .data(D => D.map(d => (d.key = D.key, d)))
+                            .join("rect")
+                            .attr("x", d => x(d.data[0]))
+                            .attr("y", d => y(d[1]))
+                            .on("mouseover", mouseover)
+                            .on("mousemove", mousemove)
+                            .on("mouseleave", mouseleave)
+                            .attr("height", d => y(d[0]) - y(d[1]))
+                            .attr("width", x.bandwidth())
+                            .append("title")
+                        
+                        // add legend
+                        var padding = 40
+                        var legend = div2.append('g')
+                            .attr('class', 'legend')
+                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+                        
+                        
+                        legend.selectAll('rect')
+                            .data(disType)
+                            .enter()
+                            .append('rect')
+                            .attr('x', 0)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('width', 12)
+                            .attr('height', 12)
+                            .attr('fill', d => color(d) );
+                        
+                        legend.selectAll('text')
+                            .data(disType)
+                            .enter()
+                            .append('text')
+                            .text(function(d){
+                                return d;
+                            })
+                            .attr('x', 18)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('text-anchor', 'start')
+                            .attr('fill', 'white')
+                            .attr('alignment-baseline', 'hanging');
+                    })
+
+                .catch(error => console.error('Error fetching CSV:', error)); 
+        </script>
+    </section>
+    <section>
+        <h2 class="subheader">
+            Country Breakdown 
+        </h2>
+        <p> Select a country to view its recent natural disasters. </p>
+        <select id="countryselectButton"></select>
+        <div id="countryBreakdown"></div>
+        <script>
+            fetch('data/cleaned/annual_country_freq.csv') 
+                .then(response => response.text()) 
+                .then(csvString => {
+                    const country_freq = d3.csvParse(csvString, (d) => { 
+                        return {
+                        year: d.Year, 
+                        country: d.Country,
+                        disasterType: d.disasterType,
+                        frequency: +d.len
+                        }}
+                    )
+                        console.log(country_freq);
+
+
+                        // Specify the chart’s dimensions.
+                        const width= 1300;
+                        const height = 600;
+                        const marginTop = 20;
+                        const marginRight = 20;
+                        const marginBottom = 30;
+                        const marginLeft = 30;
+                        
+                        // // Create the SVG container.
+                        let div1 = d3
+                            .select("#countryBreakdown")
+                            .append("svg")
+                            .attr("width", width)
+                            .attr("height", height)
+                            .attr("viewBox", [0, 0, width, height])
+                            .text("Number of Natural Disasters")
+                            .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
+
+                        
+                        // create array for column values
+                        let options = [...new Set(country_freq.map(d => d.country))].sort(); 
+                        options.unshift("Select Country");
+                        let disType = [...new Set(country_freq.map(d => d.disasterType))].sort(); 
+                        let allYears = [...new Set(country_freq.map(d => d.year))].sort(); 
+                        
+                        // Generate legend
+                        var color = d3.scaleOrdinal(d3.schemeObservable10)
+                        var padding = 40
+                        var legend = div1.append('g')
+                            .attr('class', 'legend')
+                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+                        
+                        
+                        legend.selectAll('rect')
+                            .data(disType)
+                            .enter()
+                            .append('rect')
+                            .attr('x', 0)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('width', 12)
+                            .attr('height', 12)
+                            .attr('fill', d => color(d) );
+                        
+                        legend.selectAll('text')
+                            .data(disType)
+                            .enter()
+                            .append('text')
+                            .text(function(d){
+                                return d;
+                            })
+                            .attr('x', 18)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('text-anchor', 'start')
+                            .attr('fill', 'white')
+                            .attr('alignment-baseline', 'hanging');
+
+                        // generate dropdown
+                        d3.select("#countryselectButton")
+                            .selectAll('myOptions')
+                            .data(options)
+                            .enter()
+                            .append('option')
+                            .text(function (d) {
+                                return d; }) // text showed in the menu
+                            .attr("value", function (d) { return d; }); // corresponding value returned by the button
+                        
+                        d3
+                            .select("#countryselectButton")
+                            .on("change", function(d) {
+                                // remove existing bars & axes
+                                d3.selectAll(`#countrybars`).remove()
+                                d3.selectAll(`#countryaxis`).remove()
+
+                                // recover the option that has been chosen
+                                var selectedCountry = d3.select(this).property("value")
+                                console.log(selectedCountry)
+                                countrydata = country_freq.filter(d => d.country === selectedCountry)
+                                console.log(countrydata)
+
+                                const series = d3.stack()
+                                    .keys(d3.union(countrydata.map(d => d.disasterType))) // distinct series keys, in input order
+                                    .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
+                                    (d3.index(countrydata, d => d.year, d => d.disasterType)); // group by stack then series key
+                                
+
+                                // Prepare the scales for positional and color encodings.
+                                const x = d3.scaleBand()
+                                    .domain(allYears)
+                                    .range([marginLeft, width - marginRight])
+                                    .padding(0.1);
+                                
+                                const y = d3.scaleLinear()
+                                    .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
+                                    .rangeRound([height - marginBottom, marginTop]);
+
+                                // const color = d3.scaleOrdinal()
+                                //     .domain(series.map(d => d.key))
+                                //     .range(d3.schemeSpectral[disType.length])
+                                //     .unknown("#ccc");
+                               // var color = d3.scaleOrdinal(d3.schemeObservable10)
+
+                                // A function to format the value in the tooltip.
+                                const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+
+
+                                // Append the horizontal axis.
+                                div1.append("g")
+                                    .attr("transform", `translate(0,${height - marginBottom})`)
+                                    .attr("id", 'countryaxis')
+                                    .call(d3.axisBottom(x).tickSizeOuter(0))
+                                    .call(g => g.selectAll(".domain").remove());
+
+                                // Append the vertical axis.
+                                div1.append("g")
+                                    .attr("transform", `translate(${marginLeft},0)`)
+                                    .attr("id", 'countryaxis')
+                                    .call(d3.axisLeft(y).ticks(null, "s"))
+                                    .call(g => g.selectAll(".domain").remove());
+                                
+                                // ----------------
+                                // Create a tooltip
+                                // ----------------
+                                var tooltip = d3.select("#globalOverview")
+                                    .append("div")
+                                    .style("opacity", 0)
+                                    .attr("class", "tooltip")
+                                    .style("background-color", "white")
+                                    .style("border", "solid")
+                                    .style("border-width", "1px")
+                                    .style("border-radius", "5px")
+                                    .style("padding", "10px")
+
+                                // Three function that change the tooltip when user hover / move / leave a cell
+                                var mouseover = function(d) {
+                                    var disasterType = d3.select(this.parentNode).datum().key;
+                                    var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
+                                    //var value = this
+                                    tooltip
+                                        // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+                                        .html(`${disasterType}: ${frequency}`)
+                                        .style("opacity", 1)
+                                }
+                                var mousemove = function(d) {
+                                    tooltip
+                                    .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                    .style("top", (d3.mouse(this)[1]) + "px")
+                                }
+                                var mouseleave = function(d) {
+                                    tooltip
+                                    .style("opacity", 0)
+                                }
+                                
+                                // Append a group for each series, and a rect for each element in the series.
+                                div1.append("g")
+                                    .selectAll()
+                                    .data(series)
+                                    .join("g")
+                                    .attr("fill", d => color(d.key))
+                                    .selectAll("rect")
+                                    .data(D => D.map(d => (d.key = D.key, d)))
+                                    .join("rect")
+                                    .attr("x", d => x(d.data[0]))
+                                    .attr("y", d => y(d[1]))
+                                    .on("mouseover", mouseover)
+                                    .on("mousemove", mousemove)
+                                    .on("mouseleave", mouseleave)
+                                    .attr("height", d => y(d[0]) - y(d[1]))
+                                    .attr("width", x.bandwidth())
+                                    .attr("id", 'countrybars')
+                                    .append("title")
+                                    //.text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key).frequency)}`);
+
+                                    })
+
+            
+
+
+
+                })
+
+
+
+                .catch(error => console.error('Error fetching CSV:', error)); 
+            
+
+
+        </script>
+    </section>
+    </body>
+</html>
