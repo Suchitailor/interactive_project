@@ -18,168 +18,194 @@
         <h2 class="subheader">
             Global Overview 
         </h2>
-        <div id="globalOverview"></div>
-        <script>
-            fetch('data/cleaned/annual_frequencies.csv')
-                .then(response => response.text()) 
-                .then(csvString => {
-                    const global_freq = d3.csvParse(csvString, (d) => { 
-                        return {
-                        year: d.Year, 
-                        disasterType: d.disasterType,
-                        frequency: +d.len,
-                        compkey: d.compkey
-                        }}
-                    )
-                        console.log(global_freq)
-                        // Specify the chart’s dimensions.
-                        const width= 1300;
-                        const height = 600;
-                        const marginTop = 20;
-                        const marginRight = 20;
-                        const marginBottom = 30;
-                        const marginLeft = 30;
-                        
-                        // Create the SVG container.
-                        let div2 = d3
-                            .select("#globalOverview")
-                            .append("svg")
-                            .attr("width", width)
-                            .attr("height", height)
-                            .attr("viewBox", [0, 0, width, height])
-                            .text("Number of Natural Disasters")
-                            .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
+        <p> Since the 1970's natural disasters have grown increasingly frequent on a global scale.  </p>
+        <div class = "flex-container-element" id = "legendButtons" display =  >
+            <div class="buttons are-hovered are-responsive flex-legend">
+                <button class = "button drought" id = "drought">Drought</button>
+                <button class = "button earthquake" id = "earthquakeButton">Earthquake</button>
+                <button class = "button epidemic" id = "epidemicButton  ">Epidemic</button>
+                <button class = "button extreme" id = "extremeButton">Extreme Temperature</button>
+                <button class = "button" id = "floodButton">Flood</button>
+                <button class = "button" id = "landslideButton">Landslide</button>
+                <button class = "button" id = "stormButton">Storm</button>
+                <button class = "button" id = "wildfireButton">Wildfire</button>
+                <button class = "button" id = "otherButton">Other</button>
+            </div>
+            <div id="globalOverview" class = "flex-graph"></div>
 
-                        const series = d3.stack()
-                                .keys(d3.union(global_freq.map(d => d.disasterType))) // distinct series keys, in input order
-                                .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
-                                (d3.index(global_freq, d => d.year, d => d.disasterType)); // group by stack then series key
+            </div>
+            <script>
+                fetch('data/cleaned/annual_frequencies.csv')
+                    .then(response => response.text()) 
+                    .then(csvString => {
+                        const global_freq = d3.csvParse(csvString, (d) => { 
+                            return {
+                            year: d.Year, 
+                            disasterType: d.disasterType,
+                            frequency: +d.len,
+                            compkey: d.compkey
+                            }}
+                        )
+                            console.log(global_freq)
+                            // Specify the chart’s dimensions.
+                            const width= 1300;
+                            const height = 600;
+                            const marginTop = 20;
+                            const marginRight = 20;
+                            const marginBottom = 30;
+                            const marginLeft = 30;
                             
-                        console.log(series)
-                        
-                        // Prepare the scales for positional and color encodings.
-                        let allYears = [...new Set(global_freq.map(d => d.year))].sort();
-                        let disType = [...new Set(global_freq.map(d => d.disasterType))].sort(); 
+                            // Create the SVG container.
+                            let div2 = d3
+                                .select("#globalOverview")
+                                .append("svg")
+                                .attr("width", width)
+                                .attr("height", height)
+                                .attr("viewBox", [0, 0, width, height])
+                                .text("Number of Natural Disasters")
+                                .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
 
-                        const x = d3.scaleBand()
-                            .domain(allYears)
-                            .range([marginLeft, width - marginRight])
-                            .padding(0.1);
-                        
-                        const y = d3.scaleLinear()
-                            .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
-                            .rangeRound([height - marginBottom, marginTop]);
+                            const series = d3.stack()
+                                    .keys(d3.union(global_freq.map(d => d.disasterType))) // distinct series keys, in input order
+                                    .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
+                                    (d3.index(global_freq, d => d.year, d => d.disasterType)); // group by stack then series key
+                                
+                            console.log(series)
+                            
+                            // Prepare the scales for positional and color encodings.
+                            let allYears = [...new Set(global_freq.map(d => d.year))].sort();
+                            let disType = [...new Set(global_freq.map(d => d.disasterType))].sort(); 
 
-                        // const color = d3.scaleOrdinal()
-                        //     .domain(disType)
-                        //     .range(d3.schemeSpectral[disType.length])
-                        //     .unknown("#ccc");
+                            const x = d3.scaleBand()
+                                .domain(allYears)
+                                .range([marginLeft, width - marginRight])
+                                .padding(0.1);
+                            
+                            const y = d3.scaleLinear()
+                                .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
+                                .rangeRound([height - marginBottom, marginTop]);
 
-                        var color = d3.scaleOrdinal(d3.schemeObservable10)
+                            // const color = d3.scaleOrdinal()
+                            //     .domain(disType)
+                            //     .range(d3.schemeSpectral[disType.length])
+                            //     .unknown("#ccc");
 
-                        // A function to format the value in the tooltip.
-                        const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
+                            var color = d3.scaleOrdinal(d3.schemeObservable10)
+
+                            // A function to format the value in the tooltip.
+                            const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
 
 
-                        // Append the horizontal axis.
-                        div2.append("g")
-                            .attr("transform", `translate(0,${height - marginBottom})`)
-                            .call(d3.axisBottom(x).tickSizeOuter(0))
-                            .call(g => g.selectAll(".domain").remove());
+                            // Append the horizontal axis.
+                            div2.append("g")
+                                .attr("transform", `translate(0,${height - marginBottom})`)
+                                .call(d3.axisBottom(x).tickSizeOuter(0))
+                                .call(g => g.selectAll(".domain").remove());
 
-                        // Append the vertical axis.
-                        div2.append("g")
-                            .attr("transform", `translate(${marginLeft},0)`)
-                            .call(d3.axisLeft(y).ticks(null, "s"))
-                            .call(g => g.selectAll(".domain").remove());
-                        
-                        // ----------------
-                        // Create a tooltip
-                        // ----------------
-                        var tooltip = d3.select("#globalOverview")
-                            .append("div")
-                            .style("opacity", 0)
-                            .attr("class", "tooltip")
-                            .style("background-color", "white")
-                            .style("border", "solid")
-                            .style("border-width", "1px")
-                            .style("border-radius", "5px")
-                            .style("padding", "10px")
+                            // Append the vertical axis.
+                            div2.append("g")
+                                .attr("transform", `translate(${marginLeft},0)`)
+                                .call(d3.axisLeft(y).ticks(null, "s"))
+                                .call(g => g.selectAll(".domain").remove());
+                            
+                            // ----------------
+                            // Create a tooltip
+                            // ----------------
+                            var tooltip = d3.select("#globalOverview")
+                                .append("div")
+                                .style("opacity", 0)
+                                .attr("class", "tooltip")
+                                .style("background-color", "white")
+                                .style("border", "solid")
+                                .style("border-width", "1px")
+                                .style("border-radius", "5px")
+                                .style("padding", "10px")
 
-                        // Three function that change the tooltip when user hover / move / leave a cell
-                        var mouseover = function(d) {
-                            var disasterType = d3.select(this.parentNode).datum().key;
-                            var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
-                            //var value = this
-                            tooltip
-                                // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
-                                .html(`${disasterType}: ${frequency}`)
-                                .style("opacity", 1)
-                        }
-                        var mousemove = function(d) {
-                            tooltip
-                            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-                            .style("top", (d3.mouse(this)[1]) + "px")
-                        }
-                        var mouseleave = function(d) {
-                            tooltip
-                            .style("opacity", 0)
-                        }
-                        // Append a group for each series, and a rect for each element in the series.
-                        div2.append("g")
-                            .selectAll()
-                            .data(series)
-                            .join("g")
-                            .attr("fill", d => color(d.key))
-                            .selectAll("rect")
-                            .data(D => D.map(d => (d.key = D.key, d)))
-                            .join("rect")
-                            .attr("x", d => x(d.data[0]))
-                            .attr("y", d => y(d[1]))
-                            .on("mouseover", mouseover)
-                            .on("mousemove", mousemove)
-                            .on("mouseleave", mouseleave)
-                            .attr("height", d => y(d[0]) - y(d[1]))
-                            .attr("width", x.bandwidth())
-                            .append("title")
-                        
-                        // add legend
-                        var padding = 40
-                        var legend = div2.append('g')
-                            .attr('class', 'legend')
-                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
-                        
-                        
-                        legend.selectAll('rect')
-                            .data(disType)
-                            .enter()
-                            .append('rect')
-                            .attr('x', 0)
-                            .attr('y', function(d, i){
-                                return i * 18;
-                            })
-                            .attr('width', 12)
-                            .attr('height', 12)
-                            .attr('fill', d => color(d) );
-                        
-                        legend.selectAll('text')
-                            .data(disType)
-                            .enter()
-                            .append('text')
-                            .text(function(d){
-                                return d;
-                            })
-                            .attr('x', 18)
-                            .attr('y', function(d, i){
-                                return i * 18;
-                            })
-                            .attr('text-anchor', 'start')
-                            .attr('fill', 'white')
-                            .attr('alignment-baseline', 'hanging');
-                    })
+                            // Three function that change the tooltip when user hover / move / leave a cell
+                            var mouseover = function(d) {
+                                var disasterType = d3.select(this.parentNode).datum().key;
+                                var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
+                                //var value = this
+                                tooltip
+                                    // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
+                                    .html(`${disasterType}: ${frequency}`)
+                                    .style("opacity", 1)
+                            }
+                            var mousemove = function(d) {
+                                tooltip
+                                .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                .style("top", (d3.mouse(this)[1]) + "px")
+                            }
+                            var mouseleave = function(d) {
+                                tooltip
+                                .style("opacity", 0)
+                            }
+                            // ----------------
+                            // Build Chart
+                            // ----------------
+                            div2.append("g")
+                                .selectAll()
+                                .data(series)
+                                .join("g")
+                                .attr("fill", d => color(d.key))
+                                .selectAll("rect")
+                                .data(D => D.map(d => (d.key = D.key, d)))
+                                .join("rect")
+                                .attr("x", d => x(d.data[0]))
+                                .attr("y", d => y(d[1]))
+                                .on("mouseover", mouseover)
+                                .on("mousemove", mousemove)
+                                .on("mouseleave", mouseleave)
+                                .attr("height", d => y(d[0]) - y(d[1]))
+                                .attr("width", x.bandwidth())
+                                .append("title")
+                            
+                            legendButtons = d.select("#legendButtons")
+                                .selectAll("button")
+                                .onclick()
 
-                .catch(error => console.error('Error fetching CSV:', error)); 
-        </script>
+                            // ----------------
+                            // Activate Buttons
+                            // ----------------
+
+                            
+                            // add legend
+                            var padding = 40
+                            var legend = div2.append('g')
+                                .attr('class', 'legend')
+                                .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+                            
+                            
+                            legend.selectAll('rect')
+                                .data(disType)
+                                .enter()
+                                .append('rect')
+                                .attr('x', 0)
+                                .attr('y', function(d, i){
+                                    return i * 18;
+                                })
+                                .attr('width', 12)
+                                .attr('height', 12)
+                                .attr('fill', d => color(d) );
+                            
+                            legend.selectAll('text')
+                                .data(disType)
+                                .enter()
+                                .append('text')
+                                .text(function(d){
+                                    return d;
+                                })
+                                .attr('x', 18)
+                                .attr('y', function(d, i){
+                                    return i * 18;
+                                })
+                                .attr('text-anchor', 'start')
+                                .attr('fill', 'white')
+                                .attr('alignment-baseline', 'hanging');
+                        })
+
+                    .catch(error => console.error('Error fetching CSV:', error)); 
+            </script>
     </section>
     <section>
         <h2 class="subheader">

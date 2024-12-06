@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 10;
@@ -22,3 +24,37 @@ body {
     line-height: 1.5;
     color: #daf1de;
   }
+
+
+.flex-container-element { 
+    display: flex; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    width: 90%; 
+} 
+.flex-legend { 
+    flex: 2;
+    margin: 10px; 
+    width: 10%;
+    border: 1px solid red;
+}
+
+.flex-graph { 
+    flex: 9;
+    margin: 10px; 
+    width: 90%;
+    border: 1px solid red;
+}
+
+
+
+  .buttons {
+    text-align: left; /* Aligns child elements to the left */
+    flex-direction: column;
+  }
+
+  .buttons .button {
+    display: inline-block; /* Makes each button occupy its own line */
+    margin: 10;      /* Removes any margin that could affect alignment */
+  }
+
