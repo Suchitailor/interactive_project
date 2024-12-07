@@ -22,10 +22,10 @@
         <div class = "flex-container-element" id = "legendButtons" display =  >
             <div class="buttons are-hovered are-responsive flex-legend">
                 <button class = "button" id = "allButton">All</button>
-                <button class = "button drought" id = "drought">Drought</button>
-                <button class = "button earthquake" id = "earthquakeButton">Earthquake</button>
+                <button class = "initial button drought">Drought</button>
+                <button class = "initial button earthquake" id = "earthquakeButton">Earthquake</button>
                 <button class = "button epidemic" id = "epidemicButton  ">Epidemic</button>
-                <button class = "button extreme" id = "extremeButton">Extreme Temperature</button>
+                <button class = "button extreme" id = "extremeButton">Extreme temperature </button>
                 <button class = "button" id = "floodButton">Flood</button>
                 <button class = "button" id = "landslideButton">Landslide</button>
                 <button class = "button" id = "stormButton">Storm</button>
@@ -91,7 +91,7 @@
                             //     .domain(disType)
                             //     .range(d3.schemeSpectral[disType.length])
                             //     .unknown("#ccc");
-
+                            console.log(d3.schemeObservable10)
                             var color = d3.scaleOrdinal()
                                 .domain(disType)
                                 .range(d3.schemeObservable10)
@@ -140,6 +140,7 @@
                                 .style("left", (d3.pointer(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
                                 .style("top", (d3.pointer(this)[1]) + "px")
                             }
+
                             var mouseleave = function(d) {
                                 tooltip
                                 .style("opacity", 0)
@@ -147,13 +148,23 @@
                             // ----------------
                             // Build Initial Chart
                             // ----------------
+                            disType.unshift("All")
 
                             function loadInitialState() {
                                 
-                                // start all buttons in unclicked state
+                                // start all buttons in colored, but inactive state
                                 d3.selectAll('button')
                                         .classed('is-active', false) 
+                                        .classed('initial', true) 
                                 
+                                d3.selectAll(".initial")
+                                    .data(disType)
+                                    .style("background-color", function(d) {
+                                        console.log(d)
+                                        if (d === "All" )
+                                        {return "black"}
+                                        else { return color(d)}
+                            })
                                 // highlight all button - CORRECT PLACE TO MAKE INACTIVE?
                                 // d3.select('#allButton')
                                 //         .classed('is-active',true)
@@ -189,16 +200,16 @@
                             legendButtons = d3.select("#legendButtons")
                                 .selectAll("button")
                                 .on("click", (event)=> {
-                                    // deselect all button and activate selected button
-                                    // d3.select("#allButton").classed('is-active',true)
                                     event.target.classList.toggle("is-active");
 
-                                    // Log the currently selected buttons
+                                    // Log & Extract selected buttons
                                     const selectedButtons = d3.selectAll("#legendButtons .is-active")
                                         .nodes()
                                         .map(button => button.textContent); // Extract text content from the clicked buttons
+
                                     console.log("Selected Buttons:", selectedButtons);
-                                    console.log(updateChart(selectedButtons))
+                                    updateButtons(selectedButtons)
+                                    updateChart(selectedButtons)
                                 })
                                 
 
@@ -216,9 +227,23 @@
                                 return filteredSeries
                             }
 
+                            function updateButtons(selectedButtons){
+                                // remove initial state (for background colors)
+
+                                    d3.selectAll('.initial')
+                                        .classed('initial', false) 
+
+                                    // black out non-selected buttons
+                                    d3.selectAll('button:not(.is-active)')
+                                        .style('background-color', "black") 
+                                    
+                                    // highlight selected buttons
+                                    d3.selectAll('.is-active')
+                                        .data(selectedButtons)
+                                        .style('background-color', d => color(d) )
+                            }
                             // generate updated chart after selection
                             function updateChart(selectedButtons) {
-                                console.log(selectedButtons.includes("All"))
                                 
                                 // remove all existing bars
                                 d3.selectAll("#countrybars").remove();

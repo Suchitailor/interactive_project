@@ -24,6 +24,7 @@ annual_country_freq.write_csv("cleaned/annual_country_freq.csv")
 # consolidate least frequent disaster types into Other category
 annual_frequencies = disasters.with_columns(\
     disasterType = pl.col("disasterType").replace(least_freq, ["Other"] * 6 ))
+annual_frequencies = annual_frequencies.with_columns(pl.col("disasterType")).replace("Extreme temperature", "Extreme Temperature")
 
 # calculate frequency of each disaster type by year
 annual_frequencies = annual_frequencies.select(
