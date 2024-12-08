@@ -9,32 +9,38 @@
     <link rel="stylesheet" href="theme.css">
   </head>
   <body>
-    <section class="title">
+    <section class="section">
         <h1 class="title">
             Natural Disasters 1970-2021
         </h1>
     </section>
-    <section>
+    <section class = "section">
         <h2 class="subheader">
             Global Overview 
         </h2>
         <p> Since the 1970's natural disasters have grown increasingly frequent on a global scale.  </p>
-        <div class = "flex-container-element" id = "legendButtons" display =  >
-            <div class="buttons are-hovered are-responsive flex-legend">
-                <button class = "button" id = "allButton">All</button>
-                <button class = "initial button drought">Drought</button>
-                <button class = "initial button earthquake" id = "earthquakeButton">Earthquake</button>
-                <button class = "button epidemic" id = "epidemicButton  ">Epidemic</button>
-                <button class = "button extreme" id = "extremeButton">Extreme temperature </button>
-                <button class = "button" id = "floodButton">Flood</button>
-                <button class = "button" id = "landslideButton">Landslide</button>
-                <button class = "button" id = "stormButton">Storm</button>
-                <button class = "button" id = "wildfireButton">Wildfire</button>
-                <button class = "button" id = "otherButton">Other</button>
+        <div id = "globalOverview" >
+            <div class="buttons is-grouped are-hovered are-responsive" id ="legendButtons">
+                <button class = "button">All</button>
+                <button class = "button" >Drought</button>
+                <button class = "button">Earthquake</button>
+                <button class = "button">Epidemic</button>
+                <button class = "button">Extreme temperature </button>
+                <button class = "button">Flood</button>
+                <button class = "button">Landslide</button>
+                <button class = "button">Storm</button>
+                <button class = "button">Wildfire</button>
+                <button class = "button">Other</button>
+            </div >
+            <div class = "level">
+                <div class = "chartTitle"> Worldwide Frequency of Natural Disasters</div>
+                <!-- <p class = chartText> Since the 1970s, the frequency of natural disasters has increased worldwide. Click 
+                    around to explore what types of disasters have been most frequent and caused the 
+                    most economic damage. </p> -->
+                <div class = "level-left chart" id="globalFrequency" ></div>
             </div>
-            <div id="globalOverview" class = "flex-graph"></div>
-
-            </div>
+            <div id="globalCost" ></div>
+        </div>
             <script>
                 fetch('data/cleaned/annual_frequencies.csv')
                     .then(response => response.text()) 
@@ -54,11 +60,11 @@
                             const marginTop = 20;
                             const marginRight = 20;
                             const marginBottom = 30;
-                            const marginLeft = 30;
+                            const marginLeft = 50;
                             
                             // Create the SVG container.
                             let div2 = d3
-                                .select("#globalOverview")
+                                .select("#globalFrequency")
                                 .append("svg")
                                 .attr("width", width)
                                 .attr("height", height)
@@ -87,10 +93,6 @@
                                 .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
                                 .rangeRound([height - marginBottom, marginTop]);
 
-                            // const color = d3.scaleOrdinal()
-                            //     .domain(disType)
-                            //     .range(d3.schemeSpectral[disType.length])
-                            //     .unknown("#ccc");
                             console.log(d3.schemeObservable10)
                             var color = d3.scaleOrdinal()
                                 .domain(disType)
@@ -99,11 +101,13 @@
                             // A function to format the value in the tooltip.
                             const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
 
-
                             // Append the horizontal axis.
                             div2.append("g")
                                 .attr("transform", `translate(0,${height - marginBottom})`)
-                                .call(d3.axisBottom(x).tickSizeOuter(0))
+                                .call(d3.axisBottom(x)
+                                    .tickValues(allYears.filter(year => year % 5 === 0)) // Show every 5th year
+                                    .tickSizeOuter(0)
+                                )
                                 .call(g => g.selectAll(".domain").remove());
 
                             // Append the vertical axis.
@@ -115,7 +119,7 @@
                             // ----------------
                             // Create a tooltip
                             // ----------------
-                            var tooltip = d3.select("#globalOverview")
+                            var tooltip = d3.select("#globalFrequency")
                                 .append("div")
                                 .style("opacity", 0)
                                 .attr("class", "tooltip")
@@ -129,16 +133,15 @@
                             var mouseover = function(d) {
                                 var disasterType = d3.select(this.parentNode).datum().key;
                                 var frequency = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
-                                //var value = this
+                                var value = this
                                 tooltip
-                                    // .html("Disaster Type: " + subgroupName + "<br>" + "Value: " + subgroupValue)
                                     .html(`${disasterType}: ${frequency}`)
                                     .style("opacity", 1)
                             }
                             var mousemove = function(d) {
                                 tooltip
-                                .style("left", (d3.pointer(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-                                .style("top", (d3.pointer(this)[1]) + "px")
+                                .style("left", (d3.pointer(value)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                .style("top", (d3.pointer(value)[1]) + "px")
                             }
 
                             var mouseleave = function(d) {
@@ -326,7 +329,7 @@
                     .catch(error => console.error('Error fetching CSV:', error)); 
             </script>
     </section>
-    <section>
+    <section class = "section">
         <h2 class="subheader">
             Country Breakdown 
         </h2>
