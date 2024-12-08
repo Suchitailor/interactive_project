@@ -140,8 +140,8 @@
                             }
                             var mousemove = function(d) {
                                 tooltip
-                                .style("left", (d3.pointer(value)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-                                .style("top", (d3.pointer(value)[1]) + "px")
+                                .style("left", (d3.pointer(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                .style("top", (d3.pointer(this)[1]) + "px")
                             }
 
                             var mouseleave = function(d) {
@@ -181,7 +181,7 @@
                                 .selectAll("rect")
                                 .data(D => D.map(d => (d.key = D.key, d)))
                                 .join("rect")
-                                .attr("id", "countrybars")
+                                .attr("id", "globalbars")
                                 .attr("x", d => x(d.data[0]))
                                 .attr("y", d => y(d[1]))
                                 .on("mouseover", mouseover)
@@ -249,7 +249,7 @@
                             function updateChart(selectedButtons) {
                                 
                                 // remove all existing bars
-                                d3.selectAll("#countrybars").remove();
+                                d3.selectAll("#globalbars").remove();
 
                                 // if "All" or nothing is selected, load initial state
                                 if (selectedButtons.includes("All") ||
@@ -275,7 +275,7 @@
                                 .selectAll("rect")
                                 .data(D => D.map(d => (d.key = D.key, d)))
                                 .join("rect")
-                                .attr("id", "countrybars")
+                                .attr("id", "globalbars")
                                 .attr("x", d => x(d.data[0]))
                                 .attr("y", d => y(d[1]))
                                 .on("mouseover", mouseover)
@@ -294,19 +294,19 @@
     </section>
     <section class = "section">
         <h2 class="subheader">
-            Country Breakdown 
+            Regional Breakdown 
         </h2>
-        <p> Select a country to view its recent natural disasters. </p>
-        <select id="regionselectButton"></select>
-        <div id="RegionBreakdown"></div>
+        <p> Select a region to view its recent natural disasters. </p>
+        <select id="regiondropdown"></select>
+        <div id="regionBreakdown"></div>
         <script>
-            fetch('data/cleaned/annual_country_freq.csv') 
+            fetch('data/cleaned/regional_frequencies.csv') 
                 .then(response => response.text()) 
                 .then(csvString => {
                     const country_freq = d3.csvParse(csvString, (d) => { 
                         return {
                         year: d.Year, 
-                        country: d.Country,
+                        //country: d.Country,
                         region: d.Region,
                         disasterType: d.disasterType,
                         frequency: +d.len
@@ -325,7 +325,7 @@
                         
                         // // Create the SVG container.
                         let div1 = d3
-                            .select("#countryBreakdown")
+                            .select("#regionBreakdown")
                             .append("svg")
                             .attr("width", width)
                             .attr("height", height)
@@ -335,48 +335,51 @@
 
                         
                         // create array for column values
-                        let options = [...new Set(country_freq.map(d => d.country))].sort(); 
-                        options.unshift("Select Country");
+                        let options = [...new Set(country_freq.map(d => d.region))].sort(); 
+                        options.unshift("Select Region");
                         let disType = [...new Set(country_freq.map(d => d.disasterType))].sort(); 
                         let allYears = [...new Set(country_freq.map(d => d.year))].sort(); 
                         
+                        var color = d3.scaleOrdinal()
+                                .domain(disType)
+                                .range(d3.schemeObservable10)
                         // Generate legend
-                        var color = d3.scaleOrdinal(d3.schemeObservable10)
-                        var padding = 40
-                        var legend = div1.append('g')
-                            .attr('class', 'legend')
-                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+
+                        // var padding = 40
+                        // var legend = div1.append('g')
+                        //     .attr('class', 'legend')
+                        //     .attr('transform', 'translate(' + (padding + 12) + ', 0)');
                         
                         
-                        legend.selectAll('rect')
-                            .data(disType)
-                            .enter()
-                            .append('rect')
-                            .attr('x', 0)
-                            .attr('y', function(d, i){
-                                return i * 18;
-                            })
-                            .attr('width', 12)
-                            .attr('height', 12)
-                            .attr('fill', d => color(d) );
+                        // legend.selectAll('rect')
+                        //     .data(disType)
+                        //     .enter()
+                        //     .append('rect')
+                        //     .attr('x', 0)
+                        //     .attr('y', function(d, i){
+                        //         return i * 18;
+                        //     })
+                        //     .attr('width', 12)
+                        //     .attr('height', 12)
+                        //     .attr('fill', d => color(d) );
                         
-                        legend.selectAll('text')
-                            .data(disType)
-                            .enter()
-                            .append('text')
-                            .text(function(d){
-                                return d;
-                            })
-                            .attr('x', 18)
-                            .attr('y', function(d, i){
-                                return i * 18;
-                            })
-                            .attr('text-anchor', 'start')
-                            .attr('fill', 'white')
-                            .attr('alignment-baseline', 'hanging');
+                        // legend.selectAll('text')
+                        //     .data(disType)
+                        //     .enter()
+                        //     .append('text')
+                        //     .text(function(d){
+                        //         return d;
+                        //     })
+                        //     .attr('x', 18)
+                        //     .attr('y', function(d, i){
+                        //         return i * 18;
+                        //     })
+                        //     .attr('text-anchor', 'start')
+                        //     .attr('fill', 'white')
+                        //     .attr('alignment-baseline', 'hanging');
 
                         // generate dropdown
-                        d3.select("#countryselectButton")
+                        d3.select("#regiondropdown")
                             .selectAll('myOptions')
                             .data(options)
                             .enter()
@@ -386,22 +389,22 @@
                             .attr("value", function (d) { return d; }); // corresponding value returned by the button
                         
                         d3
-                            .select("#countryselectButton")
+                            .select("#regiondropdown")
                             .on("change", function(d) {
                                 // remove existing bars & axes
-                                d3.selectAll(`#countrybars`).remove()
-                                d3.selectAll(`#countryaxis`).remove()
+                                d3.selectAll(`#regionbars`).remove()
+                                d3.selectAll(`#regionaxis`).remove()
 
                                 // recover the option that has been chosen
-                                var selectedCountry = d3.select(this).property("value")
-                                console.log(selectedCountry)
-                                countrydata = country_freq.filter(d => d.country === selectedCountry)
-                                console.log(countrydata)
+                                var selectedRegion = d3.select(this).property("value")
+                                console.log(selectedRegion)
+                                regiondata = country_freq.filter(d => d.region === selectedRegion)
+                                console.log(regiondata)
 
                                 const series = d3.stack()
-                                    .keys(d3.union(countrydata.map(d => d.disasterType))) // distinct series keys, in input order
+                                    .keys(d3.union(regiondata.map(d => d.disasterType))) // distinct series keys, in input order
                                     .value(([, D], key) => D.get(key)?.frequency || 0) // get value for each series key and stack, default 0 
-                                    (d3.index(countrydata, d => d.year, d => d.disasterType)); // group by stack then series key
+                                    (d3.index(regiondata, d => d.year, d => d.disasterType)); // group by stack then series key
                                 
 
                                 // Prepare the scales for positional and color encodings.
@@ -414,11 +417,7 @@
                                     .domain([0, 1.25 * (d3.max(series, d => d3.max(d, d => d[1])))])
                                     .rangeRound([height - marginBottom, marginTop]);
 
-                                // const color = d3.scaleOrdinal()
-                                //     .domain(series.map(d => d.key))
-                                //     .range(d3.schemeSpectral[disType.length])
-                                //     .unknown("#ccc");
-                               // var color = d3.scaleOrdinal(d3.schemeObservable10)
+
 
                                 // A function to format the value in the tooltip.
                                 const formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en")
@@ -426,22 +425,24 @@
 
                                 // Append the horizontal axis.
                                 div1.append("g")
-                                    .attr("transform", `translate(0,${height - marginBottom})`)
-                                    .attr("id", 'countryaxis')
-                                    .call(d3.axisBottom(x).tickSizeOuter(0))
-                                    .call(g => g.selectAll(".domain").remove());
+                                .attr("transform", `translate(0,${height - marginBottom})`)
+                                .call(d3.axisBottom(x)
+                                    .tickValues(allYears.filter(year => year % 5 === 0)) // Show every 5th year
+                                    .tickSizeOuter(0)
+                                )
+                                .call(g => g.selectAll(".domain").remove());
 
                                 // Append the vertical axis.
                                 div1.append("g")
                                     .attr("transform", `translate(${marginLeft},0)`)
-                                    .attr("id", 'countryaxis')
+                                    .attr("id", 'regionaxis')
                                     .call(d3.axisLeft(y).ticks(null, "s"))
                                     .call(g => g.selectAll(".domain").remove());
                                 
                                 // ----------------
                                 // Create a tooltip
                                 // ----------------
-                                var tooltip = d3.select("#globalOverview")
+                                var tooltip = d3.select("#regionBreakdown")
                                     .append("div")
                                     .style("opacity", 0)
                                     .attr("class", "tooltip")
@@ -463,8 +464,8 @@
                                 }
                                 var mousemove = function(d) {
                                     tooltip
-                                    .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-                                    .style("top", (d3.mouse(this)[1]) + "px")
+                                    .style("left", (d3.pointer(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                    .style("top", (d3.pointer(this)[1]) + "px")
                                 }
                                 var mouseleave = function(d) {
                                     tooltip
@@ -487,7 +488,7 @@
                                     .on("mouseleave", mouseleave)
                                     .attr("height", d => y(d[0]) - y(d[1]))
                                     .attr("width", x.bandwidth())
-                                    .attr("id", 'countrybars')
+                                    .attr("id", 'regionbars')
                                     .append("title")
                                     //.text(d => `${d.data[0]} ${d.key}\n${formatValue(d.data[1].get(d.key).frequency)}`);
 

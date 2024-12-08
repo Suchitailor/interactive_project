@@ -1,0 +1,3844 @@
+Year,Region,disasterType,len
+1970,South America,Flood,1
+1970,Australia and New Zealand,Storm,1
+1970,Western Africa,Flood,1
+1970,Southern Asia,Storm,1
+1970,Southern Asia,Flood,1
+1970,South America,Drought,1
+1970,Caribbean,Flood,1
+1970,Southern Africa,Drought,1
+1970,Northern America,Storm,1
+1970,Western Europe,Landslide,1
+1970,Eastern Asia,Earthquake,1
+1970,Eastern Asia,Storm,1
+1970,Western Africa,Epidemic,1
+1970,South America,Earthquake,1
+1970,Central America,Flood,1
+1970,Caribbean,Storm,1
+1970,Western Asia,Epidemic,1
+1970,Eastern Africa,Epidemic,1
+1970,Eastern Asia,Flood,1
+1970,Eastern Asia,Wildfire,1
+1970,Eastern Europe,Flood,1
+1970,South-Eastern Asia,Flood,1
+1970,Southern Asia,Earthquake,1
+1971,South America,Earthquake,1
+1971,Southern Asia,Landslide,1
+1971,Southern Asia,Drought,1
+1971,Australia and New Zealand,Flood,1
+1971,Australia and New Zealand,Storm,1
+1971,Western Europe,Flood,1
+1971,Southern Asia,Storm,1
+1971,South America,Flood,1
+1971,Northern America,Storm,1
+1971,Northern America,Other,1
+1971,South America,Storm,1
+1971,Middle Africa,Drought,1
+1971,South America,Landslide,1
+1971,Southern Europe,Extreme temperature ,1
+1971,Southern Europe,Storm,1
+1971,Western Africa,Drought,1
+1971,Eastern Asia,Storm,1
+1971,Eastern Asia,Wildfire,1
+1971,Central America,Storm,1
+1972,Southern Asia,Flood,1
+1972,South America,Extreme temperature ,1
+1972,Western Europe,Storm,1
+1972,Southern Asia,Storm,1
+1972,Southern Africa,Flood,1
+1972,South America,Landslide,1
+1972,Southern Europe,Flood,1
+1972,Melanesia,Storm,1
+1972,Northern Europe,Storm,1
+1972,Eastern Asia,Landslide,1
+1972,Eastern Asia,Wildfire,1
+1972,Eastern Asia,Flood,1
+1972,Central America,Drought,1
+1972,Caribbean,Flood,1
+1972,South-Eastern Asia,Drought,1
+1973,Eastern Africa,Drought,1
+1973,South America,Storm,1
+1973,Australia and New Zealand,Flood,1
+1973,Southern Asia,Storm,1
+1973,Southern Asia,Flood,1
+1973,South America,Flood,1
+1973,Middle Africa,Flood,1
+1973,South America,Landslide,1
+1973,Central America,Earthquake,1
+1973,Central America,Drought,1
+1973,Northern Africa,Flood,1
+1973,Southern Europe,Flood,1
+1973,Southern Europe,Storm,1
+1973,Melanesia,Storm,1
+1973,Western Africa,Wildfire,1
+1973,Central America,Flood,1
+1973,Eastern Asia,Storm,1
+1973,Eastern Asia,Wildfire,1
+1973,Central America,Landslide,1
+1973,South-Eastern Asia,Storm,1
+1973,Southern Asia,Extreme temperature ,1
+1974,South America,Storm,1
+1974,Australia and New Zealand,Storm,1
+1974,Australia and New Zealand,Drought,1
+1974,Australia and New Zealand,Flood,1
+1974,Southern Asia,Storm,1
+1974,Southern Asia,Drought,1
+1974,Southern Asia,Flood,1
+1974,Central America,Storm,1
+1974,South America,Flood,1
+1974,South America,Landslide,1
+1974,South America,Epidemic,1
+1974,Northern America,Flood,1
+1974,Eastern Asia,Earthquake,1
+1974,Eastern Europe,Landslide,1
+1974,Western Europe,Storm,1
+1974,Northern Africa,Flood,1
+1974,Eastern Asia,Storm,1
+1974,Eastern Asia,Wildfire,1
+1974,Caribbean,Drought,1
+1974,South-Eastern Asia,Storm,1
+1975,Eastern Asia,Flood,1
+1975,South America,Storm,1
+1975,Australia and New Zealand,Storm,1
+1975,Australia and New Zealand,Wildfire,1
+1975,Australia and New Zealand,Flood,1
+1975,Western Europe,Landslide,1
+1975,South America,Extreme temperature ,1
+1975,South America,Epidemic,1
+1975,South America,Flood,1
+1975,Northern America,Storm,1
+1975,Eastern Asia,Earthquake,1
+1975,Central America,Other,1
+1975,South America,Other,1
+1975,Northern Africa,Flood,1
+1975,Melanesia,Storm,1
+1975,Caribbean,Flood,1
+1975,Eastern Asia,Storm,1
+1975,Southern Asia,Earthquake,1
+1975,Southern Asia,Storm,1
+1976,Southern Asia,Earthquake,1
+1976,Southern Asia,Flood,1
+1976,Australia and New Zealand,Storm,1
+1976,Australia and New Zealand,Drought,1
+1976,Australia and New Zealand,Flood,1
+1976,Western Europe,Storm,1
+1976,Western Europe,Drought,1
+1976,Western Africa,Epidemic,1
+1976,Western Africa,Drought,1
+1976,Southern Asia,Storm,1
+1976,Northern America,Flood,1
+1976,Eastern Asia,Earthquake,1
+1976,South America,Landslide,1
+1976,South America,Flood,1
+1976,Central America,Other,1
+1976,Central America,Wildfire,1
+1976,Caribbean,Earthquake,1
+1976,Northern Europe,Storm,1
+1976,South America,Earthquake,1
+1976,South America,Other,1
+1976,Eastern Africa,Flood,1
+1976,Caribbean,Other,1
+1976,Central America,Earthquake,1
+1976,Micronesia,Storm,1
+1976,Eastern Asia,Storm,1
+1976,Eastern Asia,Drought,1
+1976,Eastern Asia,Flood,1
+1976,Central America,Flood,1
+1976,South-Eastern Asia,Earthquake,1
+1976,South-Eastern Asia,Other,1
+1976,South-Eastern Asia,Flood,1
+1976,South-Eastern Asia,Storm,1
+1977,South-Eastern Asia,Earthquake,1
+1977,Western Africa,Drought,1
+1977,Caribbean,Drought,1
+1977,South America,Earthquake,1
+1977,South America,Flood,1
+1977,Australia and New Zealand,Storm,1
+1977,Australia and New Zealand,Wildfire,1
+1977,Australia and New Zealand,Flood,1
+1977,Western Africa,Flood,1
+1977,Southern Asia,Storm,1
+1977,Southern Asia,Epidemic,1
+1977,Southern Asia,Flood,1
+1977,Eastern Europe,Earthquake,1
+1977,South America,Drought,1
+1977,South America,Storm,1
+1977,Northern America,Drought,1
+1977,Northern America,Storm,1
+1977,Western Europe,Flood,1
+1977,South America,Landslide,1
+1977,Eastern Africa,Other,1
+1977,Caribbean,Flood,1
+1977,Eastern Africa,Flood,1
+1977,South America,Epidemic,1
+1977,Northern Europe,Flood,1
+1977,Western Africa,Epidemic,1
+1977,Southern Europe,Flood,1
+1977,Eastern Asia,Storm,1
+1977,Eastern Asia,Drought,1
+1977,Eastern Asia,Flood,1
+1977,South-Eastern Asia,Storm,1
+1977,South-Eastern Asia,Epidemic,1
+1977,South-Eastern Asia,Flood,1
+1978,Southern Asia,Flood,1
+1978,South America,Flood,1
+1978,Australia and New Zealand,Storm,1
+1978,Eastern Africa,Epidemic,1
+1978,Western Africa,Wildfire,1
+1978,Southern Asia,Epidemic,1
+1978,Southern Asia,Storm,1
+1978,Western Asia,Epidemic,1
+1978,Caribbean,Storm,1
+1978,Western Europe,Flood,1
+1978,Eastern Africa,Flood,1
+1978,Southern Europe,Flood,1
+1978,Melanesia,Storm,1
+1978,Southern Europe,Earthquake,1
+1978,South-Eastern Asia,Epidemic,1
+1978,South-Eastern Asia,Flood,1
+1978,Southern Asia,Extreme temperature ,1
+1970,Melanesia,Earthquake,1
+1970,Southern Asia,Landslide,1
+1970,Western Asia,Landslide,1
+1970,Southern Europe,Flood,1
+1970,Southern Europe,Storm,1
+1970,Northern Africa,Flood,1
+1970,Eastern Africa,Storm,1
+1970,South-Eastern Asia,Earthquake,1
+1970,South-Eastern Asia,Storm,1
+1970,Western Asia,Earthquake,1
+1970,Northern America,Wildfire,1
+1971,Southern Asia,Flood,1
+1971,Southern Europe,Earthquake,1
+1971,Eastern Africa,Drought,1
+1971,South-Eastern Asia,Flood,1
+1971,Northern Africa,Drought,1
+1971,Eastern Africa,Flood,1
+1971,Central America,Other,1
+1971,South-Eastern Asia,Storm,1
+1971,Melanesia,Landslide,1
+1971,Melanesia,Other,1
+1971,Middle Africa,Epidemic,1
+1971,Western Asia,Earthquake,1
+1971,Northern America,Earthquake,1
+1972,Southern Asia,Drought,1
+1972,Southern Asia,Earthquake,1
+1972,Southern Europe,Earthquake,1
+1972,Eastern Asia,Storm,1
+1972,Micronesia,Storm,1
+1972,Eastern Africa,Storm,1
+1972,Central America,Flood,1
+1972,Central America,Earthquake,1
+1972,Southern Asia,Landslide,1
+1972,South America,Earthquake,1
+1972,South-Eastern Asia,Storm,1
+1972,South-Eastern Asia,Flood,1
+1972,Western Asia,Storm,1
+1972,Polynesia,Storm,1
+1972,Northern America,Landslide,1
+1972,Northern America,Storm,1
+1972,Northern America,Extreme temperature ,1
+1973,Northern Europe,Other,1
+1973,Caribbean,Storm,1
+1973,South-Eastern Asia,Earthquake,1
+1973,South-Eastern Asia,Flood,1
+1973,Polynesia,Storm,1
+1973,Northern America,Extreme temperature ,1
+1974,Southern Asia,Earthquake,1
+1974,South America,Earthquake,1
+1974,Northern Europe,Landslide,1
+1974,Eastern Asia,Landslide,1
+1974,Southern Asia,Landslide,1
+1974,Southern Africa,Epidemic,1
+1974,South-Eastern Asia,Flood,1
+1974,Western Africa,Flood,1
+1974,Eastern Africa,Flood,1
+1974,Russian Federation,Landslide,1
+1974,Western Asia,Flood,1
+1974,Caribbean,Storm,1
+1974,Northern America,Storm,1
+1975,Southern Asia,Flood,1
+1975,Southern Europe,Landslide,1
+1975,Eastern Asia,Landslide,1
+1975,Eastern Africa,Flood,1
+1975,Eastern Africa,Storm,1
+1975,Central America,Storm,1
+1975,South-Eastern Asia,Storm,1
+1975,Southern Asia,Landslide,1
+1975,Southern Asia,Extreme temperature ,1
+1975,South-Eastern Asia,Flood,1
+1975,South-Eastern Asia,Other,1
+1975,Caribbean,Storm,1
+1975,Eastern Europe,Flood,1
+1975,Melanesia,Earthquake,1
+1975,Western Africa,Storm,1
+1975,Western Asia,Earthquake,1
+1976,Eastern Africa,Drought,1
+1976,Northern Europe,Earthquake,1
+1976,Southern Europe,Earthquake,1
+1976,Eastern Asia,Landslide,1
+1976,Eastern Africa,Storm,1
+1976,Central America,Storm,1
+1976,Melanesia,Storm,1
+1976,Southern Asia,Landslide,1
+1976,Australia and New Zealand,Earthquake,1
+1976,Northern Africa,Epidemic,1
+1976,Russian Federation,Earthquake,1
+1976,Western Asia,Earthquake,1
+1976,Western Asia,Landslide,1
+1977,Melanesia,Earthquake,1
+1977,Southern Asia,Earthquake,1
+1977,Caribbean,Epidemic,1
+1977,Eastern Asia,Other,1
+1977,Eastern Asia,Epidemic,1
+1977,Micronesia,Epidemic,1
+1977,South-Eastern Asia,Drought,1
+1977,Southern Asia,Landslide,1
+1977,Southern Asia,Drought,1
+1977,Northern Africa,Flood,1
+1977,Eastern Africa,Storm,1
+1977,Central America,Storm,1
+1977,Western Asia,Storm,1
+1977,Eastern Europe,Flood,1
+1977,Eastern Africa,Epidemic,1
+1977,Northern Europe,Landslide,1
+1977,Western Asia,Epidemic,1
+1977,Middle Africa,Storm,1
+1977,Polynesia,Earthquake,1
+1977,Polynesia,Storm,1
+1977,Northern Africa,Drought,1
+1977,Western Asia,Earthquake,1
+1977,Eastern Africa,Drought,1
+1977,Northern America,Flood,1
+1977,Northern America,Extreme temperature ,1
+1978,Eastern Asia,Earthquake,1
+1978,Southern Europe,Storm,1
+1978,Eastern Asia,Epidemic,1
+1978,Eastern Asia,Flood,1
+1978,Eastern Asia,Storm,1
+1978,Central America,Flood,1
+1978,South-Eastern Asia,Storm,1
+1978,Western Africa,Storm,1
+1978,South-Eastern Asia,Other,2
+1978,Northern Africa,Flood,1
+1978,Northern America,Storm,1
+1971,Caribbean,Other,1
+1971,South America,Epidemic,1
+1972,Northern America,Flood,1
+1972,Western Asia,Flood,1
+1972,Southern Europe,Epidemic,1
+1973,Northern America,Storm,1
+1973,Northern America,Flood,1
+1973,Western Asia,Flood,1
+1974,Western Asia,Other,1
+1974,Southern Africa,Flood,1
+1975,Western Asia,Drought,1
+1975,Western Asia,Flood,1
+1976,Middle Africa,Epidemic,1
+1977,Melanesia,Storm,1
+1977,Western Asia,Drought,1
+1977,Southern Africa,Flood,1
+1977,Middle Africa,Other,1
+1978,Southern Africa,Flood,1
+1978,Middle Africa,Epidemic,1
+1978,South America,Storm,1
+1978,Australia and New Zealand,Drought,1
+1978,Australia and New Zealand,Flood,1
+1978,Central America,Storm,1
+1978,South America,Drought,1
+1978,Eastern Asia,Drought,1
+1978,Western Europe,Earthquake,1
+1978,Caribbean,Epidemic,1
+1978,Western Africa,Epidemic,1
+1978,Western Africa,Other,1
+1978,Eastern Asia,Wildfire,1
+1979,Central America,Earthquake,1
+1979,South America,Earthquake,1
+1979,Caribbean,Storm,1
+1979,Southern Europe,Earthquake,1
+1979,South America,Flood,1
+1979,Australia and New Zealand,Storm,1
+1979,Australia and New Zealand,Wildfire,1
+1979,Western Africa,Epidemic,1
+1979,Southern Asia,Storm,1
+1979,Southern Asia,Drought,1
+1979,Central America,Flood,1
+1979,South America,Drought,1
+1979,Northern America,Flood,1
+1979,South America,Landslide,1
+1979,Eastern Asia,Earthquake,1
+1979,Eastern Asia,Drought,1
+1979,Western Europe,Extreme temperature ,1
+1979,Caribbean,Flood,1
+1979,Northern Africa,Flood,1
+1979,Northern Africa,Storm,1
+1979,Southern Europe,Flood,1
+1979,Melanesia,Storm,1
+1979,Western Europe,Earthquake,1
+1979,Eastern Asia,Landslide,1
+1979,Eastern Asia,Storm,1
+1979,Eastern Asia,Wildfire,1
+1980,Western Africa,Drought,1
+1980,Northern Africa,Earthquake,1
+1980,Southern Asia,Flood,1
+1980,South America,Flood,1
+1980,Australia and New Zealand,Storm,1
+1980,Australia and New Zealand,Wildfire,1
+1980,Western Europe,Flood,1
+1980,Southern Europe,Earthquake,1
+1980,Southern Asia,Storm,1
+1980,South America,Storm,1
+1980,Caribbean,Storm,1
+1980,Northern America,Wildfire,1
+1980,Eastern Asia,Flood,1
+1980,Eastern Asia,Storm,1
+1980,Central America,Flood,1
+1980,Eastern Africa,Drought,1
+1980,Northern Europe,Storm,1
+1980,South America,Earthquake,1
+1980,Southern Europe,Drought,1
+1980,Eastern Africa,Epidemic,1
+1980,Melanesia,Storm,1
+1980,Eastern Asia,Wildfire,1
+1981,South America,Earthquake,1
+1981,Southern Europe,Earthquake,1
+1981,Northern America,Storm,1
+1981,Middle Africa,Drought,1
+1981,Eastern Africa,Drought,1
+1981,Australia and New Zealand,Storm,1
+1981,Australia and New Zealand,Flood,1
+1981,Australia and New Zealand,Drought,1
+1981,Western Europe,Storm,1
+1981,Western Africa,Epidemic,1
+1981,Southern Asia,Storm,1
+1981,Eastern Europe,Storm,1
+1981,South America,Flood,1
+1981,Southern Africa,Drought,1
+1981,Middle Africa,Storm,1
+1981,Eastern Asia,Storm,1
+1981,Eastern Asia,Earthquake,1
+1981,Eastern Asia,Flood,1
+1981,Eastern Asia,Wildfire,1
+1981,Polynesia,Storm,1
+1981,South America,Landslide,1
+1981,Eastern Europe,Extreme temperature ,1
+1981,Caribbean,Drought,1
+1981,Eastern Africa,Flood,1
+1981,Northern Europe,Storm,1
+1981,Caribbean,Flood,1
+1981,Northern Africa,Drought,1
+1981,Northern Africa,Flood,1
+1981,Southern Europe,Drought,1
+1981,Eastern Africa,Epidemic,1
+1981,Melanesia,Storm,1
+1981,Western Europe,Flood,1
+1981,Western Africa,Flood,1
+1982,Western Europe,Drought,1
+1982,Southern Asia,Earthquake,1
+1982,Southern Europe,Earthquake,1
+1982,South America,Flood,1
+1982,Australia and New Zealand,Storm,1
+1982,Western Europe,Flood,1
+1982,Western Europe,Landslide,1
+1982,Western Europe,Storm,1
+1982,Western Africa,Flood,1
+1982,Southern Asia,Epidemic,1
+1982,Southern Asia,Drought,1
+1982,Southern Asia,Flood,1
+1982,South America,Storm,1
+1982,Northern America,Extreme temperature ,1
+1982,Eastern Asia,Earthquake,1
+1982,Eastern Asia,Flood,1
+1982,Eastern Asia,Landslide,1
+1982,South America,Landslide,1
+1982,Western Africa,Storm,1
+1982,Eastern Europe,Extreme temperature ,1
+1982,Caribbean,Storm,1
+1982,Northern Africa,Flood,1
+1982,Southern Europe,Flood,1
+1982,Western Europe,Wildfire,1
+1982,Central America,Flood,1
+1983,Middle Africa,Drought,1
+1983,Central America,Earthquake,1
+1983,Eastern Europe,Drought,1
+1983,Southern Asia,Earthquake,1
+1983,Caribbean,Storm,1
+1983,Caribbean,Flood,1
+1983,South America,Flood,1
+1983,Caribbean,Drought,1
+1983,Australia and New Zealand,Wildfire,1
+1983,Australia and New Zealand,Storm,1
+1983,Western Europe,Flood,1
+1983,Western Europe,Earthquake,1
+1983,Western Africa,Epidemic,1
+1983,Southern Asia,Storm,1
+1983,Southern Asia,Epidemic,1
+1983,Southern Asia,Flood,1
+1983,South America,Drought,1
+1983,South America,Landslide,1
+1983,Northern America,Flood,1
+1983,Western Europe,Storm,1
+1983,South America,Earthquake,1
+1983,Eastern Asia,Storm,1
+1983,Eastern Asia,Earthquake,1
+1983,Eastern Asia,Other,2
+1983,Eastern Asia,Flood,1
+1983,Eastern Asia,Drought,1
+1983,South America,Storm,1
+1983,South America,Other,1
+1983,Eastern Africa,Storm,1
+1983,Western Asia,Storm,1
+1983,Western Europe,Wildfire,1
+1983,Eastern Africa,Drought,1
+1983,Northern Europe,Storm,1
+1983,Caribbean,Wildfire,1
+1983,Southern Europe,Flood,1
+1983,Melanesia,Storm,1
+1983,Melanesia,Drought,1
+1983,Western Europe,Landslide,1
+1983,Western Africa,Earthquake,1
+1983,Southern Europe,Earthquake,1
+1983,Southern Europe,Wildfire,1
+1983,Central America,Other,1
+1984,Western Europe,Storm,1
+1984,Southern Asia,Earthquake,1
+1984,Caribbean,Storm,1
+1984,South America,Landslide,1
+1984,Australia and New Zealand,Flood,1
+1984,Western Europe,Landslide,1
+1984,Western Europe,Flood,1
+1984,Western Africa,Wildfire,1
+1984,Western Africa,Epidemic,1
+1984,Western Africa,Flood,1
+1984,Southern Asia,Epidemic,1
+1984,Southern Asia,Flood,1
+1984,South America,Flood,1
+1984,South America,Storm,1
+1984,South America,Epidemic,1
+1984,Caribbean,Flood,1
+1984,Northern America,Drought,1
+1984,Eastern Asia,Landslide,1
+1984,Eastern Asia,Storm,1
+1984,Eastern Asia,Flood,1
+1984,Middle Africa,Other,1
+1984,Western Africa,Storm,1
+1984,Eastern Europe,Storm,1
+1984,Northern Africa,Flood,1
+1984,Southern Europe,Storm,1
+1984,Southern Europe,Wildfire,1
+1984,Western Europe,Wildfire,1
+1984,Northern Europe,Storm,1
+1984,Northern Europe,Epidemic,1
+1984,Central America,Other,1
+1985,Southern Asia,Storm,1
+1985,South America,Other,2
+1985,Middle Africa,Drought,1
+1985,Southern Europe,Landslide,1
+1985,Southern Europe,Extreme temperature ,1
+1985,South America,Earthquake,1
+1985,South America,Flood,1
+1985,Australia and New Zealand,Storm,1
+1985,Australia and New Zealand,Wildfire,1
+1985,Australia and New Zealand,Flood,1
+1985,Western Europe,Flood,1
+1985,Western Europe,Storm,1
+1985,Western Europe,Extreme temperature ,1
+1985,Western Africa,Flood,1
+1985,Southern Asia,Flood,1
+1985,Southern Asia,Epidemic,1
+1985,Northern America,Storm,1
+1985,South America,Storm,1
+1985,South America,Drought,1
+1985,Northern America,Wildfire,1
+1985,Eastern Asia,Earthquake,1
+1985,Eastern Asia,Flood,1
+1985,Eastern Asia,Landslide,1
+1985,Eastern Asia,Storm,1
+1985,Eastern Asia,Drought,1
+1985,Eastern Africa,Storm,1
+1985,Eastern Europe,Landslide,1
+1985,Eastern Europe,Extreme temperature ,1
+1985,Caribbean,Storm,1
+1985,Caribbean,Flood,1
+1985,Northern Europe,Storm,1
+1985,Northern Africa,Earthquake,1
+1985,Northern Africa,Flood,1
+1985,South America,Wildfire,1
+1985,Southern Europe,Wildfire,1
+1985,Eastern Africa,Flood,1
+1985,Eastern Africa,Epidemic,1
+1985,Melanesia,Storm,1
+1985,Western Europe,Wildfire,1
+1985,Northern Europe,Epidemic,1
+1985,Western Africa,Wildfire,1
+1985,Central America,Earthquake,1
+1986,South America,Storm,1
+1986,South America,Flood,1
+1986,Australia and New Zealand,Storm,1
+1986,Australia and New Zealand,Flood,1
+1986,Western Africa,Other,1
+1986,Southern Asia,Storm,1
+1986,Southern Asia,Flood,1
+1986,Southern Asia,Epidemic,1
+1986,Eastern Europe,Earthquake,1
+1986,Northern America,Storm,1
+1986,South America,Earthquake,1
+1986,South America,Epidemic,1
+1986,Southern Africa,Other,1
+1986,Northern America,Flood,1
+1986,Northern America,Wildfire,1
+1986,Western Europe,Storm,1
+1986,Eastern Asia,Storm,1
+1986,Eastern Asia,Earthquake,1
+1986,Eastern Asia,Extreme temperature ,1
+1986,Eastern Asia,Flood,1
+1986,Middle Africa,Other,2
+1986,South America,Landslide,1
+1986,Caribbean,Drought,1
+1986,Caribbean,Flood,1
+1986,Caribbean,Storm,1
+1986,Eastern Africa,Other,1
+1986,Melanesia,Storm,1
+1986,Melanesia,Flood,1
+1986,Western Europe,Wildfire,1
+1986,Northern Europe,Storm,1
+1986,Southern Europe,Earthquake,1
+1986,Central America,Earthquake,1
+1987,South America,Earthquake,1
+1987,Eastern Europe,Flood,1
+1987,Southern Asia,Landslide,1
+1987,Middle Africa,Epidemic,1
+1987,South America,Wildfire,1
+1987,South America,Flood,1
+1987,South America,Storm,1
+1987,Western Europe,Flood,1
+1987,Western Africa,Epidemic,1
+1987,Western Africa,Other,1
+1987,Southern Asia,Flood,1
+1987,Southern Asia,Storm,1
+1987,Southern Asia,Epidemic,1
+1987,Northern America,Storm,1
+1987,South America,Drought,1
+1987,Caribbean,Storm,1
+1987,Northern America,Flood,1
+1987,Western Europe,Storm,1
+1987,South America,Landslide,1
+1987,Eastern Asia,Storm,1
+1987,Eastern Asia,Earthquake,1
+1987,Eastern Asia,Flood,1
+1987,Eastern Asia,Landslide,1
+1987,Eastern Asia,Wildfire,1
+1987,Eastern Asia,Epidemic,1
+1987,Middle Africa,Other,1
+1987,Polynesia,Storm,1
+1987,Eastern Africa,Storm,1
+1987,Eastern Europe,Storm,1
+1987,Caribbean,Wildfire,1
+1987,Northern Africa,Earthquake,1
+1987,Northern Africa,Other,1
+1987,Northern Africa,Storm,1
+1987,Southern Europe,Storm,1
+1987,Southern Europe,Flood,1
+1987,Eastern Africa,Other,1
+1987,Eastern Africa,Drought,1
+1987,Melanesia,Storm,1
+1987,Micronesia,Storm,1
+1987,Northern Europe,Storm,1
+1987,Western Africa,Storm,1
+1987,Southern Europe,Extreme temperature ,1
+1987,Southern Europe,Wildfire,1
+1987,Central America,Other,1
+1987,Central America,Wildfire,1
+1987,Central America,Drought,1
+1987,Central America,Flood,1
+1987,Eastern Asia,Extreme temperature ,1
+1988,Caribbean,Flood,1
+1988,Southern Europe,Earthquake,1
+1988,Central America,Earthquake,1
+1988,Southern Asia,Flood,1
+1988,South America,Flood,1
+1988,Western Africa,Flood,1
+1988,Southern Asia,Earthquake,1
+1988,Southern Asia,Storm,1
+1988,South America,Extreme temperature ,1
+1988,Southern Africa,Flood,1
+1988,Southern Africa,Epidemic,1
+1988,South America,Other,1
+1988,Eastern Asia,Earthquake,1
+1988,Eastern Asia,Flood,1
+1988,Eastern Asia,Landslide,1
+1988,Eastern Asia,Storm,1
+1988,Eastern Asia,Epidemic,1
+1988,Middle Africa,Flood,1
+1988,Middle Africa,Epidemic,1
+1988,South America,Storm,1
+1988,Western Africa,Other,1
+1988,Central America,Flood,1
+1988,Central America,Storm,1
+1988,Caribbean,Storm,1
+1988,Western Europe,Flood,1
+1988,Northern Africa,Earthquake,1
+1988,Northern Africa,Other,2
+1988,Northern Africa,Storm,1
+1988,Eastern Africa,Flood,1
+1988,Eastern Africa,Epidemic,1
+1988,Eastern Africa,Other,1
+1988,Western Africa,Epidemic,1
+1988,Southern Europe,Extreme temperature ,1
+1978,South-Eastern Asia,Drought,1
+1978,Southern Asia,Landslide,1
+1978,Southern Asia,Earthquake,1
+1978,Eastern Africa,Storm,1
+1978,Central America,Earthquake,1
+1978,Central America,Drought,1
+1978,Western Africa,Drought,1
+1978,South-Eastern Asia,Landslide,1
+1979,South-Eastern Asia,Earthquake,1
+1979,Eastern Africa,Drought,1
+1979,South-Eastern Asia,Other,1
+1979,South-Eastern Asia,Landslide,1
+1979,South-Eastern Asia,Flood,1
+1979,Southern Asia,Landslide,1
+1979,Southern Asia,Extreme temperature ,1
+1979,Southern Asia,Epidemic,1
+1979,Southern Asia,Flood,1
+1979,Southern Asia,Earthquake,1
+1979,Southern Europe,Other,1
+1979,Eastern Asia,Flood,1
+1979,South-Eastern Asia,Wildfire,1
+1979,Eastern Africa,Storm,1
+1979,Eastern Africa,Flood,1
+1979,Australia and New Zealand,Landslide,1
+1979,South-Eastern Asia,Storm,1
+1979,Melanesia,Landslide,1
+1980,Caribbean,Drought,1
+1980,Melanesia,Drought,1
+1980,South-Eastern Asia,Earthquake,1
+1980,South-Eastern Asia,Other,2
+1980,South-Eastern Asia,Landslide,1
+1980,South-Eastern Asia,Storm,1
+1980,South-Eastern Asia,Flood,1
+1980,Southern Asia,Earthquake,1
+1980,Southern Asia,Landslide,1
+1980,Southern Asia,Extreme temperature ,1
+1980,Southern Asia,Epidemic,1
+1980,Eastern Asia,Earthquake,1
+1980,Western Africa,Epidemic,1
+1980,Southern Asia,Drought,1
+1980,Central America,Earthquake,1
+1980,Australia and New Zealand,Flood,1
+1980,South-Eastern Asia,Drought,1
+1980,Eastern Europe,Flood,1
+1980,Eastern Africa,Storm,1
+1981,South-Eastern Asia,Earthquake,1
+1981,Southern Asia,Earthquake,1
+1981,Eastern Asia,Drought,1
+1981,Central America,Flood,1
+1981,South-Eastern Asia,Other,1
+1981,South-Eastern Asia,Flood,1
+1981,South-Eastern Asia,Landslide,1
+1981,Southern Asia,Extreme temperature ,1
+1981,Southern Asia,Flood,1
+1981,Western Asia,Epidemic,1
+1981,Eastern Asia,Landslide,1
+1981,Southern Asia,Drought,1
+1981,Eastern Africa,Storm,1
+1981,Central America,Earthquake,1
+1981,Central America,Storm,1
+1981,South-Eastern Asia,Wildfire,1
+1981,Western Africa,Drought,1
+1981,Western Asia,Storm,1
+1981,South-Eastern Asia,Storm,1
+1981,Caribbean,Landslide,1
+1981,Southern Europe,Flood,1
+1982,South-Eastern Asia,Earthquake,1
+1982,South-Eastern Asia,Drought,1
+1982,Eastern Asia,Wildfire,1
+1982,Eastern Asia,Storm,1
+1982,Central America,Earthquake,1
+1982,Central America,Storm,1
+1982,South-Eastern Asia,Other,1
+1982,South-Eastern Asia,Landslide,1
+1982,South-Eastern Asia,Storm,1
+1982,South-Eastern Asia,Epidemic,1
+1982,South-Eastern Asia,Flood,1
+1982,Southern Asia,Storm,1
+1982,Southern Asia,Extreme temperature ,1
+1982,Southern Europe,Landslide,1
+1982,Eastern Africa,Flood,1
+1982,Western Africa,Other,1
+1982,Northern Africa,Landslide,1
+1982,Eastern Africa,Storm,1
+1982,Central America,Other,1
+1982,Western Africa,Epidemic,1
+1982,South America,Earthquake,1
+1982,Eastern Europe,Earthquake,1
+1982,Eastern Europe,Flood,1
+1982,Western Asia,Storm,1
+1983,South-Eastern Asia,Earthquake,1
+1983,Central America,Drought,1
+1983,Southern Africa,Drought,1
+1983,Eastern Asia,Wildfire,1
+1983,South-Eastern Asia,Other,1
+1983,South-Eastern Asia,Landslide,1
+1983,South-Eastern Asia,Epidemic,1
+1983,South-Eastern Asia,Flood,1
+1983,Southern Asia,Landslide,1
+1983,Northern Europe,Other,1
+1983,Northern Europe,Landslide,1
+1983,Western Asia,Wildfire,1
+1983,Southern Europe,Landslide,1
+1983,Eastern Asia,Landslide,1
+1983,Western Asia,Other,1
+1983,Northern Africa,Drought,1
+1983,Central America,Storm,1
+1983,Central America,Landslide,1
+1983,Eastern Africa,Epidemic,1
+1983,Australia and New Zealand,Flood,1
+1983,South America,Extreme temperature ,1
+1983,South-Eastern Asia,Storm,1
+1983,South-Eastern Asia,Drought,1
+1983,Melanesia,Earthquake,1
+1983,Melanesia,Other,1
+1983,Melanesia,Flood,1
+1983,Eastern Europe,Storm,1
+1983,Eastern Europe,Wildfire,1
+1983,Southern Europe,Drought,1
+1983,Western Asia,Epidemic,1
+1983,Polynesia,Storm,1
+1983,Northern Africa,Flood,1
+1984,Eastern Asia,Earthquake,1
+1984,Eastern Africa,Drought,1
+1984,Central America,Flood,1
+1984,South-Eastern Asia,Earthquake,1
+1984,South-Eastern Asia,Other,1
+1984,South-Eastern Asia,Epidemic,1
+1984,South-Eastern Asia,Drought,1
+1984,South-Eastern Asia,Flood,1
+1984,Southern Asia,Storm,1
+1984,Southern Asia,Extreme temperature ,1
+1984,Southern Asia,Wildfire,1
+1984,Northern Europe,Other,1
+1984,Southern Europe,Earthquake,1
+1984,Northern Africa,Drought,1
+1984,Eastern Africa,Storm,1
+1984,Central America,Storm,1
+1984,South-Eastern Asia,Storm,1
+1984,Eastern Europe,Flood,1
+1985,Southern Europe,Flood,1
+1985,Eastern Asia,Wildfire,1
+1985,South-Eastern Asia,Earthquake,1
+1985,South-Eastern Asia,Other,2
+1985,South-Eastern Asia,Flood,1
+1985,South-Eastern Asia,Storm,1
+1985,Southern Asia,Extreme temperature ,1
+1985,Southern Asia,Earthquake,1
+1985,South-Eastern Asia,Epidemic,1
+1985,Southern Africa,Flood,1
+1985,Western Africa,Other,1
+1985,South America,Landslide,1
+1985,Melanesia,Earthquake,1
+1985,Caribbean,Landslide,1
+1985,Western Asia,Flood,1
+1986,Melanesia,Earthquake,1
+1986,Eastern Asia,Wildfire,1
+1986,Central America,Flood,1
+1986,Eastern Europe,Drought,1
+1986,South-Eastern Asia,Flood,1
+1986,South-Eastern Asia,Epidemic,1
+1986,South-Eastern Asia,Drought,1
+1986,Southern Asia,Earthquake,1
+1986,Southern Asia,Landslide,1
+1986,Southern Europe,Flood,1
+1986,Eastern Asia,Other,1
+1986,Eastern Asia,Landslide,1
+1986,Eastern Africa,Storm,1
+1986,Eastern Africa,Flood,1
+1986,Western Africa,Epidemic,1
+1986,South-Eastern Asia,Storm,1
+1986,Southern Europe,Wildfire,1
+1987,South-Eastern Asia,Earthquake,1
+1987,Melanesia,Earthquake,1
+1987,South-Eastern Asia,Drought,1
+1987,Caribbean,Flood,1
+1987,South-Eastern Asia,Other,2
+1987,South-Eastern Asia,Flood,1
+1987,Southern Asia,Extreme temperature ,1
+1987,Southern Asia,Drought,1
+1987,Northern Europe,Flood,1
+1987,Southern Asia,Earthquake,1
+1987,Southern Europe,Landslide,1
+1987,Western Asia,Flood,1
+1987,South-Eastern Asia,Epidemic,1
+1987,Southern Africa,Flood,1
+1987,Central America,Earthquake,1
+1987,Australia and New Zealand,Earthquake,1
+1987,Australia and New Zealand,Wildfire,1
+1987,Australia and New Zealand,Flood,1
+1987,South-Eastern Asia,Storm,1
+1987,Polynesia,Landslide,1
+1988,South-Eastern Asia,Other,1
+1988,South-Eastern Asia,Flood,1
+1988,South-Eastern Asia,Landslide,1
+1988,Southern Asia,Landslide,1
+1988,Southern Asia,Extreme temperature ,1
+1988,Southern Asia,Epidemic,1
+1988,Eastern Africa,Storm,1
+1988,Central America,Extreme temperature ,1
+1988,Western Africa,Landslide,1
+1988,Southern Asia,Other,1
+1988,South America,Epidemic,1
+1988,South America,Landslide,1
+1988,South-Eastern Asia,Storm,1
+1988,Melanesia,Other,1
+1988,Northern Africa,Flood,1
+1988,Northern Africa,Epidemic,1
+1978,Middle Africa,Drought,1
+1978,Western Africa,Flood,1
+1978,Western Asia,Earthquake,1
+1978,Northern America,Flood,1
+1979,Western Africa,Drought,1
+1979,Northern America,Storm,1
+1979,Caribbean,Other,1
+1979,Eastern Africa,Other,1
+1980,Northern Africa,Drought,1
+1980,Northern America,Extreme temperature ,1
+1980,Middle Africa,Drought,1
+1980,Northern America,Storm,1
+1980,Western Asia,Landslide,1
+1980,Western Asia,Flood,1
+1980,Northern America,Other,1
+1980,Northern America,Flood,1
+1980,Southern Africa,Drought,1
+1981,Russian Federation,Storm,1
+1981,Russian Federation,Flood,1
+1981,Western Asia,Flood,1
+1981,Northern America,Flood,1
+1981,Southern Africa,Flood,1
+1982,Melanesia,Storm,1
+1982,Central America,Drought,1
+1982,Russian Federation,Flood,1
+1982,Polynesia,Storm,1
+1982,Eastern Africa,Epidemic,1
+1982,Northern America,Storm,1
+1982,Northern America,Flood,1
+1982,Western Asia,Flood,1
+1982,Western Asia,Earthquake,1
+1983,Northern America,Earthquake,1
+1983,Western Africa,Flood,1
+1983,Russian Federation,Storm,1
+1983,Russian Federation,Earthquake,1
+1983,Russian Federation,Flood,1
+1983,Western Asia,Earthquake,1
+1983,Northern America,Storm,1
+1983,Northern America,Extreme temperature ,1
+1983,Polynesia,Wildfire,1
+1983,Southern Africa,Storm,1
+1984,Russian Federation,Storm,1
+1984,Russian Federation,Earthquake,1
+1984,Russian Federation,Flood,1
+1984,Southern Africa,Storm,1
+1984,Southern Africa,Drought,1
+1984,Western Asia,Earthquake,1
+1984,Western Asia,Flood,1
+1984,Polynesia,Storm,1
+1984,Northern America,Storm,1
+1984,Northern America,Flood,1
+1985,Western Africa,Epidemic,1
+1985,Russian Federation,Earthquake,1
+1985,Russian Federation,Flood,1
+1985,Northern Europe,Flood,1
+1985,Middle Africa,Flood,1
+1985,Western Asia,Earthquake,1
+1985,Western Asia,Wildfire,1
+1985,Northern America,Flood,1
+1985,Southern Europe,Earthquake,1
+1986,Northern America,Extreme temperature ,1
+1986,Southern Africa,Drought,1
+1986,Northern Africa,Other,1
+1986,Eastern Africa,Epidemic,1
+1986,Middle Africa,Epidemic,1
+1986,Russian Federation,Earthquake,1
+1986,Northern Africa,Flood,1
+1986,Western Asia,Earthquake,1
+1986,Northern America,Earthquake,1
+1986,Polynesia,Storm,1
+1987,Northern Africa,Drought,1
+1987,Northern Africa,Epidemic,1
+1987,Eastern Africa,Flood,1
+1987,Russian Federation,Other,1
+1987,Russian Federation,Landslide,1
+1987,Russian Federation,Wildfire,1
+1987,Russian Federation,Flood,1
+1987,Western Asia,Extreme temperature ,1
+1987,Western Asia,Epidemic,1
+1987,Eastern Africa,Epidemic,1
+1987,Northern America,Earthquake,1
+1987,Northern America,Extreme temperature ,1
+1987,Western Asia,Other,1
+1988,Eastern Asia,Drought,1
+1988,Eastern Africa,Earthquake,1
+1988,Western Africa,Drought,1
+1988,Central America,Landslide,1
+1988,Russian Federation,Earthquake,1
+1988,Russian Federation,Flood,1
+1988,Middle Africa,Storm,1
+1988,Middle Africa,Other,1
+1988,Western Asia,Landslide,1
+1988,Northern America,Storm,1
+1988,Northern America,Flood,1
+1988,Melanesia,Storm,1
+1988,Australia and New Zealand,Flood,1
+1988,Australia and New Zealand,Storm,1
+1988,South America,Drought,1
+1988,Northern America,Drought,1
+1988,Western Europe,Landslide,1
+1988,Eastern Africa,Drought,1
+1989,South America,Flood,1
+1989,Northern Africa,Earthquake,1
+1989,Eastern Asia,Storm,1
+1989,South America,Storm,1
+1989,Middle Africa,Epidemic,1
+1989,Middle Africa,Drought,1
+1989,Middle Africa,Flood,1
+1989,Southern Europe,Drought,1
+1989,Caribbean,Storm,1
+1989,Polynesia,Storm,1
+1989,Australia and New Zealand,Earthquake,1
+1989,Australia and New Zealand,Storm,1
+1989,Australia and New Zealand,Flood,1
+1989,Eastern Africa,Flood,1
+1989,Western Africa,Epidemic,1
+1989,Southern Asia,Storm,1
+1989,Southern Asia,Earthquake,1
+1989,Southern Asia,Flood,1
+1989,Southern Asia,Extreme temperature ,1
+1989,Southern Asia,Drought,1
+1989,Southern Asia,Epidemic,1
+1989,Northern America,Storm,1
+1989,South America,Epidemic,1
+1989,South America,Landslide,1
+1989,Northern America,Wildfire,1
+1989,Eastern Asia,Earthquake,1
+1989,Eastern Asia,Landslide,1
+1989,Eastern Asia,Flood,1
+1989,Western Africa,Flood,1
+1989,Eastern Africa,Storm,1
+1989,Eastern Africa,Epidemic,1
+1990,Middle Africa,Drought,1
+1990,South America,Earthquake,1
+1990,Australia and New Zealand,Storm,1
+1990,Western Europe,Storm,1
+1990,South America,Drought,1
+1990,Southern Asia,Extreme temperature ,1
+1990,South America,Flood,1
+1990,Caribbean,Storm,1
+1990,Australia and New Zealand,Flood,1
+1990,Australia and New Zealand,Wildfire,1
+1990,Western Africa,Drought,1
+1990,Southern Asia,Storm,1
+1990,Southern Asia,Flood,1
+1990,Eastern Europe,Earthquake,1
+1990,Central America,Extreme temperature ,1
+1990,Central America,Flood,1
+1990,Southern Africa,Drought,1
+1990,Northern America,Flood,1
+1990,Eastern Asia,Storm,1
+1990,Eastern Asia,Earthquake,1
+1990,Eastern Asia,Other,1
+1990,Eastern Asia,Flood,1
+1990,Middle Africa,Epidemic,1
+1990,Polynesia,Storm,1
+1990,Polynesia,Epidemic,1
+1990,Central America,Earthquake,1
+1990,Caribbean,Flood,1
+1990,Northern Europe,Storm,1
+1991,Western Europe,Flood,1
+1991,Southern Asia,Earthquake,1
+1991,Western Europe,Storm,1
+1991,Eastern Asia,Flood,1
+1991,Central America,Flood,1
+1991,Central America,Earthquake,1
+1991,Northern America,Storm,1
+1991,Eastern Asia,Storm,1
+1991,Southern Asia,Storm,1
+1991,Southern Asia,Flood,1
+1991,Southern Asia,Extreme temperature ,1
+1991,South America,Other,2
+1991,Australia and New Zealand,Storm,1
+1991,Australia and New Zealand,Drought,1
+1991,Western Africa,Flood,1
+1991,Western Africa,Epidemic,1
+1991,Southern Asia,Epidemic,1
+1991,South America,Epidemic,1
+1991,South America,Flood,1
+1991,South America,Landslide,1
+1991,Northern America,Epidemic,1
+1991,South America,Drought,1
+1991,Eastern Asia,Earthquake,1
+1991,Eastern Asia,Epidemic,1
+1991,Eastern Asia,Drought,1
+1991,Eastern Asia,Landslide,1
+1991,Middle Africa,Flood,1
+1991,Middle Africa,Epidemic,1
+1991,South America,Earthquake,1
+1991,South America,Wildfire,1
+1991,Eastern Africa,Other,2
+1991,Central America,Other,2
+1991,Western Asia,Drought,1
+1991,Caribbean,Flood,1
+1991,Northern Africa,Epidemic,1
+1991,Northern Africa,Flood,1
+1992,South America,Flood,1
+1992,Eastern Asia,Storm,1
+1992,Southern Asia,Flood,1
+1992,Eastern Asia,Flood,1
+1992,South America,Earthquake,1
+1992,South America,Storm,1
+1992,Southern Asia,Earthquake,1
+1992,Southern Europe,Flood,1
+1992,South America,Epidemic,1
+1992,Australia and New Zealand,Storm,1
+1992,Australia and New Zealand,Drought,1
+1992,Eastern Africa,Epidemic,1
+1992,Western Europe,Earthquake,1
+1992,Southern Asia,Storm,1
+1992,Southern Asia,Epidemic,1
+1992,Caribbean,Storm,1
+1992,South America,Landslide,1
+1992,Middle Africa,Epidemic,1
+1992,Northern America,Extreme temperature ,1
+1992,Northern America,Wildfire,1
+1992,Northern America,Epidemic,1
+1992,South America,Wildfire,1
+1992,Eastern Asia,Earthquake,1
+1992,Eastern Asia,Other,2
+1992,Eastern Asia,Drought,1
+1992,Western Africa,Drought,1
+1992,Central America,Wildfire,1
+1992,Caribbean,Earthquake,1
+1992,Caribbean,Flood,1
+1992,Western Europe,Flood,1
+1992,Northern Europe,Drought,1
+1992,Caribbean,Epidemic,1
+1992,Northern Africa,Earthquake,1
+1992,Northern Africa,Flood,1
+1993,South America,Flood,1
+1993,Western Europe,Storm,1
+1993,Southern Asia,Landslide,1
+1993,Southern Asia,Other,1
+1993,Southern Asia,Storm,1
+1993,South America,Storm,1
+1993,Australia and New Zealand,Storm,1
+1993,Australia and New Zealand,Flood,1
+1993,Australia and New Zealand,Extreme temperature ,1
+1993,Western Europe,Flood,1
+1993,Southern Asia,Flood,1
+1993,Southern Asia,Epidemic,1
+1993,Eastern Europe,Storm,1
+1993,Eastern Europe,Flood,1
+1993,Northern America,Flood,1
+1993,South America,Other,2
+1993,South America,Wildfire,1
+1993,Eastern Asia,Storm,1
+1993,Eastern Asia,Earthquake,1
+1993,Eastern Asia,Flood,1
+1993,Eastern Asia,Landslide,1
+1993,Middle Africa,Epidemic,1
+1993,South America,Earthquake,1
+1993,South America,Landslide,1
+1993,Central America,Earthquake,1
+1993,Central America,Flood,1
+1993,Caribbean,Storm,1
+1993,Caribbean,Flood,1
+1993,Caribbean,Drought,1
+1993,Caribbean,Epidemic,1
+1993,Eastern Africa,Flood,1
+1993,Northern Africa,Flood,1
+1993,Northern Africa,Landslide,1
+1993,Northern Africa,Other,1
+1994,Australia and New Zealand,Wildfire,1
+1994,Western Europe,Storm,1
+1994,Southern Asia,Storm,1
+1994,South America,Landslide,1
+1994,South America,Flood,1
+1994,Western Europe,Flood,1
+1994,South America,Wildfire,1
+1988,Northern Europe,Flood,1
+1988,Eastern Asia,Other,1
+1988,South-Eastern Asia,Drought,1
+1988,Southern Asia,Drought,1
+1988,Central America,Drought,1
+1989,South-Eastern Asia,Earthquake,1
+1989,Eastern Africa,Drought,1
+1989,Southern Europe,Storm,1
+1989,Southern Europe,Flood,1
+1989,Melanesia,Flood,1
+1989,Western Europe,Drought,1
+1989,Western Europe,Storm,1
+1989,Northern Europe,Storm,1
+1989,Central America,Flood,1
+1989,Eastern Asia,Wildfire,1
+1989,Central America,Other,1
+1989,Caribbean,Landslide,1
+1989,Caribbean,Flood,1
+1989,South-Eastern Asia,Other,1
+1989,South-Eastern Asia,Landslide,1
+1989,South-Eastern Asia,Flood,1
+1989,Southern Asia,Other,1
+1989,Southern Asia,Landslide,1
+1989,Western Asia,Other,1
+1989,Southern Africa,Storm,1
+1989,Central America,Earthquake,1
+1989,Central America,Wildfire,1
+1989,Eastern Africa,Earthquake,1
+1989,Melanesia,Storm,1
+1989,South-Eastern Asia,Storm,1
+1990,South-Eastern Asia,Flood,1
+1990,South-Eastern Asia,Earthquake,1
+1990,Southern Asia,Earthquake,1
+1990,Southern Europe,Drought,1
+1990,Eastern Africa,Drought,1
+1990,Southern Europe,Storm,1
+1990,Eastern Africa,Flood,1
+1990,Melanesia,Earthquake,1
+1990,Melanesia,Storm,1
+1990,Western Europe,Landslide,1
+1990,Western Europe,Extreme temperature ,1
+1990,Northern Europe,Earthquake,1
+1990,Southern Europe,Earthquake,1
+1990,Central America,Epidemic,1
+1990,South-Eastern Asia,Other,1
+1990,South-Eastern Asia,Epidemic,1
+1990,Southern Asia,Landslide,1
+1990,Southern Asia,Epidemic,1
+1990,Southern Europe,Wildfire,1
+1990,Caribbean,Epidemic,1
+1990,Eastern Africa,Earthquake,1
+1990,Eastern Asia,Extreme temperature ,1
+1990,Western Africa,Extreme temperature ,1
+1990,Southern Africa,Flood,1
+1990,Central America,Storm,1
+1990,Eastern Asia,Wildfire,1
+1990,Eastern Africa,Epidemic,1
+1990,Western Africa,Epidemic,1
+1990,South America,Other,1
+1990,South America,Landslide,1
+1990,South-Eastern Asia,Storm,1
+1990,South-Eastern Asia,Drought,1
+1990,Eastern Europe,Storm,1
+1991,South-Eastern Asia,Other,1
+1991,South-Eastern Asia,Storm,1
+1991,South-Eastern Asia,Wildfire,1
+1991,Western Asia,Earthquake,1
+1991,Eastern Africa,Flood,1
+1991,South-Eastern Asia,Flood,1
+1991,Eastern Europe,Earthquake,1
+1991,Eastern Europe,Flood,1
+1991,Western Europe,Drought,1
+1991,Southern Europe,Wildfire,1
+1991,Western Europe,Extreme temperature ,1
+1991,Northern Europe,Extreme temperature ,1
+1991,Northern Europe,Storm,1
+1991,Southern Europe,Extreme temperature ,1
+1991,Central America,Epidemic,1
+1991,South-Eastern Asia,Earthquake,1
+1991,South-Eastern Asia,Landslide,1
+1991,South-Eastern Asia,Epidemic,1
+1991,Western Asia,Storm,1
+1991,Southern Europe,Other,1
+1991,Western Asia,Flood,1
+1991,Eastern Asia,Other,1
+1991,Eastern Africa,Epidemic,1
+1991,Eastern Africa,Drought,1
+1991,South-Eastern Asia,Drought,1
+1991,Eastern Africa,Storm,1
+1991,Central America,Storm,1
+1991,Micronesia,Storm,1
+1991,Western Africa,Drought,1
+1991,Western Africa,Storm,1
+1991,Central America,Wildfire,1
+1991,Australia and New Zealand,Flood,1
+1991,Southern Asia,Landslide,1
+1991,South America,Extreme temperature ,1
+1991,Melanesia,Landslide,1
+1992,South-Eastern Asia,Storm,1
+1992,Southern Asia,Landslide,1
+1992,Western Asia,Extreme temperature ,1
+1992,Central America,Extreme temperature ,1
+1992,Western Asia,Storm,1
+1992,Western Asia,Earthquake,1
+1992,Central Asia,Earthquake,1
+1992,South-Eastern Asia,Flood,1
+1992,South-Eastern Asia,Earthquake,1
+1992,Central America,Earthquake,1
+1992,Caribbean,Drought,1
+1992,Eastern Africa,Other,1
+1992,Melanesia,Storm,1
+1992,Western Europe,Storm,1
+1992,Western Europe,Epidemic,1
+1992,Central America,Other,1
+1992,Central America,Epidemic,1
+1992,Micronesia,Storm,1
+1992,Eastern Europe,Drought,1
+1992,South-Eastern Asia,Landslide,1
+1992,Southern Asia,Extreme temperature ,1
+1992,South-Eastern Asia,Epidemic,1
+1992,Central America,Storm,1
+1992,Eastern Africa,Drought,1
+1992,Western Africa,Extreme temperature ,1
+1992,Western Africa,Epidemic,1
+1992,Northern Europe,Storm,1
+1992,Southern Asia,Wildfire,1
+1992,South America,Drought,1
+1992,South-Eastern Asia,Other,1
+1992,Melanesia,Other,1
+1992,Melanesia,Flood,1
+1992,Eastern Europe,Wildfire,1
+1992,Eastern Europe,Flood,1
+1992,Eastern Europe,Landslide,1
+1993,Micronesia,Earthquake,1
+1993,Eastern Africa,Drought,1
+1993,Melanesia,Earthquake,1
+1993,Southern Europe,Storm,1
+1993,Southern Europe,Drought,1
+1993,Eastern Africa,Storm,1
+1993,Melanesia,Storm,1
+1993,Northern Europe,Flood,1
+1993,Western Africa,Flood,1
+1993,Western Africa,Storm,1
+1993,Southern Europe,Earthquake,1
+1993,South-Eastern Asia,Other,2
+1993,South-Eastern Asia,Flood,1
+1993,Southern Asia,Earthquake,1
+1993,Southern Asia,Drought,1
+1993,Eastern Asia,Other,1
+1993,Central Asia,Flood,1
+1993,South-Eastern Asia,Storm,1
+1993,Northern Europe,Storm,1
+1993,Central America,Storm,1
+1993,Western Africa,Drought,1
+1993,South-Eastern Asia,Landslide,1
+1993,Melanesia,Flood,1
+1993,Eastern Europe,Extreme temperature ,1
+1994,South-Eastern Asia,Earthquake,1
+1994,Southern Asia,Earthquake,1
+1994,Northern Europe,Flood,1
+1994,South-Eastern Asia,Other,1
+1994,South-Eastern Asia,Flood,1
+1994,Central Asia,Landslide,1
+1994,Eastern Africa,Storm,1
+1994,South-Eastern Asia,Landslide,1
+1994,South-Eastern Asia,Storm,1
+1994,Eastern Europe,Storm,1
+1988,Southern Africa,Drought,1
+1988,Northern Africa,Drought,1
+1988,Melanesia,Earthquake,1
+1988,Western Asia,Flood,1
+1988,Melanesia,Landslide,1
+1989,Russian Federation,Earthquake,1
+1989,Russian Federation,Landslide,1
+1989,Western Africa,Drought,1
+1989,Russian Federation,Other,1
+1989,Russian Federation,Flood,1
+1989,Northern America,Earthquake,1
+1989,Northern America,Extreme temperature ,1
+1989,South America,Earthquake,1
+1989,Western Asia,Flood,1
+1989,Middle Africa,Landslide,1
+1990,Northern America,Storm,1
+1990,Northern Africa,Earthquake,1
+1990,Northern Africa,Drought,1
+1990,Russian Federation,Earthquake,1
+1990,Russian Federation,Flood,1
+1990,Russian Federation,Landslide,1
+1990,Central Asia,Flood,1
+1990,Northern Africa,Flood,1
+1990,Western Asia,Flood,1
+1990,Northern America,Earthquake,1
+1990,Northern America,Extreme temperature ,1
+1990,Northern America,Epidemic,1
+1990,South America,Epidemic,1
+1990,Southern Europe,Flood,1
+1990,Southern Africa,Storm,1
+1990,Southern Africa,Earthquake,1
+1990,Middle Africa,Flood,1
+1991,Russian Federation,Earthquake,1
+1991,Russian Federation,Storm,1
+1991,Northern Africa,Drought,1
+1991,Russian Federation,Other,1
+1991,Russian Federation,Flood,1
+1991,Northern America,Earthquake,1
+1991,Northern America,Flood,1
+1991,Northern America,Wildfire,1
+1991,Northern America,Drought,1
+1991,Polynesia,Storm,1
+1991,Southern Africa,Wildfire,1
+1992,Northern America,Storm,1
+1992,Central America,Flood,1
+1992,Southern Africa,Epidemic,1
+1992,Central Asia,Other,1
+1992,Central Asia,Landslide,1
+1992,Central Asia,Flood,1
+1992,Western Asia,Other,1
+1992,Eastern Europe,Storm,1
+1992,Northern America,Earthquake,1
+1992,Middle Africa,Earthquake,1
+1993,Central Asia,Landslide,1
+1993,Eastern Europe,Landslide,1
+1993,Eastern Europe,Drought,1
+1993,Northern Africa,Earthquake,1
+1993,Central America,Landslide,1
+1993,Middle Africa,Drought,1
+1993,South-Eastern Asia,Drought,1
+1993,Western Asia,Landslide,1
+1993,Polynesia,Storm,1
+1993,Northern America,Storm,1
+1993,Northern America,Earthquake,1
+1993,Northern America,Extreme temperature ,1
+1993,Northern America,Wildfire,1
+1993,Northern America,Epidemic,1
+1993,Polynesia,Earthquake,1
+1993,Western Asia,Flood,1
+1993,Southern Africa,Flood,1
+1993,Southern Africa,Storm,1
+1994,Northern America,Earthquake,1
+1994,Eastern Africa,Earthquake,1
+1994,South America,Earthquake,1
+1994,Eastern Asia,Flood,1
+1994,Northern America,Storm,1
+1994,Eastern Asia,Storm,1
+1994,Eastern Africa,Epidemic,1
+1994,Western Asia,Extreme temperature ,1
+1994,Eastern Africa,Flood,1
+1994,Northern America,Landslide,1
+1994,Australia and New Zealand,Storm,1
+1994,Australia and New Zealand,Earthquake,1
+1994,Australia and New Zealand,Extreme temperature ,1
+1994,Western Africa,Flood,1
+1994,Southern Asia,Flood,1
+1994,Southern Asia,Extreme temperature ,1
+1994,South America,Drought,1
+1994,South America,Storm,1
+1994,South America,Extreme temperature ,1
+1994,Northern America,Wildfire,1
+1994,Eastern Asia,Earthquake,1
+1994,Eastern Asia,Landslide,1
+1994,Eastern Asia,Extreme temperature ,1
+1994,Eastern Asia,Drought,1
+1994,Middle Africa,Flood,1
+1995,Western Asia,Flood,1
+1995,Western Africa,Drought,1
+1995,Southern Asia,Flood,1
+1995,Eastern Asia,Storm,1
+1995,Southern Asia,Landslide,1
+1995,Middle Africa,Epidemic,1
+1995,Southern Europe,Flood,1
+1995,Caribbean,Storm,1
+1995,South America,Flood,1
+1995,South America,Extreme temperature ,1
+1995,South America,Storm,1
+1995,Australia and New Zealand,Storm,1
+1995,Australia and New Zealand,Extreme temperature ,1
+1995,Western Europe,Flood,1
+1995,Western Europe,Storm,1
+1995,Western Africa,Flood,1
+1995,Southern Asia,Storm,1
+1995,Southern Asia,Extreme temperature ,1
+1995,Southern Asia,Epidemic,1
+1995,Eastern Europe,Epidemic,1
+1995,Central America,Flood,1
+1995,South America,Landslide,1
+1995,South America,Epidemic,1
+1995,Southern Africa,Flood,1
+1995,Middle Africa,Wildfire,1
+1995,Middle Africa,Flood,1
+1995,Northern America,Storm,1
+1995,Northern America,Wildfire,1
+1995,Northern America,Flood,1
+1995,South America,Earthquake,1
+1995,Eastern Asia,Earthquake,1
+1995,Eastern Asia,Flood,1
+1995,Eastern Asia,Landslide,1
+1995,Eastern Asia,Wildfire,1
+1995,Eastern Asia,Drought,1
+1995,Western Africa,Epidemic,1
+1996,South America,Flood,1
+1996,Northern America,Flood,1
+1996,Eastern Asia,Storm,1
+1996,Southern Asia,Earthquake,1
+1996,Southern Asia,Flood,1
+1996,Southern Europe,Epidemic,1
+1996,Australia and New Zealand,Storm,1
+1996,Australia and New Zealand,Flood,1
+1996,Australia and New Zealand,Landslide,1
+1996,Western Europe,Flood,1
+1996,Southern Europe,Storm,1
+1996,Western Africa,Epidemic,1
+1996,Western Africa,Flood,1
+1996,Southern Asia,Storm,1
+1996,Southern Asia,Extreme temperature ,1
+1996,Southern Asia,Epidemic,1
+1996,Eastern Europe,Flood,1
+1996,South America,Landslide,1
+1996,Middle Africa,Flood,1
+1996,Northern America,Storm,1
+1996,Eastern Asia,Earthquake,1
+1996,Eastern Asia,Flood,1
+1996,Eastern Asia,Landslide,1
+1996,Middle Africa,Epidemic,1
+1997,Eastern Asia,Flood,1
+1997,South America,Earthquake,1
+1997,South America,Flood,1
+1997,Eastern Asia,Storm,1
+1997,Southern Europe,Landslide,1
+1997,Southern Asia,Earthquake,1
+1997,Southern Asia,Flood,1
+1997,Southern Asia,Landslide,1
+1997,Middle Africa,Drought,1
+1997,Southern Europe,Flood,1
+1997,Western Asia,Earthquake,1
+1997,Western Asia,Flood,1
+1997,Australia and New Zealand,Flood,1
+1997,Australia and New Zealand,Wildfire,1
+1997,Australia and New Zealand,Landslide,1
+1997,Western Europe,Flood,1
+1997,Eastern Africa,Epidemic,1
+1997,Western Africa,Epidemic,1
+1997,Western Africa,Flood,1
+1997,Southern Asia,Storm,1
+1997,Southern Asia,Extreme temperature ,1
+1997,Southern Asia,Epidemic,1
+1997,Eastern Europe,Flood,1
+1997,Eastern Europe,Storm,1
+1997,Eastern Europe,Epidemic,1
+1997,South America,Epidemic,1
+1997,South America,Storm,1
+1997,Northern America,Storm,1
+1997,Northern America,Flood,1
+1997,Northern America,Wildfire,1
+1997,South America,Wildfire,1
+1997,Eastern Asia,Earthquake,1
+1997,Eastern Asia,Landslide,1
+1997,Eastern Asia,Extreme temperature ,1
+1997,Eastern Asia,Drought,1
+1997,Middle Africa,Epidemic,1
+1998,Eastern Asia,Earthquake,1
+1998,Southern Asia,Earthquake,1
+1998,Eastern Asia,Flood,1
+1998,Southern Asia,Flood,1
+1998,Southern Asia,Epidemic,1
+1998,Middle Africa,Epidemic,1
+1998,South America,Storm,1
+1998,South America,Flood,1
+1998,Western Asia,Flood,1
+1998,Australia and New Zealand,Flood,1
+1998,Western Europe,Earthquake,1
+1998,Western Asia,Earthquake,1
+1998,Southern Europe,Earthquake,1
+1998,Western Europe,Flood,1
+1998,Western Africa,Epidemic,1
+1998,Western Africa,Flood,1
+1998,Southern Asia,Storm,1
+1998,Southern Asia,Extreme temperature ,1
+1998,South America,Earthquake,1
+1998,South America,Landslide,1
+1998,South America,Wildfire,1
+1998,South America,Epidemic,1
+1998,South-Eastern Asia,Wildfire,1
+1998,Middle Africa,Flood,1
+1998,Northern America,Flood,1
+1998,Northern America,Wildfire,1
+1998,Northern America,Storm,1
+1998,Eastern Asia,Storm,1
+1998,Eastern Asia,Landslide,1
+1994,Northern Africa,Flood,1
+1994,Caribbean,Storm,1
+1994,South-Eastern Asia,Drought,1
+1994,Southern Europe,Flood,1
+1994,Eastern Europe,Flood,1
+1994,Western Africa,Epidemic,1
+1994,Central America,Flood,1
+1994,Central America,Drought,1
+1994,Caribbean,Flood,1
+1994,Northern Africa,Earthquake,1
+1994,Northern Africa,Wildfire,1
+1994,Southern Europe,Wildfire,1
+1994,Southern Europe,Storm,1
+1994,Eastern Africa,Landslide,1
+1994,Middle Africa,Epidemic,1
+1994,South-Eastern Asia,Wildfire,1
+1994,Southern Asia,Epidemic,1
+1994,Eastern Africa,Drought,1
+1994,South-Eastern Asia,Epidemic,1
+1994,Central America,Other,1
+1994,Australia and New Zealand,Flood,1
+1995,South-Eastern Asia,Storm,1
+1995,South-Eastern Asia,Earthquake,1
+1995,South-Eastern Asia,Flood,1
+1995,Central America,Storm,1
+1995,Northern Europe,Storm,1
+1995,South America,Other,1
+1995,Western Africa,Other,1
+1995,Central America,Epidemic,1
+1995,Caribbean,Flood,1
+1995,Western Asia,Earthquake,1
+1995,Eastern Africa,Storm,1
+1995,Caribbean,Epidemic,1
+1995,Northern Africa,Earthquake,1
+1995,Northern Africa,Flood,1
+1995,Northern Africa,Extreme temperature ,1
+1995,Eastern Africa,Other,1
+1995,Southern Europe,Extreme temperature ,1
+1995,Eastern Africa,Flood,1
+1995,Southern Europe,Earthquake,1
+1995,Southern Europe,Wildfire,1
+1995,Northern Europe,Landslide,1
+1995,Western Asia,Wildfire,1
+1995,Central Asia,Storm,1
+1995,South-Eastern Asia,Epidemic,1
+1995,Western Africa,Storm,1
+1995,Central America,Earthquake,1
+1995,Central America,Extreme temperature ,1
+1995,Central America,Drought,1
+1995,Caribbean,Other,1
+1995,South-Eastern Asia,Landslide,1
+1995,South-Eastern Asia,Wildfire,1
+1995,Southern Africa,Drought,1
+1995,Central America,Other,1
+1995,Northern Europe,Flood,1
+1995,Australia and New Zealand,Other,1
+1995,South-Eastern Asia,Other,2
+1996,Caribbean,Storm,1
+1996,Southern Europe,Flood,1
+1996,South-Eastern Asia,Earthquake,1
+1996,Eastern Africa,Storm,1
+1996,South-Eastern Asia,Storm,1
+1996,South America,Epidemic,1
+1996,Central America,Flood,1
+1996,Central America,Storm,1
+1996,Caribbean,Flood,1
+1996,Western Asia,Epidemic,1
+1996,Western Europe,Storm,1
+1996,Eastern Africa,Drought,1
+1996,Northern Africa,Flood,1
+1996,South America,Earthquake,1
+1996,Northern Africa,Extreme temperature ,1
+1996,Southern Europe,Landslide,1
+1996,Eastern Africa,Flood,1
+1996,Northern Europe,Storm,1
+1996,Southern Europe,Earthquake,1
+1996,Central America,Other,1
+1996,South-Eastern Asia,Flood,1
+1996,South-Eastern Asia,Landslide,1
+1996,South-Eastern Asia,Epidemic,1
+1996,Southern Asia,Landslide,1
+1996,Southern Asia,Drought,1
+1996,Northern Europe,Other,1
+1996,Caribbean,Landslide,1
+1996,Southern Africa,Storm,1
+1996,Northern Africa,Storm,1
+1996,Central America,Drought,1
+1996,Eastern Asia,Wildfire,1
+1996,Eastern Asia,Epidemic,1
+1996,Caribbean,Other,1
+1997,South-Eastern Asia,Storm,1
+1997,South-Eastern Asia,Drought,1
+1997,Western Africa,Drought,1
+1997,Southern Europe,Storm,1
+1997,Eastern Africa,Flood,1
+1997,Polynesia,Storm,1
+1997,Polynesia,Epidemic,1
+1997,Caribbean,Epidemic,1
+1997,Caribbean,Flood,1
+1997,Western Europe,Extreme temperature ,1
+1997,Northern Africa,Epidemic,1
+1997,Northern Africa,Flood,1
+1997,South America,Drought,1
+1997,Northern Africa,Storm,1
+1997,Southern Europe,Epidemic,1
+1997,Eastern Africa,Drought,1
+1997,Melanesia,Storm,1
+1997,Western Europe,Wildfire,1
+1997,Western Europe,Drought,1
+1997,Northern Europe,Flood,1
+1997,Northern Europe,Extreme temperature ,1
+1997,Micronesia,Storm,1
+1997,Central America,Drought,1
+1997,Southern Europe,Wildfire,1
+1997,South-Eastern Asia,Earthquake,1
+1997,South-Eastern Asia,Other,1
+1997,South-Eastern Asia,Wildfire,1
+1997,South-Eastern Asia,Epidemic,1
+1997,Western Asia,Epidemic,1
+1997,Southern Europe,Earthquake,1
+1997,Southern Europe,Drought,1
+1997,Eastern Asia,Epidemic,1
+1997,Central Asia,Extreme temperature ,1
+1997,Central Asia,Wildfire,1
+1997,Central Asia,Earthquake,1
+1997,Central Asia,Epidemic,1
+1997,Eastern Africa,Storm,1
+1997,Eastern Africa,Other,1
+1997,Central America,Earthquake,1
+1997,Central America,Other,1
+1997,Central America,Landslide,1
+1997,Central America,Storm,1
+1997,Central America,Extreme temperature ,1
+1997,South-Eastern Asia,Flood,1
+1997,Caribbean,Other,1
+1997,Western Europe,Storm,1
+1997,Australia and New Zealand,Storm,1
+1997,South America,Landslide,1
+1998,Southern Europe,Landslide,1
+1998,Central America,Storm,1
+1998,Southern Europe,Wildfire,1
+1998,Central America,Wildfire,1
+1998,Middle Africa,Other,1
+1998,Central America,Other,1
+1998,Western Asia,Extreme temperature ,1
+1998,Eastern Europe,Flood,1
+1998,Caribbean,Storm,1
+1998,Western Europe,Landslide,1
+1998,Northern Europe,Storm,1
+1998,Western Africa,Wildfire,1
+1998,Southern Europe,Flood,1
+1998,Central America,Landslide,1
+1998,Central America,Epidemic,1
+1998,South-Eastern Asia,Other,1
+1998,South-Eastern Asia,Epidemic,1
+1998,South-Eastern Asia,Flood,1
+1998,Southern Asia,Landslide,1
+1998,Southern Europe,Extreme temperature ,1
+1998,Central Asia,Flood,1
+1998,Eastern Africa,Flood,1
+1998,Central America,Flood,1
+1998,Eastern Africa,Landslide,1
+1998,South-Eastern Asia,Storm,1
+1994,Northern America,Flood,1
+1994,Eastern Europe,Earthquake,1
+1994,Melanesia,Other,1
+1994,Caribbean,Drought,1
+1994,Eastern Europe,Extreme temperature ,1
+1994,Central Asia,Flood,1
+1994,Western Asia,Storm,1
+1994,Eastern Europe,Epidemic,1
+1994,Melanesia,Earthquake,1
+1994,Southern Africa,Storm,1
+1994,Southern Africa,Flood,1
+1995,Western Asia,Landslide,1
+1995,Eastern Europe,Flood,1
+1995,Eastern Europe,Storm,1
+1995,Eastern Europe,Earthquake,1
+1995,Eastern Europe,Extreme temperature ,1
+1995,Eastern Europe,Landslide,1
+1995,Central Asia,Other,1
+1995,Northern America,Extreme temperature ,1
+1995,Eastern Africa,Drought,1
+1996,Western Asia,Earthquake,1
+1996,Melanesia,Other,1
+1996,Melanesia,Landslide,1
+1996,Eastern Europe,Extreme temperature ,1
+1996,Eastern Europe,Epidemic,1
+1996,Eastern Europe,Landslide,1
+1996,Eastern Europe,Wildfire,1
+1996,Eastern Africa,Epidemic,1
+1996,Northern Africa,Epidemic,1
+1996,Northern Africa,Drought,1
+1996,Southern Africa,Epidemic,1
+1996,Central Asia,Flood,1
+1996,Central Asia,Epidemic,1
+1996,Western Asia,Wildfire,1
+1996,Northern America,Wildfire,1
+1996,Western Asia,Flood,1
+1996,Southern Africa,Flood,1
+1996,Southern Africa,Landslide,1
+1996,Southern Africa,Extreme temperature ,1
+1997,Melanesia,Earthquake,1
+1997,Melanesia,Drought,1
+1997,Melanesia,Wildfire,1
+1997,Eastern Europe,Extreme temperature ,1
+1997,Eastern Europe,Wildfire,1
+1997,Central Asia,Landslide,1
+1997,Caribbean,Earthquake,1
+1997,Eastern Africa,Wildfire,1
+1997,Eastern Africa,Landslide,1
+1997,Southern Africa,Earthquake,1
+1997,Southern Africa,Flood,1
+1997,Middle Africa,Flood,1
+1998,Northern America,Extreme temperature ,1
+1998,Western Africa,Drought,1
+1998,Melanesia,Earthquake,1
+1998,Melanesia,Epidemic,1
+1998,Polynesia,Landslide,1
+1998,Eastern Europe,Extreme temperature ,1
+1998,Eastern Europe,Wildfire,1
+1998,Eastern Europe,Storm,1
+1998,Eastern Africa,Epidemic,1
+1998,Northern Africa,Flood,1
+1998,Northern Africa,Epidemic,1
+1998,Central Asia,Landslide,1
+1998,Polynesia,Storm,1
+1998,Eastern Asia,Epidemic,1
+1998,Central Asia,Epidemic,1
+1998,Melanesia,Storm,1
+1998,Western Europe,Storm,1
+1998,South America,Drought,1
+1999,Eastern Asia,Storm,1
+1999,Southern Asia,Flood,1
+1999,Australia and New Zealand,Storm,1
+1999,Southern Asia,Storm,1
+1999,Southern Asia,Earthquake,1
+1999,Southern Asia,Wildfire,1
+1999,Southern Asia,Epidemic,1
+1999,Middle Africa,Epidemic,1
+1999,Caribbean,Storm,1
+1999,South America,Wildfire,1
+1999,Australia and New Zealand,Wildfire,1
+1999,Western Europe,Flood,1
+1999,Western Europe,Landslide,1
+1999,Western Asia,Earthquake,1
+1999,Eastern Africa,Storm,1
+1999,Eastern Africa,Epidemic,1
+1999,Eastern Africa,Drought,1
+1999,Western Europe,Storm,1
+1999,Western Africa,Flood,1
+1999,Western Africa,Epidemic,1
+1999,Eastern Europe,Storm,1
+1999,Southern Europe,Storm,1
+1999,Eastern Europe,Flood,1
+1999,South America,Flood,1
+1999,South America,Epidemic,1
+1999,South America,Landslide,1
+1999,Middle Africa,Flood,1
+1999,Northern America,Storm,1
+1999,Northern America,Wildfire,1
+1999,Eastern Asia,Earthquake,1
+1999,Eastern Asia,Flood,1
+1999,Eastern Asia,Landslide,1
+1999,Eastern Asia,Wildfire,1
+2000,Eastern Asia,Flood,1
+2000,Southern Asia,Drought,1
+2000,Southern Asia,Flood,1
+2000,South America,Flood,1
+2000,Western Europe,Storm,1
+2000,Western Asia,Drought,1
+2000,Southern Europe,Drought,1
+2000,Australia and New Zealand,Storm,1
+2000,Southern Asia,Storm,1
+2000,Eastern Asia,Storm,1
+2000,Southern Asia,Epidemic,1
+2000,Middle Africa,Flood,1
+2000,Middle Africa,Landslide,1
+2000,Middle Africa,Epidemic,1
+2000,South America,Storm,1
+2000,South America,Extreme temperature ,1
+2000,South America,Wildfire,1
+2000,Australia and New Zealand,Flood,1
+2000,Australia and New Zealand,Wildfire,1
+2000,Australia and New Zealand,Other,1
+2000,Western Europe,Landslide,1
+2000,Western Asia,Earthquake,1
+2000,Western Asia,Landslide,1
+2000,Eastern Africa,Epidemic,1
+2000,Eastern Africa,Flood,1
+2000,Western Africa,Epidemic,1
+2000,Southern Asia,Earthquake,1
+2000,Southern Asia,Extreme temperature ,1
+2000,Eastern Europe,Extreme temperature ,1
+2000,Eastern Europe,Wildfire,1
+2000,Eastern Europe,Drought,1
+2000,Southern Europe,Epidemic,1
+2000,Southern Europe,Landslide,1
+2000,Central America,Storm,1
+2000,South America,Drought,1
+2000,South America,Landslide,1
+2000,Southern Africa,Flood,1
+2000,Northern America,Storm,1
+2000,Eastern Asia,Earthquake,1
+2000,Eastern Asia,Landslide,1
+2001,Southern Asia,Extreme temperature ,1
+2001,Middle Africa,Flood,1
+2001,South America,Storm,1
+2001,Australia and New Zealand,Flood,1
+2001,Australia and New Zealand,Storm,1
+2001,Western Africa,Epidemic,1
+2001,South America,Flood,1
+2001,Northern America,Storm,1
+2001,Eastern Asia,Storm,1
+2001,Eastern Asia,Earthquake,1
+1998,South-Eastern Asia,Earthquake,1
+1998,Western Asia,Drought,1
+1998,Caribbean,Drought,1
+1998,Central America,Drought,1
+1998,Southern Europe,Storm,1
+1998,Eastern Africa,Drought,1
+1998,Melanesia,Drought,1
+1998,Micronesia,Drought,1
+1998,Northern Europe,Flood,1
+1998,Central America,Extreme temperature ,1
+1998,South-Eastern Asia,Drought,1
+1998,Southern Africa,Drought,1
+1998,Central America,Earthquake,1
+1999,South America,Earthquake,1
+1999,Central America,Earthquake,1
+1999,Central America,Flood,1
+1999,Eastern Asia,Drought,1
+1999,Middle Africa,Other,1
+1999,South America,Storm,1
+1999,Caribbean,Wildfire,1
+1999,Northern Europe,Storm,1
+1999,Caribbean,Epidemic,1
+1999,Northern Africa,Earthquake,1
+1999,Northern Africa,Flood,1
+1999,South America,Other,1
+1999,Southern Europe,Earthquake,1
+1999,Southern Europe,Drought,1
+1999,Eastern Africa,Flood,1
+1999,Melanesia,Storm,1
+1999,Western Europe,Wildfire,1
+1999,Northern Europe,Flood,1
+1999,Caribbean,Flood,1
+1999,South-Eastern Asia,Earthquake,1
+1999,South-Eastern Asia,Landslide,1
+1999,South-Eastern Asia,Wildfire,1
+1999,South-Eastern Asia,Epidemic,1
+1999,South-Eastern Asia,Flood,1
+1999,Southern Asia,Extreme temperature ,1
+1999,Southern Asia,Drought,1
+1999,Western Asia,Drought,1
+1999,Southern Europe,Landslide,1
+1999,Southern Europe,Wildfire,1
+1999,Central Asia,Epidemic,1
+1999,Micronesia,Drought,1
+1999,South-Eastern Asia,Drought,1
+1999,Southern Africa,Epidemic,1
+1999,Northern Europe,Extreme temperature ,1
+1999,Northern Africa,Drought,1
+1999,Eastern Europe,Epidemic,1
+1999,Central America,Other,1
+1999,Central America,Storm,1
+1999,Central America,Extreme temperature ,1
+1999,Central America,Drought,1
+1999,Western Africa,Storm,1
+1999,Central America,Wildfire,1
+1999,Polynesia,Epidemic,1
+1999,Western Europe,Epidemic,1
+1999,Australia and New Zealand,Flood,1
+2000,Central America,Flood,1
+2000,South-Eastern Asia,Earthquake,1
+2000,South-Eastern Asia,Flood,1
+2000,Eastern Africa,Storm,1
+2000,Eastern Asia,Drought,1
+2000,Northern Europe,Storm,1
+2000,Central America,Drought,1
+2000,South America,Earthquake,1
+2000,Central America,Landslide,1
+2000,Caribbean,Drought,1
+2000,Caribbean,Flood,1
+2000,Western Asia,Extreme temperature ,1
+2000,Western Asia,Wildfire,1
+2000,Eastern Europe,Flood,1
+2000,Northern Africa,Flood,1
+2000,Northern Africa,Storm,1
+2000,South America,Epidemic,1
+2000,Northern Africa,Extreme temperature ,1
+2000,Southern Europe,Flood,1
+2000,Southern Europe,Wildfire,1
+2000,Southern Europe,Storm,1
+2000,Eastern Africa,Landslide,1
+2000,Eastern Africa,Wildfire,1
+2000,Melanesia,Flood,1
+2000,Western Europe,Flood,1
+2000,Micronesia,Epidemic,1
+2000,Northern Europe,Flood,1
+2000,Western Africa,Storm,1
+2000,Southern Europe,Earthquake,1
+2000,Southern Europe,Extreme temperature ,1
+2000,Central America,Other,1
+2000,Central America,Wildfire,1
+2000,South-Eastern Asia,Landslide,1
+2000,South-Eastern Asia,Wildfire,1
+2000,South-Eastern Asia,Epidemic,1
+2000,Southern Asia,Landslide,1
+2000,Northern Europe,Epidemic,1
+2000,Northern Europe,Earthquake,1
+2000,Western Asia,Epidemic,1
+2000,Western Asia,Storm,1
+2000,Eastern Asia,Other,1
+2000,Central Asia,Epidemic,1
+2000,Central Asia,Flood,1
+2000,Central Asia,Extreme temperature ,1
+2000,Eastern Asia,Wildfire,1
+2000,Eastern Asia,Epidemic,1
+2000,Southern Africa,Epidemic,1
+2000,Eastern Europe,Storm,1
+2000,Eastern Africa,Drought,1
+2000,Central America,Earthquake,1
+2000,Central America,Extreme temperature ,1
+2000,Western Africa,Flood,1
+2000,South-Eastern Asia,Storm,1
+2000,Western Africa,Landslide,1
+2001,South-Eastern Asia,Flood,1
+2001,Middle Africa,Epidemic,1
+2001,Western Europe,Flood,1
+2001,Southern Europe,Flood,1
+2001,Central America,Earthquake,1
+2001,South-Eastern Asia,Landslide,1
+2001,Southern Asia,Earthquake,1
+2001,Southern Asia,Epidemic,1
+2001,Central Asia,Extreme temperature ,1
+2001,Eastern Africa,Flood,1
+2001,Eastern Africa,Epidemic,1
+2001,Southern Asia,Flood,1
+1998,Eastern Europe,Drought,1
+1998,Northern Africa,Wildfire,1
+1998,Southern Africa,Storm,1
+1998,Southern Africa,Wildfire,1
+1999,Melanesia,Earthquake,1
+1999,South America,Drought,1
+1999,Southern Africa,Flood,1
+1999,Northern America,Extreme temperature ,1
+1999,South-Eastern Asia,Storm,1
+1999,Melanesia,Flood,1
+1999,Eastern Europe,Extreme temperature ,1
+1999,Eastern Europe,Landslide,1
+1999,Eastern Europe,Earthquake,1
+1999,Eastern Europe,Wildfire,1
+1999,Northern Africa,Epidemic,1
+1999,Southern Europe,Flood,1
+1999,Southern Europe,Epidemic,1
+1999,Central Asia,Flood,1
+1999,Central Asia,Storm,1
+1999,Northern America,Drought,1
+1999,Northern America,Flood,1
+1999,Central Asia,Landslide,1
+1999,Western Asia,Flood,1
+1999,Southern Africa,Storm,1
+1999,Southern Africa,Wildfire,1
+2000,Eastern Europe,Earthquake,1
+2000,Northern America,Flood,1
+2000,Melanesia,Earthquake,1
+2000,Southern Africa,Storm,1
+2000,Northern America,Drought,1
+2000,South America,Other,1
+2000,South-Eastern Asia,Other,2
+2000,Eastern Europe,Landslide,1
+2000,Eastern Europe,Epidemic,1
+2000,Northern Africa,Epidemic,1
+2000,Central America,Epidemic,1
+2000,Central Asia,Earthquake,1
+2000,Central Asia,Drought,1
+2000,Western Asia,Flood,1
+2000,Eastern Africa,Earthquake,1
+2000,Northern America,Earthquake,1
+2000,Northern America,Extreme temperature ,1
+2000,Northern America,Wildfire,1
+2000,Southern Africa,Wildfire,1
+2001,Middle Africa,Drought,1
+2001,South-Eastern Asia,Storm,1
+2001,Eastern Europe,Flood,1
+2001,Eastern Europe,Extreme temperature ,1
+2001,Eastern Africa,Earthquake,1
+2001,Eastern Africa,Landslide,1
+2001,Southern Africa,Storm,1
+2001,South America,Extreme temperature ,1
+2001,South America,Wildfire,1
+2001,Australia and New Zealand,Wildfire,1
+2001,Western Africa,Drought,1
+2001,Southern Asia,Storm,1
+2001,Eastern Europe,Wildfire,1
+2001,Eastern Europe,Storm,1
+2001,Caribbean,Storm,1
+2001,Central America,Storm,1
+2001,South America,Drought,1
+2001,Middle Africa,Storm,1
+2001,Northern America,Wildfire,1
+2001,Northern America,Epidemic,1
+2001,Western Europe,Extreme temperature ,1
+2002,Southern Asia,Earthquake,1
+2002,South America,Earthquake,1
+2002,South America,Flood,1
+2002,Western Europe,Landslide,1
+2002,Australia and New Zealand,Storm,1
+2002,Southern Europe,Storm,1
+2002,Australia and New Zealand,Drought,1
+2002,South America,Landslide,1
+2002,Southern Asia,Flood,1
+2002,Southern Asia,Landslide,1
+2002,Southern Asia,Epidemic,1
+2002,Middle Africa,Flood,1
+2002,Southern Europe,Flood,1
+2002,Southern Europe,Epidemic,1
+2002,South America,Extreme temperature ,1
+2002,South America,Storm,1
+2002,Australia and New Zealand,Wildfire,1
+2002,Australia and New Zealand,Epidemic,1
+2002,Western Europe,Flood,1
+2002,Western Europe,Storm,1
+2002,Eastern Africa,Flood,1
+2002,Eastern Africa,Epidemic,1
+2002,Western Africa,Epidemic,1
+2002,Southern Asia,Storm,1
+2002,Southern Asia,Extreme temperature ,1
+2002,Eastern Europe,Flood,1
+2002,South America,Wildfire,1
+2002,South America,Epidemic,1
+2002,South America,Drought,1
+2002,Caribbean,Storm,1
+2002,Middle Africa,Wildfire,1
+2002,Middle Africa,Epidemic,1
+2002,Northern America,Flood,1
+2002,Northern America,Wildfire,1
+2002,Northern America,Epidemic,1
+2002,Western Europe,Epidemic,1
+2002,Eastern Asia,Storm,1
+2003,South America,Flood,1
+2003,Southern Asia,Flood,1
+2003,Middle Africa,Flood,1
+2003,Australia and New Zealand,Flood,1
+2003,Australia and New Zealand,Wildfire,1
+2003,Australia and New Zealand,Storm,1
+2003,Western Europe,Flood,1
+2003,Western Africa,Epidemic,1
+2003,Northern America,Flood,1
+2003,Western Europe,Storm,1
+2003,South America,Wildfire,1
+2001,Eastern Asia,Flood,1
+2001,Northern Africa,Flood,1
+2001,Eastern Asia,Landslide,1
+2001,Central America,Drought,1
+2001,Eastern Asia,Other,1
+2001,Eastern Asia,Drought,1
+2001,Polynesia,Storm,1
+2001,South America,Landslide,1
+2001,Central America,Flood,1
+2001,Western Europe,Storm,1
+2001,South America,Other,1
+2001,Southern Europe,Epidemic,1
+2001,Southern Europe,Storm,1
+2001,Melanesia,Storm,1
+2001,Northern Europe,Flood,1
+2001,Northern Europe,Epidemic,1
+2001,Western Asia,Storm,1
+2001,Western Africa,Flood,1
+2001,Southern Europe,Earthquake,1
+2001,Central America,Extreme temperature ,1
+2001,Caribbean,Flood,1
+2001,South-Eastern Asia,Earthquake,1
+2001,Southern Asia,Landslide,1
+2001,Southern Europe,Other,1
+2001,Central Asia,Flood,1
+2001,South-Eastern Asia,Drought,1
+2001,Southern Asia,Drought,1
+2001,Northern Europe,Extreme temperature ,1
+2001,Southern Europe,Extreme temperature ,1
+2001,Eastern Africa,Drought,1
+2002,South-Eastern Asia,Earthquake,1
+2002,Southern Africa,Drought,1
+2002,Eastern Asia,Flood,1
+2002,Western Asia,Earthquake,1
+2002,Caribbean,Flood,1
+2002,South-Eastern Asia,Flood,1
+2002,Southern Europe,Earthquake,1
+2002,Eastern Africa,Storm,1
+2002,Western Africa,Drought,1
+2002,Eastern Africa,Drought,1
+2002,Micronesia,Storm,1
+2002,Eastern Asia,Earthquake,1
+2002,Eastern Asia,Landslide,1
+2002,Eastern Asia,Extreme temperature ,1
+2002,Eastern Asia,Epidemic,1
+2002,Eastern Asia,Drought,1
+2002,Central America,Flood,1
+2002,Eastern Europe,Storm,1
+2002,Northern Europe,Storm,1
+2002,Northern Africa,Flood,1
+2002,South America,Other,2
+2002,Northern Africa,Earthquake,1
+2002,Northern Europe,Flood,1
+2002,Northern Europe,Epidemic,1
+2002,Western Africa,Flood,1
+2002,Central America,Other,1
+2002,Central America,Storm,1
+2002,Central America,Epidemic,1
+2002,Central America,Landslide,1
+2002,Central America,Drought,1
+2002,South-Eastern Asia,Other,1
+2002,South-Eastern Asia,Wildfire,1
+2002,South-Eastern Asia,Epidemic,1
+2002,South-Eastern Asia,Landslide,1
+2002,Southern Asia,Drought,1
+2002,Southern Asia,Wildfire,1
+2002,Southern Europe,Drought,1
+2002,Western Asia,Storm,1
+2002,Eastern Asia,Wildfire,1
+2002,Eastern Africa,Landslide,1
+2002,Central Asia,Landslide,1
+2002,South-Eastern Asia,Drought,1
+2002,Western Asia,Epidemic,1
+2002,Central America,Extreme temperature ,1
+2003,Melanesia,Storm,1
+2003,Southern Europe,Flood,1
+2003,South-Eastern Asia,Flood,1
+2003,Central America,Earthquake,1
+2003,Southern Asia,Storm,1
+2003,Eastern Africa,Storm,1
+2003,Eastern Asia,Earthquake,1
+2003,Western Asia,Storm,1
+2003,Northern Africa,Storm,1
+2003,Eastern Europe,Storm,1
+2003,South-Eastern Asia,Earthquake,1
+2003,South-Eastern Asia,Landslide,1
+2003,Southern Asia,Earthquake,1
+2003,Western Asia,Flood,1
+2003,Northern Europe,Extreme temperature ,1
+2003,Eastern Africa,Flood,1
+2003,Eastern Africa,Epidemic,1
+2001,Melanesia,Earthquake,1
+2001,Northern America,Flood,1
+2001,South America,Earthquake,1
+2001,Southern Africa,Flood,1
+2001,Australia and New Zealand,Extreme temperature ,1
+2001,Southern Africa,Epidemic,1
+2001,Southern Africa,Drought,1
+2001,South-Eastern Asia,Other,1
+2001,Melanesia,Epidemic,1
+2001,Southern Europe,Wildfire,1
+2001,Eastern Europe,Other,1
+2001,Western Asia,Epidemic,1
+2001,Western Africa,Storm,1
+2001,Central Asia,Landslide,1
+2001,Central Asia,Storm,1
+2001,Western Asia,Earthquake,1
+2001,Western Asia,Flood,1
+2001,Western Asia,Landslide,1
+2001,Western Asia,Extreme temperature ,1
+2001,Northern America,Earthquake,1
+2001,Northern America,Extreme temperature ,1
+2001,Melanesia,Other,1
+2001,Polynesia,Flood,1
+2001,Southern Africa,Wildfire,1
+2001,Middle Africa,Other,1
+2001,Middle Africa,Landslide,1
+2002,Northern America,Storm,1
+2002,Middle Africa,Other,1
+2002,Central Asia,Flood,1
+2002,Melanesia,Earthquake,1
+2002,South-Eastern Asia,Storm,1
+2002,Melanesia,Storm,1
+2002,Western Africa,Storm,1
+2002,Western Africa,Extreme temperature ,1
+2002,Central America,Wildfire,1
+2002,Australia and New Zealand,Flood,1
+2002,Melanesia,Other,1
+2002,Melanesia,Landslide,1
+2002,Melanesia,Epidemic,1
+2002,Eastern Europe,Extreme temperature ,1
+2002,Eastern Europe,Epidemic,1
+2002,Eastern Europe,Landslide,1
+2002,Eastern Europe,Wildfire,1
+2002,Eastern Africa,Earthquake,1
+2002,Western Asia,Flood,1
+2002,Northern Africa,Storm,1
+2002,Northern Africa,Epidemic,1
+2002,Western Asia,Landslide,1
+2002,Central Asia,Earthquake,1
+2002,Northern America,Extreme temperature ,1
+2002,Northern America,Drought,1
+2002,Melanesia,Flood,1
+2002,Southern Africa,Storm,1
+2002,Southern Africa,Flood,1
+2002,Southern Africa,Wildfire,1
+2002,Southern Africa,Epidemic,1
+2003,South America,Storm,1
+2003,Western Europe,Extreme temperature ,1
+2003,Polynesia,Flood,1
+2003,Eastern Europe,Flood,1
+2003,Central Asia,Landslide,1
+2003,Northern Africa,Flood,1
+2003,Western Asia,Earthquake,1
+2003,Northern America,Storm,1
+2003,Middle Africa,Storm,1
+2003,South America,Drought,1
+2003,Eastern Africa,Drought,1
+2003,Western Africa,Flood,1
+2004,South America,Flood,1
+2004,Australia and New Zealand,Storm,1
+2004,Southern Asia,Flood,1
+2004,Middle Africa,Flood,1
+2004,Southern Europe,Flood,1
+2004,Middle Africa,Drought,1
+2004,South America,Extreme temperature ,1
+2004,Southern Asia,Earthquake,1
+2004,Middle Africa,Epidemic,1
+2004,Southern Europe,Extreme temperature ,1
+2004,Western Asia,Flood,1
+2004,Polynesia,Storm,1
+2004,Australia and New Zealand,Flood,1
+2004,Australia and New Zealand,Other,1
+2004,Eastern Africa,Earthquake,1
+2004,Eastern Africa,Flood,1
+2004,Eastern Africa,Storm,1
+2004,Western Africa,Epidemic,1
+2004,Western Africa,Other,1
+2004,Southern Asia,Storm,1
+2005,Southern Europe,Storm,1
+2005,Southern Asia,Storm,1
+2005,Southern Asia,Flood,1
+2005,Middle Africa,Flood,1
+2005,South America,Storm,1
+2005,Polynesia,Storm,1
+2005,Australia and New Zealand,Wildfire,1
+2005,Australia and New Zealand,Storm,1
+2005,Eastern Africa,Flood,1
+2003,Caribbean,Flood,1
+2003,Eastern Asia,Storm,1
+2003,Western Africa,Storm,1
+2003,Eastern Asia,Drought,1
+2003,Eastern Asia,Flood,1
+2003,Caribbean,Earthquake,1
+2003,Southern Europe,Earthquake,1
+2003,Caribbean,Storm,1
+2003,Northern Africa,Earthquake,1
+2003,South America,Other,1
+2003,Southern Europe,Drought,1
+2003,Southern Europe,Extreme temperature ,1
+2003,Southern Asia,Extreme temperature ,1
+2003,Eastern Asia,Landslide,1
+2003,Middle Africa,Landslide,1
+2003,Caribbean,Drought,1
+2003,South America,Landslide,1
+2003,Middle Africa,Epidemic,1
+2003,Northern America,Wildfire,1
+2003,Eastern Asia,Wildfire,1
+2003,Central America,Flood,1
+2003,Eastern Europe,Extreme temperature ,1
+2003,Northern Africa,Extreme temperature ,1
+2003,Southern Europe,Wildfire,1
+2003,Western Europe,Wildfire,1
+2003,Micronesia,Storm,1
+2003,Central America,Landslide,1
+2003,Central America,Wildfire,1
+2003,Caribbean,Epidemic,1
+2003,Eastern Europe,Drought,1
+2003,South-Eastern Asia,Drought,1
+2003,Southern Asia,Landslide,1
+2003,Southern Asia,Epidemic,1
+2003,Western Asia,Epidemic,1
+2003,Central Asia,Earthquake,1
+2004,Eastern Asia,Earthquake,1
+2004,Central America,Flood,1
+2004,Eastern Asia,Flood,1
+2004,South-Eastern Asia,Storm,1
+2004,Melanesia,Storm,1
+2004,Micronesia,Storm,1
+2004,Caribbean,Storm,1
+2004,Southern Europe,Storm,1
+2004,Eastern Asia,Storm,1
+2004,Eastern Africa,Drought,1
+2004,South-Eastern Asia,Earthquake,1
+2004,Central America,Earthquake,1
+2004,Caribbean,Flood,1
+2004,Melanesia,Flood,1
+2004,South-Eastern Asia,Other,1
+2004,Northern America,Flood,1
+2004,Western Asia,Storm,1
+2004,Northern Africa,Storm,1
+2004,Western Europe,Storm,1
+2004,Western Africa,Storm,1
+2004,Northern America,Storm,1
+2004,South-Eastern Asia,Landslide,1
+2004,Northern Europe,Storm,1
+2004,Central America,Drought,1
+2004,South America,Storm,1
+2004,Southern Asia,Epidemic,1
+2004,South America,Drought,1
+2004,Southern Africa,Flood,1
+2004,Eastern Asia,Other,1
+2004,Eastern Asia,Landslide,1
+2004,Eastern Asia,Extreme temperature ,1
+2004,Eastern Asia,Epidemic,1
+2004,South America,Earthquake,1
+2004,Caribbean,Drought,1
+2004,Western Europe,Earthquake,1
+2004,Caribbean,Earthquake,1
+2004,Northern Africa,Earthquake,1
+2004,Northern Africa,Flood,1
+2004,Northern Africa,Epidemic,1
+2004,Southern Europe,Wildfire,1
+2004,Northern Europe,Flood,1
+2004,Western Africa,Wildfire,1
+2004,Western Africa,Flood,1
+2004,Eastern Europe,Flood,1
+2004,South-Eastern Asia,Flood,1
+2004,South-Eastern Asia,Epidemic,1
+2004,Western Asia,Epidemic,1
+2004,Central Asia,Landslide,1
+2004,Eastern Africa,Epidemic,1
+2004,Eastern Asia,Wildfire,1
+2005,South America,Flood,1
+2005,Eastern Asia,Storm,1
+2005,Central America,Flood,1
+2005,Western Asia,Flood,1
+2005,South-Eastern Asia,Flood,1
+2005,Eastern Asia,Earthquake,1
+2005,South-Eastern Asia,Earthquake,1
+2005,Eastern Africa,Other,1
+2005,Northern Europe,Storm,1
+2005,Eastern Europe,Storm,1
+2005,Western Africa,Epidemic,1
+2005,Middle Africa,Epidemic,1
+2005,Eastern Africa,Epidemic,1
+2005,Eastern Europe,Flood,1
+2005,Western Europe,Storm,1
+2005,Northern Africa,Flood,1
+2005,Northern Africa,Storm,1
+2005,South-Eastern Asia,Other,1
+2005,South-Eastern Asia,Landslide,1
+2005,Southern Asia,Landslide,1
+2005,Southern Asia,Earthquake,1
+2005,Central Asia,Flood,1
+2005,Eastern Asia,Wildfire,1
+2003,South-Eastern Asia,Storm,1
+2003,Central America,Storm,1
+2003,Eastern Europe,Earthquake,1
+2003,Central Asia,Flood,1
+2003,Southern Africa,Storm,1
+2003,South America,Extreme temperature ,1
+2003,Central America,Extreme temperature ,1
+2003,Southern Africa,Flood,1
+2003,Melanesia,Epidemic,1
+2003,Melanesia,Landslide,1
+2003,Eastern Europe,Wildfire,1
+2003,Northern Africa,Epidemic,1
+2003,Central America,Epidemic,1
+2003,South-Eastern Asia,Epidemic,1
+2003,Central Asia,Epidemic,1
+2003,Northern America,Earthquake,1
+2003,Northern America,Landslide,1
+2003,Micronesia,Other,1
+2004,Central Asia,Flood,1
+2004,Eastern Europe,Storm,1
+2004,Northern America,Wildfire,1
+2004,Southern Europe,Earthquake,1
+2004,Central Asia,Earthquake,1
+2004,Western Asia,Earthquake,1
+2004,Central America,Storm,1
+2004,South America,Landslide,1
+2004,Western Asia,Extreme temperature ,1
+2004,Northern Africa,Other,1
+2004,Central America,Extreme temperature ,1
+2004,Central America,Landslide,1
+2004,Melanesia,Other,1
+2004,Southern Europe,Drought,1
+2004,Eastern Europe,Extreme temperature ,1
+2004,Eastern Europe,Earthquake,1
+2004,Eastern Europe,Wildfire,1
+2004,Middle Africa,Other,1
+2004,Caribbean,Landslide,1
+2004,Northern America,Extreme temperature ,1
+2004,Southern Africa,Epidemic,1
+2004,Southern Africa,Drought,1
+2005,Northern America,Flood,1
+2005,Southern Europe,Flood,1
+2005,Southern Africa,Storm,1
+2005,Northern America,Storm,1
+2005,Middle Africa,Storm,1
+2005,Western Asia,Storm,1
+2005,Eastern Africa,Storm,1
+2005,Western Africa,Flood,1
+2005,South-Eastern Asia,Storm,1
+2005,Eastern Europe,Landslide,1
+2005,Northern Africa,Epidemic,1
+2005,Central Asia,Landslide,1
+2005,Western Asia,Earthquake,1
+2005,Western Asia,Landslide,1
+2005,Southern Africa,Earthquake,1
+2005,South-Eastern Asia,Epidemic,1
+2006,Southern Asia,Storm,1
+2006,Southern Asia,Earthquake,1
+2006,Southern Asia,Flood,1
+2005,Caribbean,Flood,1
+2005,Caribbean,Storm,1
+2005,Central America,Storm,1
+2005,Eastern Africa,Drought,1
+2005,Eastern Asia,Drought,1
+2005,Western Europe,Flood,1
+2005,South America,Earthquake,1
+2005,Eastern Asia,Flood,1
+2005,Australia and New Zealand,Flood,1
+2005,Melanesia,Flood,1
+2005,Middle Africa,Drought,1
+2005,Southern Asia,Extreme temperature ,1
+2005,Western Europe,Extreme temperature ,1
+2005,Eastern Europe,Extreme temperature ,1
+2005,Southern Europe,Extreme temperature ,1
+2005,Northern Europe,Extreme temperature ,1
+2005,Southern Asia,Epidemic,1
+2005,South America,Wildfire,1
+2005,South America,Drought,1
+2005,Northern America,Wildfire,1
+2005,Eastern Asia,Extreme temperature ,1
+2005,Eastern Asia,Epidemic,1
+2005,South America,Other,1
+2005,Caribbean,Wildfire,1
+2005,Southern Europe,Wildfire,1
+2005,Northern Europe,Flood,1
+2005,Western Europe,Wildfire,1
+2005,Central America,Landslide,1
+2005,South-Eastern Asia,Wildfire,1
+2006,South America,Flood,1
+2006,Eastern Asia,Flood,1
+2006,South-Eastern Asia,Flood,1
+2006,Eastern Asia,Storm,1
+2006,Southern Europe,Flood,1
+2006,Eastern Asia,Earthquake,1
+2006,Middle Africa,Flood,1
+2006,Melanesia,Flood,1
+2006,Southern Europe,Storm,1
+2006,South-Eastern Asia,Earthquake,1
+2006,Western Europe,Flood,1
+2006,Western Africa,Flood,1
+2006,Northern America,Flood,1
+2006,Eastern Europe,Flood,1
+2006,Western Asia,Flood,1
+2006,Western Europe,Storm,1
+2006,Australia and New Zealand,Storm,1
+2006,Eastern Africa,Flood,1
+2006,Eastern Europe,Storm,1
+2006,Eastern Asia,Drought,1
+2006,Caribbean,Storm,1
+2006,Melanesia,Storm,1
+2006,Western Africa,Drought,1
+2006,Southern Asia,Landslide,1
+2006,Southern Asia,Drought,1
+2006,Middle Africa,Epidemic,1
+2006,Australia and New Zealand,Flood,1
+2006,Australia and New Zealand,Wildfire,1
+2006,Australia and New Zealand,Drought,1
+2006,Eastern Africa,Storm,1
+2006,Western Europe,Extreme temperature ,1
+2006,Western Africa,Epidemic,1
+2006,Eastern Europe,Earthquake,1
+2006,Southern Africa,Epidemic,1
+2006,Eastern Asia,Other,1
+2006,Eastern Asia,Landslide,1
+2006,South America,Other,1
+2006,Eastern Africa,Other,2
+2006,Caribbean,Flood,1
+2006,Northern Africa,Earthquake,1
+2006,Northern Africa,Flood,1
+2006,Southern Europe,Extreme temperature ,1
+2006,Southern Europe,Wildfire,1
+2006,Eastern Africa,Epidemic,1
+2006,Central America,Extreme temperature ,1
+2006,Central America,Flood,1
+2006,South-Eastern Asia,Other,1
+2006,South-Eastern Asia,Landslide,1
+2006,South-Eastern Asia,Wildfire,1
+2006,Southern Asia,Extreme temperature ,1
+2007,Caribbean,Flood,1
+2007,South America,Flood,1
+2007,Southern Asia,Flood,1
+2007,South America,Other,1
+2007,Melanesia,Storm,1
+2007,South-Eastern Asia,Flood,1
+2007,Eastern Asia,Storm,1
+2007,Northern Africa,Flood,1
+2007,Northern America,Storm,1
+2007,South-Eastern Asia,Landslide,1
+2007,Middle Africa,Flood,1
+2007,Middle Africa,Epidemic,1
+2007,Western Europe,Storm,1
+2007,Eastern Africa,Flood,1
+2007,Western Africa,Epidemic,1
+2007,Southern Asia,Extreme temperature ,1
+2007,Eastern Europe,Storm,1
+2007,South America,Epidemic,1
+2007,South America,Landslide,1
+2007,Northern Europe,Storm,1
+2007,Southern Europe,Storm,1
+2007,Southern Europe,Flood,1
+2007,Melanesia,Flood,1
+2007,South-Eastern Asia,Earthquake,1
+2007,South-Eastern Asia,Epidemic,1
+2005,South-Eastern Asia,Drought,1
+2005,Western Africa,Drought,1
+2005,Central America,Earthquake,1
+2005,Western Asia,Extreme temperature ,1
+2005,Melanesia,Earthquake,1
+2005,Melanesia,Other,1
+2005,Central America,Other,1
+2005,Eastern Africa,Earthquake,1
+2005,Northern America,Extreme temperature ,1
+2005,Western Asia,Epidemic,1
+2005,Middle Africa,Earthquake,1
+2006,Central America,Storm,1
+2006,South-Eastern Asia,Storm,1
+2006,Northern America,Earthquake,1
+2006,Eastern Africa,Drought,1
+2006,Melanesia,Landslide,1
+2006,Central Asia,Landslide,1
+2006,Southern Africa,Flood,1
+2006,Northern America,Storm,1
+2006,Northern Europe,Drought,1
+2006,Middle Africa,Storm,1
+2006,Central Asia,Storm,1
+2006,Southern Europe,Landslide,1
+2006,Caribbean,Epidemic,1
+2006,Central Asia,Earthquake,1
+2006,South-Eastern Asia,Epidemic,1
+2006,Central America,Landslide,1
+2006,Eastern Africa,Earthquake,1
+2006,Caribbean,Other,1
+2006,Central America,Wildfire,1
+2006,South America,Drought,1
+2006,Melanesia,Other,1
+2006,Eastern Asia,Epidemic,1
+2006,South America,Epidemic,1
+2006,Eastern Europe,Extreme temperature ,1
+2006,Eastern Africa,Landslide,1
+2006,Northern Africa,Epidemic,1
+2006,Central America,Earthquake,1
+2006,Southern Africa,Storm,1
+2006,Western Asia,Epidemic,1
+2006,Northern America,Extreme temperature ,1
+2006,Northern America,Wildfire,1
+2007,Eastern Asia,Earthquake,1
+2007,Eastern Africa,Storm,1
+2007,Australia and New Zealand,Storm,1
+2007,Melanesia,Earthquake,1
+2007,Eastern Europe,Flood,1
+2007,Western Asia,Flood,1
+2007,Southern Africa,Flood,1
+2007,Southern Africa,Epidemic,1
+2007,Southern Asia,Landslide,1
+2007,Eastern Africa,Epidemic,1
+2007,Northern America,Flood,1
+2007,Eastern Asia,Flood,1
+2007,Caribbean,Storm,1
+2007,Central America,Storm,1
+2007,Australia and New Zealand,Flood,1
+2007,Eastern Europe,Extreme temperature ,1
+2007,Caribbean,Earthquake,1
+2007,Central America,Flood,1
+2007,South America,Earthquake,1
+2007,Northern Europe,Flood,1
+2007,Southern Europe,Extreme temperature ,1
+2007,Southern Asia,Storm,1
+2007,South America,Extreme temperature ,1
+2007,Eastern Asia,Landslide,1
+2007,Southern Europe,Wildfire,1
+2007,Western Europe,Extreme temperature ,1
+2007,Western Africa,Flood,1
+2007,Southern Asia,Epidemic,1
+2007,Eastern Europe,Wildfire,1
+2007,South America,Drought,1
+2007,Western Europe,Flood,1
+2007,Western Asia,Extreme temperature ,1
+2007,Eastern Africa,Drought,1
+2007,Northern Africa,Wildfire,1
+2007,Eastern Africa,Other,1
+2007,Northern Europe,Earthquake,1
+2007,Central America,Earthquake,1
+2007,South-Eastern Asia,Other,1
+2008,South America,Flood,1
+2008,Central America,Flood,1
+2008,Eastern Asia,Storm,1
+2008,Caribbean,Storm,1
+2008,Central America,Storm,1
+2008,Australia and New Zealand,Storm,1
+2008,Eastern Europe,Extreme temperature ,1
+2008,Western Europe,Storm,1
+2008,Eastern Africa,Drought,1
+2008,Southern Asia,Extreme temperature ,1
+2008,Eastern Africa,Flood,1
+2008,Southern Asia,Flood,1
+2008,Eastern Asia,Earthquake,1
+2008,Eastern Asia,Flood,1
+2008,Middle Africa,Flood,1
+2008,South America,Earthquake,1
+2008,South America,Other,2
+2008,Northern Africa,Flood,1
+2008,Southern Europe,Earthquake,1
+2008,South-Eastern Asia,Flood,1
+2008,Australia and New Zealand,Flood,1
+2008,South America,Storm,1
+2008,Northern Europe,Flood,1
+2008,Eastern Asia,Extreme temperature ,1
+2008,Southern Asia,Storm,1
+2008,Melanesia,Storm,1
+2008,Northern Europe,Storm,1
+2008,Southern Asia,Drought,1
+2008,Northern America,Flood,1
+2008,Southern Asia,Epidemic,1
+2008,Middle Africa,Epidemic,1
+2008,Western Europe,Extreme temperature ,1
+2008,Western Africa,Flood,1
+2008,Western Africa,Epidemic,1
+2008,Southern Asia,Landslide,1
+2008,South America,Epidemic,1
+2008,South America,Drought,1
+2008,Southern Africa,Epidemic,1
+2008,Eastern Asia,Landslide,1
+2008,Eastern Asia,Drought,1
+2008,South America,Landslide,1
+2008,Caribbean,Flood,1
+2008,Eastern Europe,Storm,1
+2008,Northern Africa,Other,1
+2008,Eastern Africa,Epidemic,1
+2008,Micronesia,Flood,1
+2008,Western Africa,Storm,1
+2008,Central America,Landslide,1
+2008,South-Eastern Asia,Earthquake,1
+2008,South-Eastern Asia,Other,1
+2008,South-Eastern Asia,Landslide,1
+2009,Western Europe,Storm,1
+2009,Southern Asia,Storm,1
+2009,South America,Flood,1
+2009,Eastern Asia,Storm,1
+2009,Southern Asia,Flood,1
+2009,Western Europe,Flood,1
+2009,Central America,Earthquake,1
+2009,South-Eastern Asia,Flood,1
+2009,Melanesia,Flood,1
+2009,Australia and New Zealand,Wildfire,1
+2009,Australia and New Zealand,Storm,1
+2009,Middle Africa,Storm,1
+2009,Southern Asia,Earthquake,1
+2009,Southern Asia,Landslide,1
+2009,Middle Africa,Flood,1
+2009,Middle Africa,Epidemic,1
+2009,South America,Landslide,1
+2009,South America,Epidemic,1
+2009,Eastern Africa,Flood,1
+2009,Western Africa,Storm,1
+2009,Western Africa,Epidemic,1
+2009,Southern Europe,Extreme temperature ,1
+2009,Southern Europe,Flood,1
+2009,Southern Africa,Flood,1
+2009,Northern America,Flood,1
+2009,Eastern Asia,Earthquake,1
+2009,Eastern Asia,Flood,1
+2009,Eastern Asia,Landslide,1
+2009,Western Africa,Landslide,1
+2009,Polynesia,Epidemic,1
+2009,Eastern Europe,Flood,1
+2009,Caribbean,Flood,1
+2009,Northern Africa,Flood,1
+2009,Southern Europe,Storm,1
+2009,Western Europe,Extreme temperature ,1
+2009,Central America,Other,1
+2009,Central America,Flood,1
+2009,South-Eastern Asia,Earthquake,1
+2009,South-Eastern Asia,Landslide,1
+2007,Eastern Europe,Earthquake,1
+2007,Western Asia,Storm,1
+2007,South-Eastern Asia,Storm,1
+2007,Central Asia,Earthquake,1
+2007,Central Asia,Flood,1
+2007,Central America,Landslide,1
+2007,Southern Africa,Wildfire,1
+2007,Northern America,Wildfire,1
+2007,Southern Africa,Drought,1
+2007,Eastern Europe,Drought,1
+2007,Western Asia,Epidemic,1
+2007,Eastern Asia,Extreme temperature ,1
+2007,Eastern Africa,Landslide,1
+2007,Western Asia,Wildfire,1
+2007,Western Africa,Storm,1
+2007,South-Eastern Asia,Drought,1
+2007,South America,Wildfire,1
+2007,Northern Africa,Epidemic,1
+2007,Middle Africa,Storm,1
+2007,Central Asia,Landslide,1
+2007,Northern America,Drought,1
+2007,Western Asia,Other,1
+2008,South-Eastern Asia,Storm,1
+2008,Northern America,Storm,1
+2008,Southern Africa,Storm,1
+2008,Southern Europe,Flood,1
+2008,Southern Asia,Earthquake,1
+2008,Eastern Europe,Flood,1
+2008,Southern Africa,Flood,1
+2008,Eastern Africa,Storm,1
+2008,Central Asia,Drought,1
+2008,Central Asia,Extreme temperature ,1
+2008,Western Asia,Flood,1
+2008,Western Asia,Epidemic,1
+2008,Central Asia,Flood,1
+2008,Eastern Africa,Landslide,1
+2008,Central Asia,Earthquake,1
+2008,Eastern Asia,Epidemic,1
+2008,Eastern Africa,Wildfire,1
+2008,Melanesia,Flood,1
+2008,Melanesia,Other,2
+2008,Southern Europe,Extreme temperature ,1
+2008,Eastern Europe,Earthquake,1
+2008,Eastern Africa,Earthquake,1
+2008,Northern Africa,Epidemic,1
+2008,Western Asia,Drought,1
+2008,South-Eastern Asia,Drought,1
+2008,Western Asia,Wildfire,1
+2008,Northern America,Extreme temperature ,1
+2008,Northern America,Earthquake,1
+2008,Northern America,Wildfire,1
+2009,South-Eastern Asia,Storm,1
+2009,Northern America,Storm,1
+2009,Southern Europe,Earthquake,1
+2009,Central Asia,Flood,1
+2009,Eastern Africa,Storm,1
+2009,Southern Asia,Extreme temperature ,1
+2009,Eastern Africa,Epidemic,1
+2009,Western Africa,Other,1
+2009,Melanesia,Landslide,1
+2009,Western Asia,Landslide,1
+2009,Northern America,Extreme temperature ,1
+2009,Northern America,Wildfire,1
+2009,Southern Africa,Storm,1
+2007,Southern Africa,Extreme temperature ,1
+2008,Southern Africa,Wildfire,1
+2008,Middle Africa,Storm,1
+2008,Middle Africa,Earthquake,1
+2009,Southern Europe,Wildfire,1
+2009,South America,Storm,1
+2009,Western Africa,Flood,1
+2009,Western Asia,Flood,1
+2009,Polynesia,Earthquake,1
+2009,South America,Drought,1
+2009,Melanesia,Storm,1
+2009,Northern Europe,Storm,1
+2009,Eastern Asia,Drought,1
+2009,Eastern Africa,Drought,1
+2009,Central America,Drought,1
+2009,Australia and New Zealand,Flood,1
+2009,Australia and New Zealand,Extreme temperature ,1
+2009,Southern Asia,Drought,1
+2009,Eastern Europe,Storm,1
+2009,Caribbean,Epidemic,1
+2009,Western Europe,Wildfire,1
+2009,Northern Europe,Flood,1
+2009,Northern Europe,Extreme temperature ,1
+2009,Western Asia,Earthquake,1
+2009,Central America,Epidemic,1
+2009,Southern Asia,Epidemic,1
+2010,Eastern Asia,Storm,1
+2010,Central America,Storm,1
+2010,Australia and New Zealand,Storm,1
+2010,South-Eastern Asia,Other,1
+2010,Southern Asia,Earthquake,1
+2010,Southern Asia,Flood,1
+2010,Australia and New Zealand,Flood,1
+2010,Western Asia,Flood,1
+2010,Western Europe,Flood,1
+2010,Southern Europe,Flood,1
+2010,South America,Flood,1
+2010,Eastern Asia,Earthquake,1
+2010,Eastern Asia,Flood,1
+2010,Western Africa,Flood,1
+2010,Central America,Flood,1
+2010,Eastern Europe,Flood,1
+2010,Caribbean,Storm,1
+2010,Caribbean,Flood,1
+2010,South-Eastern Asia,Earthquake,1
+2010,South-Eastern Asia,Flood,1
+2010,South America,Earthquake,1
+2010,Southern Asia,Storm,1
+2010,Middle Africa,Flood,1
+2010,Caribbean,Drought,1
+2010,Melanesia,Storm,1
+2010,Western Europe,Storm,1
+2010,Middle Africa,Storm,1
+2010,Northern Europe,Other,1
+2010,Eastern Asia,Drought,1
+2010,Northern Africa,Flood,1
+2010,Northern Africa,Storm,1
+2010,Southern Asia,Landslide,1
+2010,South America,Extreme temperature ,1
+2010,Eastern Africa,Storm,1
+2010,Eastern Africa,Flood,1
+2010,Eastern Africa,Drought,1
+2010,Western Africa,Epidemic,1
+2010,Eastern Europe,Extreme temperature ,1
+2010,Southern Europe,Extreme temperature ,1
+2010,South America,Wildfire,1
+2010,South America,Epidemic,1
+2010,South America,Drought,1
+2010,Northern America,Storm,1
+2010,Western Europe,Extreme temperature ,1
+2010,Eastern Asia,Landslide,1
+2010,Eastern Asia,Wildfire,1
+2010,Middle Africa,Epidemic,1
+2010,Polynesia,Storm,1
+2010,South America,Landslide,1
+2010,Northern Europe,Storm,1
+2010,Caribbean,Epidemic,1
+2010,South America,Other,1
+2010,Southern Europe,Storm,1
+2010,Eastern Africa,Epidemic,1
+2010,Northern Europe,Extreme temperature ,1
+2010,Central America,Other,1
+2010,Central America,Landslide,1
+2010,Central America,Epidemic,1
+2010,Caribbean,Earthquake,1
+2010,South-Eastern Asia,Landslide,1
+2010,Southern Asia,Extreme temperature ,1
+2010,Western Asia,Wildfire,1
+2011,South America,Flood,1
+2011,Eastern Asia,Flood,1
+2011,Western Asia,Flood,1
+2011,Caribbean,Flood,1
+2011,Caribbean,Storm,1
+2011,Southern Asia,Earthquake,1
+2011,South-Eastern Asia,Earthquake,1
+2011,Australia and New Zealand,Storm,1
+2011,Middle Africa,Storm,1
+2011,Northern America,Storm,1
+2011,Eastern Asia,Storm,1
+2011,Southern Asia,Flood,1
+2011,Middle Africa,Flood,1
+2011,South America,Other,1
+2011,Australia and New Zealand,Flood,1
+2011,Eastern Africa,Storm,1
+2011,Eastern Africa,Flood,1
+2011,Eastern Africa,Epidemic,1
+2011,Western Europe,Storm,1
+2011,Western Europe,Flood,1
+2011,Western Africa,Flood,1
+2011,Southern Asia,Extreme temperature ,1
+2011,South America,Landslide,1
+2011,Southern Africa,Flood,1
+2011,Middle Africa,Epidemic,1
+2011,Northern America,Flood,1
+2011,South America,Extreme temperature ,1
+2011,South America,Wildfire,1
+2011,Eastern Asia,Earthquake,1
+2011,Eastern Asia,Landslide,1
+2011,Eastern Asia,Extreme temperature ,1
+2011,Southern Europe,Earthquake,1
+2011,Western Africa,Epidemic,1
+2011,Central America,Flood,1
+2011,Central America,Storm,1
+2011,South-Eastern Asia,Flood,1
+2011,South-Eastern Asia,Landslide,1
+2011,Southern Asia,Storm,1
+2009,Central America,Storm,1
+2009,South-Eastern Asia,Other,1
+2009,Central Asia,Drought,1
+2009,Western Africa,Drought,1
+2009,Middle Africa,Drought,1
+2009,Eastern Asia,Extreme temperature ,1
+2009,Eastern Africa,Earthquake,1
+2009,South America,Extreme temperature ,1
+2009,Melanesia,Epidemic,1
+2009,Eastern Europe,Extreme temperature ,1
+2010,South America,Storm,1
+2010,Melanesia,Earthquake,1
+2010,Eastern Europe,Drought,1
+2010,South-Eastern Asia,Storm,1
+2010,Central Asia,Flood,1
+2010,Eastern Europe,Wildfire,1
+2010,Western Africa,Drought,1
+2010,Northern Europe,Flood,1
+2010,Eastern Asia,Extreme temperature ,1
+2010,Eastern Africa,Landslide,1
+2010,Central Asia,Landslide,1
+2010,Central Asia,Epidemic,1
+2010,Eastern Africa,Other,1
+2010,Central America,Earthquake,1
+2010,Southern Africa,Flood,1
+2010,Southern Asia,Epidemic,1
+2010,Australia and New Zealand,Earthquake,1
+2010,Western Asia,Storm,1
+2010,South-Eastern Asia,Epidemic,1
+2010,Melanesia,Flood,1
+2010,Western Africa,Landslide,1
+2010,South-Eastern Asia,Drought,1
+2010,Central Asia,Earthquake,1
+2010,Western Asia,Earthquake,1
+2010,Western Asia,Landslide,1
+2010,Northern America,Earthquake,1
+2010,Northern America,Flood,1
+2011,South-Eastern Asia,Storm,1
+2011,Eastern Europe,Flood,1
+2011,Central America,Wildfire,1
+2011,Melanesia,Storm,1
+2011,Southern Europe,Extreme temperature ,1
+2011,Central Asia,Flood,1
+2011,Central Asia,Earthquake,1
+2011,Southern Asia,Epidemic,1
+2011,Central America,Extreme temperature ,1
+2011,Western Africa,Storm,1
+2011,Australia and New Zealand,Earthquake,1
+2011,South-Eastern Asia,Other,1
+2011,South America,Epidemic,1
+2011,Eastern Europe,Storm,1
+2011,Polynesia,Storm,1
+2011,Western Asia,Earthquake,1
+2011,Northern America,Extreme temperature ,1
+2011,Northern America,Wildfire,1
+2009,Northern Africa,Drought,1
+2009,Melanesia,Other,1
+2009,Middle Africa,Wildfire,1
+2010,Southern Africa,Storm,1
+2010,Middle Africa,Landslide,1
+2010,Middle Africa,Wildfire,1
+2010,Southern Europe,Earthquake,1
+2011,Southern Asia,Drought,1
+2011,Western Africa,Drought,1
+2011,Eastern Africa,Drought,1
+2011,Australia and New Zealand,Wildfire,1
+2011,Southern Asia,Landslide,1
+2011,Caribbean,Epidemic,1
+2011,Northern Africa,Flood,1
+2011,Southern Europe,Flood,1
+2011,Central America,Earthquake,1
+2011,Central America,Landslide,1
+2012,Eastern Asia,Storm,1
+2012,Northern Africa,Flood,1
+2012,Caribbean,Storm,1
+2012,Western Asia,Storm,1
+2012,Western Africa,Drought,1
+2012,South-Eastern Asia,Storm,1
+2012,Southern Asia,Earthquake,1
+2012,Southern Asia,Flood,1
+2012,Eastern Asia,Flood,1
+2012,Middle Africa,Flood,1
+2012,Eastern Africa,Flood,1
+2012,Central America,Flood,1
+2012,South America,Flood,1
+2012,Melanesia,Flood,1
+2012,Western Asia,Flood,1
+2012,Caribbean,Flood,1
+2012,South-Eastern Asia,Flood,1
+2012,Eastern Europe,Flood,1
+2012,Southern Asia,Storm,1
+2012,Middle Africa,Storm,1
+2012,Central America,Drought,1
+2012,South America,Storm,1
+2012,Middle Africa,Drought,1
+2012,Southern Asia,Landslide,1
+2012,Southern Asia,Extreme temperature ,1
+2012,Southern Europe,Extreme temperature ,1
+2012,Australia and New Zealand,Flood,1
+2012,Western Europe,Extreme temperature ,1
+2012,Western Asia,Earthquake,1
+2012,Western Asia,Extreme temperature ,1
+2012,Western Africa,Flood,1
+2012,Eastern Europe,Earthquake,1
+2012,Eastern Europe,Extreme temperature ,1
+2012,South America,Drought,1
+2012,Northern America,Storm,1
+2012,Northern America,Flood,1
+2012,South America,Earthquake,1
+2012,South America,Wildfire,1
+2012,Eastern Asia,Earthquake,1
+2012,Eastern Asia,Landslide,1
+2012,Eastern Asia,Extreme temperature ,1
+2012,Middle Africa,Epidemic,1
+2012,South America,Epidemic,1
+2012,Central America,Earthquake,1
+2012,Caribbean,Epidemic,1
+2012,Southern Europe,Flood,1
+2012,Southern Europe,Wildfire,1
+2012,Northern Europe,Extreme temperature ,1
+2012,Melanesia,Storm,1
+2012,Northern Europe,Flood,1
+2012,Western Africa,Epidemic,1
+2012,Central America,Other,1
+2012,South-Eastern Asia,Earthquake,1
+2012,South-Eastern Asia,Landslide,1
+2012,Southern Asia,Other,1
+2013,South America,Flood,1
+2013,Eastern Asia,Flood,1
+2013,Caribbean,Flood,1
+2013,Eastern Asia,Storm,1
+2013,Western Europe,Storm,1
+2013,Northern Europe,Storm,1
+2013,Southern Asia,Flood,1
+2013,Western Europe,Flood,1
+2013,Eastern Asia,Earthquake,1
+2013,Eastern Europe,Flood,1
+2013,Western Africa,Flood,1
+2013,South-Eastern Asia,Earthquake,1
+2013,South-Eastern Asia,Flood,1
+2013,Middle Africa,Flood,1
+2013,Western Asia,Flood,1
+2013,Western Asia,Storm,1
+2013,Southern Europe,Storm,1
+2013,Australia and New Zealand,Storm,1
+2013,Middle Africa,Storm,1
+2013,Northern America,Storm,1
+2013,Southern Asia,Earthquake,1
+2013,Southern Asia,Landslide,1
+2013,South America,Storm,1
+2013,Western Asia,Extreme temperature ,1
+2013,Australia and New Zealand,Wildfire,1
+2013,Western Africa,Epidemic,1
+2013,Western Africa,Wildfire,1
+2013,Southern Asia,Storm,1
+2013,Eastern Europe,Extreme temperature ,1
+2013,South America,Extreme temperature ,1
+2013,South America,Drought,1
+2013,South America,Landslide,1
+2013,Southern Africa,Flood,1
+2013,Middle Africa,Epidemic,1
+2013,Northern America,Extreme temperature ,1
+2013,Northern America,Flood,1
+2013,Eastern Asia,Other,1
+2013,Eastern Asia,Landslide,1
+2013,Eastern Asia,Extreme temperature ,1
+2013,Eastern Asia,Drought,1
+2013,South America,Earthquake,1
+2013,South America,Epidemic,1
+2013,Central America,Epidemic,1
+2013,Southern Europe,Flood,1
+2013,Eastern Africa,Flood,1
+2013,Eastern Africa,Epidemic,1
+2013,Northern Europe,Flood,1
+2013,Northern Europe,Extreme temperature ,1
+2013,Central America,Earthquake,1
+2013,Eastern Europe,Storm,1
+2013,Eastern Europe,Earthquake,1
+2013,South-Eastern Asia,Other,1
+2013,South-Eastern Asia,Landslide,1
+2014,South-Eastern Asia,Flood,1
+2014,South America,Flood,1
+2014,South America,Landslide,1
+2014,Australia and New Zealand,Extreme temperature ,1
+2014,Australia and New Zealand,Wildfire,1
+2014,Eastern Europe,Extreme temperature ,1
+2014,Northern America,Extreme temperature ,1
+2014,Southern Europe,Storm,1
+2014,Western Europe,Flood,1
+2014,Western Europe,Storm,1
+2014,Northern Europe,Flood,1
+2014,Southern Europe,Earthquake,1
+2014,Central America,Flood,1
+2014,South-Eastern Asia,Other,1
+2014,South-Eastern Asia,Landslide,1
+2011,Southern Africa,Drought,1
+2011,Northern Africa,Drought,1
+2011,Northern Europe,Flood,1
+2011,Southern Europe,Landslide,1
+2011,Central America,Drought,1
+2011,Northern Europe,Storm,1
+2011,Western Asia,Storm,1
+2011,South America,Storm,1
+2011,South America,Earthquake,1
+2011,South-Eastern Asia,Epidemic,1
+2011,Eastern Europe,Extreme temperature ,1
+2011,Northern Africa,Storm,1
+2011,South-Eastern Asia,Drought,1
+2011,Polynesia,Drought,1
+2012,Eastern Africa,Storm,1
+2012,Central Asia,Flood,1
+2012,Southern Europe,Drought,1
+2012,Western Africa,Storm,1
+2012,Eastern Africa,Drought,1
+2012,Eastern Asia,Drought,1
+2012,Southern Europe,Earthquake,1
+2012,Central Asia,Extreme temperature ,1
+2012,Southern Asia,Drought,1
+2012,Northern Africa,Extreme temperature ,1
+2012,Eastern Europe,Drought,1
+2012,Central America,Storm,1
+2012,Southern Africa,Flood,1
+2012,Australia and New Zealand,Storm,1
+2012,South America,Landslide,1
+2012,South America,Extreme temperature ,1
+2012,South-Eastern Asia,Epidemic,1
+2012,Micronesia,Storm,1
+2012,Melanesia,Landslide,1
+2012,Eastern Europe,Storm,1
+2012,Eastern Europe,Wildfire,1
+2012,Northern Africa,Epidemic,1
+2012,South-Eastern Asia,Drought,1
+2012,Central Asia,Earthquake,1
+2012,Eastern Africa,Landslide,1
+2012,Eastern Africa,Epidemic,1
+2013,Central America,Storm,1
+2013,South-Eastern Asia,Storm,1
+2013,Eastern Africa,Storm,1
+2013,Central America,Flood,1
+2013,Melanesia,Flood,1
+2013,Melanesia,Earthquake,1
+2013,Southern Africa,Drought,1
+2013,Southern Asia,Extreme temperature ,1
+2013,South-Eastern Asia,Epidemic,1
+2013,Northern Africa,Flood,1
+2013,Micronesia,Drought,1
+2013,Southern Africa,Epidemic,1
+2013,Australia and New Zealand,Earthquake,1
+2013,Australia and New Zealand,Drought,1
+2013,Central America,Drought,1
+2013,South America,Other,1
+2013,Micronesia,Storm,1
+2013,Southern Europe,Wildfire,1
+2013,Eastern Europe,Other,1
+2013,Melanesia,Epidemic,1
+2013,Central America,Other,1
+2013,Central Asia,Extreme temperature ,1
+2013,Western Asia,Landslide,1
+2014,South-Eastern Asia,Storm,1
+2014,Southern Europe,Flood,1
+2014,Southern Asia,Extreme temperature ,1
+2014,Southern Asia,Earthquake,1
+2014,Northern Africa,Storm,1
+2014,Eastern Africa,Storm,1
+2014,Southern Europe,Extreme temperature ,1
+2014,Polynesia,Storm,1
+2014,Eastern Africa,Flood,1
+2011,Southern Africa,Storm,1
+2011,Northern America,Drought,1
+2012,Northern America,Drought,1
+2012,Polynesia,Storm,1
+2012,Southern Africa,Storm,1
+2012,Northern America,Extreme temperature ,1
+2012,Northern America,Wildfire,1
+2013,Southern Africa,Storm,1
+2013,Northern America,Wildfire,1
+2013,Northern Africa,Epidemic,1
+2014,Eastern Asia,Storm,1
+2014,Central America,Storm,1
+2014,South America,Earthquake,1
+2014,Eastern Europe,Flood,1
+2014,Southern Asia,Flood,1
+2014,Eastern Asia,Flood,1
+2014,Eastern Asia,Earthquake,1
+2014,Western Africa,Flood,1
+2014,Eastern Africa,Earthquake,1
+2014,Western Asia,Flood,1
+2014,Northern America,Storm,1
+2014,Southern Asia,Storm,1
+2014,Northern Europe,Storm,1
+2014,Western Africa,Drought,1
+2014,Central America,Drought,1
+2014,Northern America,Flood,1
+2014,Middle Africa,Landslide,1
+2014,Australia and New Zealand,Storm,1
+2014,Eastern Europe,Storm,1
+2014,South America,Drought,1
+2014,South America,Wildfire,1
+2014,Eastern Asia,Landslide,1
+2014,Eastern Asia,Drought,1
+2014,Middle Africa,Flood,1
+2014,Middle Africa,Epidemic,1
+2014,South America,Storm,1
+2014,Western Africa,Other,2
+2014,Caribbean,Flood,1
+2014,Northern Africa,Earthquake,1
+2014,Western Africa,Epidemic,1
+2014,Central America,Earthquake,1
+2014,Central America,Extreme temperature ,1
+2015,Eastern Asia,Flood,1
+2015,Caribbean,Storm,1
+2015,Eastern Asia,Storm,1
+2015,Southern Asia,Storm,1
+2015,Southern Asia,Landslide,1
+2015,South America,Storm,1
+2015,Northern Africa,Storm,1
+2015,Australia and New Zealand,Storm,1
+2015,Middle Africa,Flood,1
+2015,Southern Europe,Flood,1
+2015,Southern Asia,Flood,1
+2015,South America,Flood,1
+2015,Western Africa,Flood,1
+2015,South America,Earthquake,1
+2015,Central America,Flood,1
+2015,Western Asia,Flood,1
+2015,Caribbean,Flood,1
+2015,South America,Drought,1
+2015,Middle Africa,Storm,1
+2015,South America,Landslide,1
+2015,Northern Europe,Storm,1
+2015,Western Africa,Drought,1
+2015,Eastern Africa,Drought,1
+2015,Southern Asia,Earthquake,1
+2015,Middle Africa,Epidemic,1
+2015,South America,Other,1
+2015,Australia and New Zealand,Flood,1
+2015,Australia and New Zealand,Wildfire,1
+2015,Eastern Africa,Landslide,1
+2015,Eastern Africa,Flood,1
+2015,Western Europe,Extreme temperature ,1
+2015,Eastern Europe,Flood,1
+2015,Southern Africa,Drought,1
+2015,Northern America,Wildfire,1
+2015,South America,Wildfire,1
+2015,Eastern Asia,Earthquake,1
+2015,Eastern Asia,Landslide,1
+2015,Eastern Asia,Drought,1
+2015,Western Africa,Storm,1
+2015,Central America,Other,1
+2015,Caribbean,Drought,1
+2015,Northern Africa,Flood,1
+2015,Northern Africa,Extreme temperature ,1
+2015,Melanesia,Drought,1
+2015,Western Europe,Flood,1
+2015,Western Europe,Storm,1
+2015,Micronesia,Storm,1
+2015,Northern Europe,Flood,1
+2015,Western Africa,Epidemic,1
+2015,Western Africa,Landslide,1
+2015,Central America,Landslide,1
+2015,Central America,Epidemic,1
+2016,Southern Asia,Storm,1
+2016,South America,Earthquake,1
+2016,Eastern Asia,Flood,1
+2016,Eastern Asia,Storm,1
+2016,Melanesia,Storm,1
+2016,Southern Asia,Flood,1
+2016,South America,Flood,1
+2016,Eastern Africa,Flood,1
+2016,Northern America,Wildfire,1
+2016,Australia and New Zealand,Storm,1
+2016,Western Europe,Storm,1
+2016,Caribbean,Storm,1
+2016,Eastern Asia,Landslide,1
+2016,Western Europe,Flood,1
+2016,Middle Africa,Flood,1
+2016,Australia and New Zealand,Wildfire,1
+2016,Western Africa,Flood,1
+2016,Southern Asia,Earthquake,1
+2016,Central America,Storm,1
+2016,Middle Africa,Epidemic,1
+2016,Northern America,Flood,1
+2016,Eastern Asia,Extreme temperature ,1
+2016,Caribbean,Flood,1
+2016,Southern Europe,Flood,1
+2016,Central America,Landslide,1
+1980,Eastern Africa,Landslide,1
+2014,Eastern Africa,Drought,1
+2014,Melanesia,Flood,1
+2014,Caribbean,Drought,1
+2014,Micronesia,Flood,1
+2014,Caribbean,Epidemic,1
+2014,Southern Asia,Landslide,1
+2014,Eastern Asia,Extreme temperature ,1
+2014,Eastern Asia,Other,1
+2014,Central Asia,Flood,1
+2014,Eastern Africa,Epidemic,1
+2014,Central Asia,Storm,1
+2014,Southern Asia,Drought,1
+2014,Southern Africa,Storm,1
+2014,Northern Africa,Flood,1
+2014,South-Eastern Asia,Drought,1
+2014,South America,Extreme temperature ,1
+2014,Melanesia,Other,1
+2014,Melanesia,Storm,1
+2014,Central America,Epidemic,1
+2014,Southern Africa,Flood,1
+2014,South-Eastern Asia,Earthquake,1
+2014,South-Eastern Asia,Extreme temperature ,1
+2015,Eastern Africa,Storm,1
+2015,South-Eastern Asia,Storm,1
+2015,Central America,Storm,1
+2015,Southern Europe,Storm,1
+2015,South-Eastern Asia,Drought,1
+2015,Eastern Asia,Extreme temperature ,1
+2015,South-Eastern Asia,Flood,1
+2015,South-Eastern Asia,Earthquake,1
+2015,Western Asia,Storm,1
+2015,Melanesia,Storm,1
+2015,Northern Africa,Drought,1
+2015,Caribbean,Epidemic,1
+2015,South-Eastern Asia,Landslide,1
+2015,South-Eastern Asia,Wildfire,1
+2015,Southern Asia,Extreme temperature ,1
+2015,Southern Asia,Drought,1
+2015,Western Asia,Epidemic,1
+2015,Central Asia,Flood,1
+2015,Central Asia,Earthquake,1
+2015,Eastern Asia,Epidemic,1
+2015,Southern Asia,Other,1
+2015,Central America,Drought,1
+2015,South America,Extreme temperature ,1
+2015,Melanesia,Flood,1
+2015,Eastern Europe,Storm,1
+2015,Eastern Europe,Extreme temperature ,1
+2015,Eastern Europe,Wildfire,1
+2016,Western Africa,Storm,1
+2016,South-Eastern Asia,Storm,1
+2016,Eastern Europe,Flood,1
+2016,Northern Africa,Extreme temperature ,1
+2016,South-Eastern Asia,Flood,1
+2016,Central America,Flood,1
+2016,South-Eastern Asia,Landslide,1
+2016,South-Eastern Asia,Drought,1
+2016,Caribbean,Drought,1
+2016,Southern Africa,Drought,1
+2016,Eastern Africa,Drought,1
+2016,South-Eastern Asia,Earthquake,1
+2016,Southern Asia,Landslide,1
+2016,Southern Asia,Extreme temperature ,1
+2016,Southern Asia,Wildfire,1
+2016,Southern Europe,Earthquake,1
+2016,Eastern Asia,Earthquake,1
+2016,Australia and New Zealand,Flood,1
+2016,Western Asia,Flood,1
+2016,Eastern Europe,Extreme temperature ,1
+2016,Southern Europe,Wildfire,1
+2016,South America,Drought,1
+2016,Eastern Africa,Landslide,1
+2016,Northern Africa,Flood,1
+2016,Northern Africa,Epidemic,1
+2016,Eastern Africa,Epidemic,1
+2016,South-Eastern Asia,Extreme temperature ,1
+2013,Eastern Africa,Drought,1
+2014,Northern America,Earthquake,1
+2014,Western Asia,Earthquake,1
+2014,Northern America,Landslide,1
+2014,Northern America,Wildfire,1
+2014,Northern America,Drought,1
+2014,Southern Africa,Earthquake,1
+2014,South-Eastern Asia,Epidemic,1
+2014,Northern Africa,Epidemic,1
+2015,Northern America,Storm,1
+2015,Northern America,Flood,1
+2015,Polynesia,Storm,1
+2015,Central Asia,Landslide,1
+2015,Polynesia,Drought,1
+2015,Eastern Africa,Epidemic,1
+2015,Northern America,Drought,1
+2015,Middle Africa,Earthquake,1
+2015,Middle Africa,Wildfire,1
+2015,Northern Africa,Epidemic,1
+2016,Northern America,Storm,1
+2016,Eastern Asia,Drought,1
+2016,Central Asia,Flood,1
+2016,Northern Africa,Storm,1
+2016,Northern Africa,Drought,1
+2016,Central Asia,Earthquake,1
+2016,Polynesia,Storm,1
+2016,Eastern Africa,Earthquake,1
+2016,Western Asia,Landslide,1
+2016,Southern Africa,Extreme temperature ,1
+2016,Southern Africa,Flood,1
+2016,Australia and New Zealand,Epidemic,1
+2016,Western Africa,Epidemic,1
+2016,South America,Epidemic,1
+2016,Micronesia,Drought,1
+2017,Western Africa,Flood,1
+2017,Western Europe,Storm,1
+2017,Central America,Storm,1
+2017,Caribbean,Storm,1
+2017,Eastern Asia,Storm,1
+2017,Eastern Asia,Flood,1
+2017,South America,Flood,1
+2017,Southern Asia,Storm,1
+2017,Southern Europe,Flood,1
+2017,Southern Asia,Landslide,1
+2017,Eastern Asia,Earthquake,1
+2017,Southern Europe,Earthquake,1
+2017,Australia and New Zealand,Wildfire,1
+2017,Northern America,Wildfire,1
+2017,South America,Wildfire,1
+2017,Southern Europe,Wildfire,1
+2017,Australia and New Zealand,Storm,1
+2017,Eastern Africa,Landslide,1
+2017,South America,Landslide,1
+2017,South America,Storm,1
+2017,Middle Africa,Drought,1
+2017,Southern Europe,Extreme temperature ,1
+2017,Eastern Europe,Extreme temperature ,1
+2017,Northern Africa,Extreme temperature ,1
+2017,Southern Asia,Flood,1
+2017,Middle Africa,Flood,1
+2017,Western Asia,Flood,1
+2017,Western Africa,Epidemic,1
+2017,Southern Asia,Epidemic,1
+2017,South America,Epidemic,1
+2017,Southern Africa,Flood,1
+2017,Middle Africa,Storm,1
+2017,Northern America,Flood,1
+2017,Western Europe,Other,1
+2017,Eastern Asia,Landslide,1
+2017,Eastern Asia,Drought,1
+2017,Eastern Europe,Storm,1
+2017,Western Europe,Flood,1
+2017,Western Europe,Wildfire,1
+2017,Northern Europe,Flood,1
+2017,Western Africa,Storm,1
+2018,Western Europe,Storm,1
+2018,Southern Europe,Flood,1
+2018,South America,Flood,1
+2018,Caribbean,Storm,1
+2018,Southern Asia,Flood,1
+2018,Central America,Flood,1
+2018,Western Africa,Flood,1
+2018,Northern America,Wildfire,1
+2018,Eastern Asia,Flood,1
+2018,Eastern Asia,Storm,1
+2018,Southern Europe,Wildfire,1
+2018,South America,Storm,1
+2018,Eastern Africa,Storm,1
+2018,Melanesia,Storm,1
+2018,Southern Asia,Drought,1
+2018,Southern Europe,Storm,1
+2018,Northern Europe,Storm,1
+2018,Southern Asia,Landslide,1
+2018,Middle Africa,Flood,1
+2018,Middle Africa,Epidemic,1
+2018,South America,Drought,1
+2018,Western Asia,Storm,1
+2018,Australia and New Zealand,Extreme temperature ,1
+2018,Australia and New Zealand,Drought,1
+2018,Australia and New Zealand,Flood,1
+2018,Eastern Africa,Flood,1
+2018,Western Europe,Extreme temperature ,1
+2018,Southern Asia,Storm,1
+2018,Southern Asia,Extreme temperature ,1
+2018,Eastern Europe,Flood,1
+2018,South America,Epidemic,1
+2018,South America,Landslide,1
+2018,Southern Africa,Flood,1
+2018,Northern America,Storm,1
+2018,Northern America,Extreme temperature ,1
+2018,Northern America,Flood,1
+2018,Eastern Asia,Earthquake,1
+2018,Central America,Drought,1
+2018,Eastern Europe,Extreme temperature ,1
+2018,Caribbean,Flood,1
+2018,Northern Africa,Flood,1
+2018,Southern Europe,Extreme temperature ,1
+2018,Northern Europe,Extreme temperature ,1
+2018,Eastern Africa,Landslide,1
+2018,Eastern Africa,Epidemic,1
+2018,Western Europe,Flood,1
+2018,Western Asia,Flood,1
+2018,Western Africa,Storm,1
+2019,South America,Flood,1
+2019,Southern Asia,Flood,1
+2019,Southern Europe,Flood,1
+2019,Northern America,Flood,1
+2019,Australia and New Zealand,Wildfire,1
+2019,Eastern Africa,Storm,1
+2019,South America,Landslide,1
+2019,Southern Europe,Storm,1
+2019,Western Europe,Storm,1
+2019,Northern Africa,Extreme temperature ,1
+2019,Middle Africa,Flood,1
+2019,Southern Europe,Earthquake,1
+2019,Western Asia,Storm,1
+2019,Australia and New Zealand,Flood,1
+2019,Western Europe,Extreme temperature ,1
+2019,Eastern Africa,Flood,1
+2019,Southern Asia,Storm,1
+2019,Southern Asia,Landslide,1
+2019,South America,Other,1
+2019,South America,Earthquake,1
+2019,Eastern Asia,Storm,1
+2019,Eastern Asia,Earthquake,1
+2019,Eastern Asia,Flood,1
+2019,Eastern Asia,Landslide,1
+2019,Eastern Asia,Wildfire,1
+2019,Middle Africa,Epidemic,1
+2019,Central America,Epidemic,1
+2019,Caribbean,Storm,1
+2019,Southern Europe,Extreme temperature ,1
+2019,Eastern Africa,Epidemic,1
+2019,Micronesia,Storm,1
+2019,Northern Europe,Extreme temperature ,1
+2019,Western Asia,Flood,1
+2019,Western Africa,Flood,1
+2015,Micronesia,Drought,1
+2016,Australia and New Zealand,Earthquake,1
+2016,Eastern Africa,Storm,1
+2016,Caribbean,Epidemic,1
+2016,Western Asia,Wildfire,1
+2016,Southern Asia,Drought,1
+2016,South-Eastern Asia,Epidemic,1
+2017,Central America,Earthquake,1
+2017,Southern Europe,Storm,1
+2017,South-Eastern Asia,Storm,1
+2017,Central America,Flood,1
+2017,Caribbean,Flood,1
+2017,South-Eastern Asia,Flood,1
+2017,South-Eastern Asia,Landslide,1
+2017,Australia and New Zealand,Flood,1
+2017,South-Eastern Asia,Earthquake,1
+2017,Eastern Africa,Storm,1
+2017,Eastern Africa,Drought,1
+2017,Western Africa,Drought,1
+2017,Central America,Landslide,1
+2017,South-Eastern Asia,Other,1
+2017,Southern Asia,Extreme temperature ,1
+2017,Southern Asia,Earthquake,1
+2017,Western Asia,Earthquake,1
+2017,Southern Europe,Drought,1
+2017,Central Asia,Flood,1
+2017,Eastern Africa,Flood,1
+2017,Eastern Africa,Epidemic,1
+2017,Central Asia,Earthquake,1
+2017,Central Asia,Landslide,1
+2017,Eastern Asia,Epidemic,1
+2017,Polynesia,Flood,1
+2018,South-Eastern Asia,Storm,1
+2018,South-Eastern Asia,Earthquake,1
+2018,South-Eastern Asia,Flood,1
+2018,Melanesia,Earthquake,1
+2018,South-Eastern Asia,Other,2
+2018,Southern Europe,Other,1
+2018,Central America,Other,1
+2018,Northern Europe,Wildfire,1
+2018,Eastern Asia,Extreme temperature ,1
+2018,South-Eastern Asia,Landslide,1
+2018,Central America,Storm,1
+2018,Southern Africa,Drought,1
+2018,Northern Africa,Extreme temperature ,1
+2018,Caribbean,Earthquake,1
+2018,Southern Asia,Wildfire,1
+2018,Southern Asia,Earthquake,1
+2018,Central Asia,Flood,1
+2018,Northern Europe,Drought,1
+2018,Central America,Earthquake,1
+2018,Micronesia,Storm,1
+2018,Western Africa,Drought,1
+2018,Western Africa,Epidemic,1
+2018,South America,Earthquake,1
+2018,South-Eastern Asia,Epidemic,1
+2018,Micronesia,Epidemic,1
+2018,Melanesia,Other,1
+2018,Eastern Europe,Drought,1
+2019,Northern Africa,Landslide,1
+2019,Central America,Flood,1
+2019,Eastern Asia,Extreme temperature ,1
+2019,South-Eastern Asia,Flood,1
+2019,Melanesia,Flood,1
+2019,South-Eastern Asia,Earthquake,1
+2019,Eastern Europe,Extreme temperature ,1
+2019,South-Eastern Asia,Landslide,1
+2019,Eastern Africa,Drought,1
+2019,Southern Asia,Drought,1
+2019,Eastern Asia,Drought,1
+2019,Caribbean,Flood,1
+2019,Eastern Europe,Storm,1
+2019,Southern Asia,Extreme temperature ,1
+2019,Southern Asia,Epidemic,1
+2019,Southern Asia,Earthquake,1
+2019,South-Eastern Asia,Drought,1
+2019,Northern Africa,Flood,1
+2019,Eastern Africa,Landslide,1
+2019,Western Africa,Epidemic,1
+2019,Northern Europe,Landslide,1
+2019,South-Eastern Asia,Storm,1
+2019,South-Eastern Asia,Epidemic,1
+2019,Melanesia,Earthquake,1
+2019,Melanesia,Other,1
+2019,Melanesia,Landslide,1
+1973,Eastern Asia,Earthquake,1
+1989,Melanesia,Epidemic,1
+2016,Melanesia,Earthquake,1
+2016,Western Asia,Storm,1
+2016,Melanesia,Epidemic,1
+2016,Northern America,Earthquake,1
+2016,Western Asia,Epidemic,1
+2017,Northern America,Storm,1
+2017,Southern Africa,Storm,1
+2017,Western Asia,Storm,1
+2017,Western Africa,Landslide,1
+2017,Northern Africa,Wildfire,1
+2017,Eastern Europe,Flood,1
+2017,Northern Africa,Flood,1
+2017,Northern Africa,Epidemic,1
+2017,Middle Africa,Epidemic,1
+2017,Central Asia,Epidemic,1
+2017,Northern America,Drought,1
+2017,Melanesia,Other,1
+2017,Melanesia,Storm,1
+2017,Western Asia,Epidemic,1
+2017,Southern Africa,Drought,1
+2017,Southern Africa,Wildfire,1
+2017,Middle Africa,Landslide,1
+2018,Northern America,Other,1
+2018,Polynesia,Storm,1
+2018,Northern America,Landslide,1
+2018,Western Asia,Landslide,1
+2018,Eastern Europe,Storm,1
+2018,Northern America,Drought,1
+2019,Eastern Europe,Flood,1
+2019,Northern America,Storm,1
+2019,Central America,Earthquake,1
+2019,Central Asia,Flood,1
+2019,Southern Africa,Flood,1
+2019,Western Europe,Flood,1
+2019,Southern Africa,Drought,1
+2019,Eastern Africa,Other,1
+2019,Eastern Europe,Wildfire,1
+2019,Northern America,Earthquake,1
+2019,Western Asia,Epidemic,1
+2019,Middle Africa,Landslide,1
+2019,Northern Africa,Epidemic,1
+2019,Northern Africa,Wildfire,1
+2019,South America,Drought,1
+2019,South America,Wildfire,1
+2019,South America,Epidemic,1
+2019,Caribbean,Epidemic,1
+2019,Melanesia,Storm,1
+2019,Melanesia,Epidemic,1
+2019,Western Europe,Earthquake,1
+2019,Northern Europe,Flood,1
+2020,South America,Storm,1
+2020,Western Europe,Storm,1
+2020,Melanesia,Storm,1
+2020,South America,Flood,1
+2020,Australia and New Zealand,Storm,1
+2020,Southern Asia,Storm,1
+2020,Southern Asia,Flood,1
+2020,Southern Europe,Flood,1
+2020,Western Africa,Flood,1
+2020,Northern America,Storm,1
+2020,Australia and New Zealand,Flood,1
+2020,Western Asia,Storm,1
+2020,Eastern Africa,Storm,1
+2020,Eastern Asia,Landslide,1
+2020,South America,Landslide,1
+2020,Caribbean,Storm,1
+2020,Western Africa,Drought,1
+2020,Eastern Asia,Flood,1
+2020,Eastern Asia,Storm,1
+2020,Northern Africa,Flood,1
+2020,Middle Africa,Flood,1
+2020,Southern Asia,Landslide,1
+2020,Eastern Africa,Flood,1
+2020,Western Europe,Extreme temperature ,1
+2020,Central America,Storm,1
+2020,South America,Drought,1
+2020,Northern America,Flood,1
+2020,Eastern Asia,Earthquake,1
+2020,Eastern Asia,Wildfire,1
+2020,Eastern Europe,Storm,1
+2020,Northern Africa,Earthquake,1
+2020,South America,Other,1
+2020,Southern Europe,Storm,1
+2020,Eastern Africa,Landslide,1
+2020,Western Europe,Flood,1
+2020,Northern Europe,Flood,1
+2020,Northern Europe,Storm,1
+2020,Northern Europe,Extreme temperature ,1
+2020,Western Asia,Flood,1
+2021,South America,Storm,1
+2021,Eastern Europe,Storm,1
+2021,Western Europe,Storm,1
+2021,Southern Europe,Storm,1
+2021,Eastern Asia,Storm,1
+2021,Western Europe,Flood,1
+2021,Southern Asia,Flood,1
+2021,South America,Flood,1
+2021,Eastern Asia,Flood,1
+2021,Caribbean,Storm,1
+2021,Eastern Europe,Flood,1
+2021,Eastern Europe,Wildfire,1
+2021,Northern America,Wildfire,1
+2021,Western Asia,Wildfire,1
+2021,Northern Africa,Wildfire,1
+2021,Northern America,Extreme temperature ,1
+2021,Australia and New Zealand,Storm,1
+2021,Southern Asia,Drought,1
+2021,Eastern Africa,Drought,1
+2021,Southern Europe,Flood,1
+2021,Southern Asia,Landslide,1
+2021,Middle Africa,Flood,1
+2021,South America,Earthquake,1
+2021,South America,Wildfire,1
+2021,Australia and New Zealand,Wildfire,1
+2021,Australia and New Zealand,Flood,1
+2021,Eastern Africa,Flood,1
+2021,Southern Asia,Storm,1
+2021,Southern Asia,Earthquake,1
+2021,Northern America,Storm,1
+2021,Eastern Asia,Earthquake,1
+2021,Central America,Flood,1
+2021,Northern Africa,Flood,1
+2021,South America,Other,1
+2021,Melanesia,Storm,1
+1971,South-Eastern Asia,Earthquake,1
+1979,Western Asia,Earthquake,1
+2016,Melanesia,Flood,1
+2019,Central America,Storm,1
+2019,South-Eastern Asia,Wildfire,1
+2019,Northern Africa,Other,1
+2019,Western Africa,Storm,1
+2019,Australia and New Zealand,Other,1
+2019,Polynesia,Epidemic,1
+2019,Western Asia,Earthquake,1
+2020,South-Eastern Asia,Storm,1
+2020,Central America,Flood,1
+2020,Central Asia,Flood,1
+2020,Western Asia,Extreme temperature ,1
+2020,South-Eastern Asia,Flood,1
+2020,Melanesia,Flood,1
+2020,Caribbean,Earthquake,1
+2020,South-Eastern Asia,Landslide,1
+2020,Southern Africa,Drought,1
+2020,Eastern Africa,Drought,1
+2020,Southern Europe,Earthquake,1
+2020,South-Eastern Asia,Earthquake,1
+2020,South-Eastern Asia,Other,1
+2020,Southern Asia,Earthquake,1
+2020,Southern Asia,Other,1
+2020,Western Asia,Wildfire,1
+2020,Southern Europe,Landslide,1
+2020,Caribbean,Epidemic,1
+2020,Central America,Earthquake,1
+2020,Southern Africa,Flood,1
+2020,Western Africa,Epidemic,1
+2020,Northern Europe,Landslide,1
+2020,Australia and New Zealand,Wildfire,1
+2020,Melanesia,Landslide,1
+2020,Eastern Europe,Flood,1
+2020,South America,Epidemic,1
+2020,Central America,Landslide,1
+2020,Polynesia,Storm,1
+2020,Western Asia,Earthquake,1
+2020,Western Asia,Landslide,1
+2021,Central America,Storm,1
+2021,Western Asia,Storm,1
+2021,South-Eastern Asia,Storm,1
+2021,South-Eastern Asia,Earthquake,1
+2021,South-Eastern Asia,Flood,1
+2021,Southern Asia,Other,1
+2021,Central Asia,Flood,1
+2021,Western Asia,Flood,1
+2021,Eastern Africa,Other,1
+2021,Western Africa,Flood,1
+2021,Southern Europe,Wildfire,1
+2021,Central Asia,Drought,1
+2021,Western Africa,Storm,1
+2021,South-Eastern Asia,Landslide,1
+2021,Eastern Africa,Storm,1
+2021,Micronesia,Storm,1
+2021,Western Africa,Epidemic,1
+2021,Southern Europe,Earthquake,1
+2021,Central America,Other,1
+2021,Caribbean,Earthquake,1
+2021,Caribbean,Flood,1
+2021,South-Eastern Asia,Other,1
+2021,Western Asia,Drought,1
+2021,Eastern Asia,Landslide,1
+2021,Eastern Africa,Epidemic,1
+2021,Central Asia,Landslide,1
+2021,Southern Africa,Storm,1
+2021,Southern Africa,Flood,1
+2021,Eastern Europe,Landslide,1
+2021,Northern Africa,Storm,1
+2021,Southern Europe,Other,1
+2021,Northern Europe,Flood,1
+2021,Central Asia,Earthquake,1
+2021,Polynesia,Drought,1
+1973,Northern America,Earthquake,1
+1975,Northern America,Earthquake,1
+2019,Northern America,Wildfire,1
+2019,Southern Africa,Storm,1
+2020,Southern Africa,Storm,1
+2020,Northern America,Drought,1
+2020,Eastern Europe,Wildfire,1
+2020,Northern America,Wildfire,1
+2020,Middle Africa,Epidemic,1
+2021,Northern America,Flood,1
+2021,Middle Africa,Other,1
+2021,Northern Africa,Drought,1
+2021,Caribbean,Other,1
+2021,Middle Africa,Epidemic,1
