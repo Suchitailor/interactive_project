@@ -6,8 +6,8 @@ disasters = pl.read_csv("1970-2021_DISASTERS.csv", infer_schema=False).rename({"
 
 # calculate frequency of each disaster type by year AND country
 annual_country_freq = disasters.select(
-    ["Year", "disasterType", "Country"]
-    ).group_by(["Year", "Country", "disasterType"], maintain_order=True).len()
+    ["Year", "Region", "disasterType", "Country"]
+    ).group_by(["Year", "Region", "Country", "disasterType"], maintain_order=True).len()
 
 # consolidate least frequent disaster types into Other category
 least_freq = annual_country_freq.group_by("disasterType").sum()\
@@ -24,7 +24,6 @@ annual_country_freq.write_csv("cleaned/annual_country_freq.csv")
 # consolidate least frequent disaster types into Other category
 annual_frequencies = disasters.with_columns(\
     disasterType = pl.col("disasterType").replace(least_freq, ["Other"] * 6 ))
-annual_frequencies = annual_frequencies.with_columns(pl.col("disasterType")).replace("Extreme temperature", "Extreme Temperature")
 
 # calculate frequency of each disaster type by year
 annual_frequencies = annual_frequencies.select(

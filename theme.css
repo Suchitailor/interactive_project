@@ -10,7 +10,8 @@ body {
   h1 {
     color: #daf1de;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
+    padding-top: 2cm;
   }
 
   h2 {
@@ -37,29 +38,49 @@ body {
     opacity: 0.9;
     position: absolute;
   }
-
-#globalFrequency {
-  display: block;
-  margin: auto;
+/* put an outline around all when selected */
+  button.button.all.initial  {
+    outline: 2px solid #daf1de;
 }
+
+/* #globalFrequency {
+  display: flex;
+  margin: auto;
+} */
 
 .chartTitle {
   color: #daf1de;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  width: 10%;
   vertical-align: top;
   border: 1px solid red;
 
 }
 
 .chart {
-  width: 85%
+  width: 90%;
+  border: 1px solid red;
+  padding-top: 25px;
+  justify-content: center;
+
+
 }
 #legendButtons {
-  display: flex; /* Use flexbox for layout */
-  flex-wrap: wrap; /* Allows wrapping if buttons overflow */
+  margin: auto;
+  padding: 10px;
+  display: flex; /* Enables flexbox layout */
+  flex-direction: row;
+  flex-wrap: wrap; /* Allows buttons to wrap to the next row if needed */
   gap: 10px; /* Adds space between buttons */
-  justify-content: center; /* Align buttons horizontally */
+  justify-content: left; /* Align buttons horizontally */
+  left: 0;
+  right: 0;
+  border: 1px solid red;
 }
+
+.container.global {
+  display: flex;
+  flex-direction: column;
+}
+
