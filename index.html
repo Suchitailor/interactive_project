@@ -15,33 +15,29 @@
         </h1>
     </section>
     <section class = "section">
-        <h2 class="subheader">
-            Global Overview 
-        </h2>
-        <p> Since the 1970's natural disasters have grown increasingly frequent on a global scale.  </p>
-            <div class="item buttons is-grouped are-hovered are-responsive container" id ="legendButtons">
-                <button class = "button all">All</button>
-                <button class = "button" >Drought</button>
-                <button class = "button">Earthquake</button>
-                <button class = "button">Epidemic</button>
-                <button class = "button">Extreme temperature </button>
-                <button class = "button">Flood</button>
-                <button class = "button">Landslide</button>
-                <button class = "button">Storm</button>
-                <button class = "button">Wildfire</button>
-                <button class = "button">Other</button>
-            </div >
             <div id = "globalOverview" class = "container global">
-            <div class = "item chartTitle"> Global Frequency of Natural Disasters </div>
-            <div class = "level">
-                <!-- <p class = chartText> Since the 1970s, the frequency of natural disasters has increased worldwide. Click 
-                    around to explore what types of disasters have been most frequent and caused the 
-                    most economic damage. </p> -->
+                <div class = "item chartTitle"> Global Frequency of Natural Disasters </div>
+                <p> Since the 1970s, the frequency of natural disasters has increased worldwide. Click 
+                    around to explore what types of disasters have been most frequent over the years. </p>
+                <div class="item buttons are-small is-grouped are-hovered are-responsive container frequency" id ="legendButtons">
+                    <button class = "button all">All</button>
+                    <button class = "button" >Drought</button>
+                    <button class = "button">Earthquake</button>
+                    <button class = "button">Epidemic</button>
+                    <button class = "button">Extreme temperature </button>
+                    <button class = "button">Flood</button>
+                    <button class = "button">Landslide</button>
+                    <button class = "button">Storm</button>
+                    <button class = "button">Wildfire</button>
+                    <button class = "button">Other</button>
+                </div >
                 <div class = "item chart" id="globalFrequency" ></div>
-            </div>
-            <div id="globalCost" ></div>
+                <div class = "item chartTitle"> Global Cost of Natural Disasters (Thousands of USD) </div>
+                <p> The natural disasters have grown increasingly expensive.  </p>
+                <div id="globalCost" ></div>
+
         </div>
-            <script>
+            <script class = "frequencyScript">
                 fetch('data/cleaned/annual_frequencies.csv')
                     .then(response => response.text()) 
                     .then(csvString => {
@@ -61,8 +57,7 @@
                             const marginRight = 20;
                             const marginBottom = 30;
                             const marginLeft = 50;
-                            
-                            // Create the SVG container.
+
                             let div2 = d3
                                 .select("#globalFrequency")
                                 .append("svg")
@@ -166,13 +161,9 @@
                                         console.log(d)
                                         if (d === "All" )
                                         {return "black"}
-                                        else { return color(d)}
+                                        else { return color(d)
+                                        }
                             })
-                                // highlight all button - CORRECT PLACE TO MAKE INACTIVE?
-                                // d3.select('#allButton')
-                                //         .classed('is-active',true)
-
-                                // generate graph with all disaster types
                                 div2.append("g")
                                 .selectAll()
                                 .data(series)
@@ -262,10 +253,6 @@
                                 const filteredSeries = filterData(selectedButtons)
                                 console.log(filteredSeries)
                                 
-                                // how do i add a condition here - IF is-active is true then....
-
-
-                                // if a button value is in selectedButtons, change state to is-active
                                 // graph with newly selected data
                                 div2.append("g")
                                 .selectAll()
@@ -288,6 +275,256 @@
                             }
 
                         })
+
+                    .catch(error => console.error('Error fetching CSV:', error)); 
+            </script>
+            <script>
+                fetch('data/cleaned/disaster_costs.csv')
+                    .then(response => response.text()) 
+                    .then(csvString => {
+                        const global_cost = d3.csvParse(csvString, (d) => { 
+                            return {
+                            year: d.Year, 
+                            disasterType: d.disasterType,
+                            cost: d.economicdamage
+                            }}
+                        )
+
+                        console.log(global_cost)
+                            // Specify the chart’s dimensions.
+                            const width= 1300;
+                            const height = 600;
+                            const marginTop = 20;
+                            const marginRight = 20;
+                            const marginBottom = 30;
+                            const marginLeft = 50;
+
+                            let div3 = d3
+                                .select("#globalCost")
+                                .append("svg")
+                                .attr("width", width)
+                                .attr("height", height)
+                                .attr("viewBox", [0, 0, width, height])
+                                .text("Number of Natural Disasters")
+                                .attr("style", "max-width: 100%; height: auto; overflow: visible; font: 10px sans-serif;");
+
+                            const cost_series = d3.stack()
+                                    .keys(d3.union(global_cost.map(d => d.disasterType))) // distinct series keys, in input order
+                                    .value(([, D], key) => D.get(key)?.cost || 0) // get value for each series key and stack, default 0 
+                                    (d3.index(global_cost, d => d.year, d => d.disasterType)); // group by stack then series key
+                                
+                            console.log(`cost series:`,cost_series)
+                            
+                            // Prepare the scales for positional and color encodings.
+                            let allYears = [...new Set(global_cost.map(d => d.year))].sort();
+                            let disType = [...new Set(global_cost.map(d => d.disasterType))].sort(); 
+
+                            const x = d3.scaleBand()
+                                .domain(allYears)
+                                .range([marginLeft, width - marginRight])
+                                .padding(0.1);
+                            
+                            const y = d3.scaleLinear()
+                                .domain([0, 1.25 * (d3.max(cost_series, d => d3.max(d, d => d[1])))])
+                                .rangeRound([height - marginBottom, marginTop]);
+
+                            console.log(y)
+
+                            var color = d3.scaleOrdinal()
+                                .domain(disType)
+                                .range(d3.schemeObservable10)
+                            
+                            console.log(disType)
+                            // Append the horizontal axis.
+                            div3.append("g")
+                                .attr("transform", `translate(0,${height - marginBottom})`)
+                                .call(d3.axisBottom(x)
+                                    .tickValues(allYears.filter(year => year % 5 === 0)) // Show every 5th year
+                                    .tickSizeOuter(0)
+                                )
+                                .call(g => g.selectAll(".domain").remove());
+
+                            // Append the vertical axis.
+                            div3.append("g")
+                                .attr("transform", `translate(${marginLeft},0)`)
+                                .call(d3.axisLeft(y).ticks(null, "~s"))
+                                .call(g => g.selectAll(".domain").remove());
+                            
+                            // ----------------
+                            // Initiate a tooltip
+                            // ----------------
+                            let enUs = d3.formatLocale({
+                                            thousands: ",",
+                                            grouping: [3],
+                                            currency: ["$", ""]
+                                            });
+
+                            var tooltip = d3.select("#globalCost")
+                                .append("div")
+                                .style("opacity", 0)
+                                .attr("class", "tooltip")
+                                .style("background-color", "white")
+                                .style("border", "solid")
+                                .style("border-width", "1px")
+                                .style("border-radius", "5px")
+                                .style("padding", "10px")
+
+                            // Three function that change the tooltip when user hover / move / leave a cell
+                            var mouseover = function(d) {
+                                var disasterType = d3.select(this.parentNode).datum().key;
+                                var cost = -(d3.select(this).datum()[0] - d3.select(this).datum()[1]);
+                                var value = this
+                                tooltip
+                                    .html(`${disasterType}: $${d3.format("~s")(cost)}`)
+                                    .style("opacity", 1)
+                            }
+                            var mousemove = function(d) {
+                                tooltip
+                                .style("left", (d3.pointer(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+                                .style("top", (d3.pointer(this)[1]) + "px")
+                            }
+
+                            var mouseleave = function(d) {
+                                tooltip
+                                .style("opacity", 0)
+                            }
+                            
+                            // ----------------
+                            // Build Initial Chart
+                            // ----------------
+                            disType.unshift("All")
+
+                            function loadInitialState() {
+                                
+                                // start all buttons in colored, but inactive state - DON'T NEED THIS TWICE?
+                            //     d3.selectAll('button')
+                            //             .classed('is-active', false) 
+                            //             .classed('initial', true) 
+                                
+                            //     d3.selectAll(".initial")
+                            //         .data(disType)
+                            //         .style("background-color", function(d) {
+                            //             console.log(d)
+                            //             if (d === "All" )
+                            //             {return "black"}
+                            //             else { return color(d)}
+                            // })
+                            div3.append("g")
+                                .selectAll()
+                                .data(cost_series)
+                                .join("g")
+                                .attr("fill", d => color(d.key))
+                                .selectAll("rect")
+                                .data(D => D.map(d => (d.key = D.key, d)))
+                                .join("rect")
+                                .attr("id", "econbars")
+                                .attr("x", d => x(d.data[0]))
+                                .attr("y", d => y(d[1]))
+                                .on("mouseover", mouseover)
+                                .on("mousemove", mousemove)
+                                .on("mouseleave", mouseleave)
+                                .attr("height", d => y(d[0]) - y(d[1]))
+                                .attr("width", x.bandwidth())
+                                .append("title")
+                            }
+
+                            // generate full chart as initial state
+                            loadInitialState()
+
+
+                            // ----------------
+                            // Add Buttons
+                            // ----------------
+
+                            // add interactivity to Buttons
+                            // legendButtons = d3.select("#legendButtons")
+                            //     .selectAll("button")
+                            //     .on("click", (event)=> {
+                            //         //event.target.classList.toggle("is-active");
+
+                            //         // Log & Extract selected buttons
+                            //         const selectedButtons = d3.selectAll("#legendButtons .is-active")
+                            //             .nodes()
+                            //             .map(button => button.textContent); // Extract text content from the clicked buttons
+
+                            //         console.log("Selected Cost Buttons:", selectedButtons);
+                            //         //updateButtons(selectedButtons)
+                            //         //updateChart(selectedButtons)
+                            //     })
+                                
+
+                            // // generate filter for when buttons are selected 
+                            // function filterData(selectedButtons) {
+                            //     const filteredData = global_cost.filter(function(d,i){
+                            //         return selectedButtons.indexOf(d.disasterType) >= 0
+                            //     })
+
+                            //     const filteredSeries = d3.stack()
+                            //         .keys(d3.union(filteredData.map(d => d.disasterType))) // distinct series keys, in input order
+                            //         .value(([, D], key) => D.get(key)?.cost || 0) // get value for each series key and stack, default 0 
+                            //         (d3.index(filteredData, d => d.year, d => d.disasterType)); // group by stack then series key
+                            //     console.log("cost",filteredSeries)
+                            //     return filteredSeries
+                            // }
+
+                            // function updateButtons(selectedButtons){
+                            //     // remove initial state (for background colors)
+
+                            //         d3.selectAll('.initial')
+                            //             .classed('initial', false) 
+
+                            //         // black out non-selected buttons
+                            //         d3.selectAll('button:not(.is-active)')
+                            //             .style('background-color', "black") 
+                                    
+                            //         // highlight selected buttons
+                            //         d3.selectAll('.is-active')
+                            //             .data(selectedButtons)
+                            //             .style('background-color', d => color(d) )
+                            // }
+                            // generate updated chart after selection
+                            // function updateChart(selectedButtons) {
+                                
+                            //     // remove all existing bars
+                            //     d3.selectAll("#econbars").remove();
+
+                            //     // if "All" or nothing is selected, load initial state
+                            //     if (selectedButtons.includes("All") ||
+                            //         selectedButtons.length === 0) {
+                            //         return loadInitialState()
+                            //     }
+
+                            //     // if options are selected, load chart with selected options
+                            //     else {
+                            //     const filteredSeries = filterData(selectedButtons)
+                            //     console.log(filteredSeries)
+                                
+                            //     // how do i add a condition here - IF is-active is true then....
+
+
+                            //     // if a button value is in selectedButtons, change state to is-active
+                            //     // graph with newly selected data
+                            //     div3.append("g")
+                            //     .selectAll()
+                            //     .data(filteredSeries)
+                            //     .join("g")
+                            //     .attr("fill", d => color(d.key))
+                            //     .selectAll("rect")
+                            //     .data(D => D.map(d => (d.key = D.key, d)))
+                            //     .join("rect")
+                            //     .attr("id", "econbars")
+                            //     .attr("x", d => x(d.data[0]))
+                            //     .attr("y", d => y(d[1]))
+                            //     .on("mouseover", mouseover)
+                            //     .on("mousemove", mousemove)
+                            //     .on("mouseleave", mouseleave)
+                            //     .attr("height", d => y(d[0]) - y(d[1]))
+                            //     .attr("width", x.bandwidth())
+                            //     .append("title")
+                            //     }
+                            // }
+
+                    })
 
                     .catch(error => console.error('Error fetching CSV:', error)); 
             </script>
@@ -345,38 +582,38 @@
                                 .range(d3.schemeObservable10)
                         // Generate legend
 
-                        // var padding = 40
-                        // var legend = div1.append('g')
-                        //     .attr('class', 'legend')
-                        //     .attr('transform', 'translate(' + (padding + 12) + ', 0)');
+                        var padding = 40
+                        var legend = div1.append('g')
+                            .attr('class', 'legend')
+                            .attr('transform', 'translate(' + (padding + 12) + ', 0)');
                         
                         
-                        // legend.selectAll('rect')
-                        //     .data(disType)
-                        //     .enter()
-                        //     .append('rect')
-                        //     .attr('x', 0)
-                        //     .attr('y', function(d, i){
-                        //         return i * 18;
-                        //     })
-                        //     .attr('width', 12)
-                        //     .attr('height', 12)
-                        //     .attr('fill', d => color(d) );
+                        legend.selectAll('rect')
+                            .data(disType)
+                            .enter()
+                            .append('rect')
+                            .attr('x', 0)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('width', 12)
+                            .attr('height', 12)
+                            .attr('fill', d => color(d) );
                         
-                        // legend.selectAll('text')
-                        //     .data(disType)
-                        //     .enter()
-                        //     .append('text')
-                        //     .text(function(d){
-                        //         return d;
-                        //     })
-                        //     .attr('x', 18)
-                        //     .attr('y', function(d, i){
-                        //         return i * 18;
-                        //     })
-                        //     .attr('text-anchor', 'start')
-                        //     .attr('fill', 'white')
-                        //     .attr('alignment-baseline', 'hanging');
+                        legend.selectAll('text')
+                            .data(disType)
+                            .enter()
+                            .append('text')
+                            .text(function(d){
+                                return d;
+                            })
+                            .attr('x', 18)
+                            .attr('y', function(d, i){
+                                return i * 18;
+                            })
+                            .attr('text-anchor', 'start')
+                            .attr('fill', 'white')
+                            .attr('alignment-baseline', 'hanging');
 
                         // generate dropdown
                         d3.select("#regiondropdown")

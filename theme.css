@@ -36,7 +36,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #a6a6a6;
     opacity: 0.9;
-    position: absolute;
+    position: relative;
   }
 /* put an outline around all when selected */
   button.button.all.initial  {
@@ -50,17 +50,14 @@ body {
 
 .chartTitle {
   color: #daf1de;
-  text-align: center;
-  font-size: 30px;
+  text-align: left;
+  font-size: 20px;
   font-weight: bold;
   vertical-align: top;
-  border: 1px solid red;
 
 }
 
 .chart {
-  width: 90%;
-  border: 1px solid red;
   padding-top: 25px;
   justify-content: center;
 
@@ -73,10 +70,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap; /* Allows buttons to wrap to the next row if needed */
   gap: 10px; /* Adds space between buttons */
-  justify-content: left; /* Align buttons horizontally */
+  justify-content: center; /* Align buttons horizontally */
   left: 0;
   right: 0;
-  border: 1px solid red;
 }
 
 .container.global {
