@@ -32,8 +32,9 @@
                     <button class = "button">Other</button>
                 </div >
                 <div class = "item chart" id="globalFrequency" ></div>
-                <div class = "item chartTitle"> Global Cost of Natural Disasters (Thousands of USD) </div>
-                <p> The natural disasters have grown increasingly expensive.  </p>
+                <div class = "item chartTitle"> Global Cost of Natural Disasters (Billions of USD) </div>
+                <p> The natural disasters have grown increasingly expensive. Take a look at the below graph to
+                    examine the costs. Please note that "G" represents Billions. </p>
                 <div id="globalCost" ></div>
 
         </div>
@@ -353,11 +354,6 @@
                             // ----------------
                             // Initiate a tooltip
                             // ----------------
-                            let enUs = d3.formatLocale({
-                                            thousands: ",",
-                                            grouping: [3],
-                                            currency: ["$", ""]
-                                            });
 
                             var tooltip = d3.select("#globalCost")
                                 .append("div")
@@ -396,19 +392,6 @@
 
                             function loadInitialState() {
                                 
-                                // start all buttons in colored, but inactive state - DON'T NEED THIS TWICE?
-                            //     d3.selectAll('button')
-                            //             .classed('is-active', false) 
-                            //             .classed('initial', true) 
-                                
-                            //     d3.selectAll(".initial")
-                            //         .data(disType)
-                            //         .style("background-color", function(d) {
-                            //             console.log(d)
-                            //             if (d === "All" )
-                            //             {return "black"}
-                            //             else { return color(d)}
-                            // })
                             div3.append("g")
                                 .selectAll()
                                 .data(cost_series)
@@ -433,7 +416,7 @@
 
 
                             // ----------------
-                            // Add Buttons
+                            // Add Buttons - NOT WORKING (keeping this section in submission in case I come back to this)
                             // ----------------
 
                             // add interactivity to Buttons
@@ -499,8 +482,6 @@
                             //     const filteredSeries = filterData(selectedButtons)
                             //     console.log(filteredSeries)
                                 
-                            //     // how do i add a condition here - IF is-active is true then....
-
 
                             //     // if a button value is in selectedButtons, change state to is-active
                             //     // graph with newly selected data
@@ -530,10 +511,9 @@
             </script>
     </section>
     <section class = "section">
-        <h2 class="subheader">
-            Regional Breakdown 
-        </h2>
-        <p> Select a region to view its recent natural disasters. </p>
+            <div class = "item chartTitle"> Regional Overview of Storms </div>
+            <p> Below, you can see the presence of different storms in various regions. Each bar indicates
+                that there was at least one of the storm type in that year.  </p>
         <select id="regiondropdown"></select>
         <div id="regionBreakdown"></div>
         <script>
@@ -669,12 +649,12 @@
                                 )
                                 .call(g => g.selectAll(".domain").remove());
 
-                                // Append the vertical axis.
-                                div1.append("g")
-                                    .attr("transform", `translate(${marginLeft},0)`)
-                                    .attr("id", 'regionaxis')
-                                    .call(d3.axisLeft(y).ticks(null, "s"))
-                                    .call(g => g.selectAll(".domain").remove());
+                                // Append the vertical axis. - COMMENTING OUT FOR SUBMISSION (UNTIL I GET FREQUENCY WORKING)
+                                // div1.append("g")
+                                //     .attr("transform", `translate(${marginLeft},0)`)
+                                //     .attr("id", 'regionaxis')
+                                //     .call(d3.axisLeft(y).ticks(null, "s"))
+                                //     .call(g => g.selectAll(".domain").remove());
                                 
                                 // ----------------
                                 // Create a tooltip
@@ -744,6 +724,15 @@
 
 
         </script>
+    <div> References </div>
+    <text> Data Source:
+        <a href="https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis/data"> All Natural Disasters 1970 - 2021 /EOSDIS </a>  - 
+        <a href = "http://opendatacommons.org/licenses/dbcl/1.0/"> See License</a> <br /> </text>
+    <text> Data Source: 
+        <a href = "https://ourworldindata.org/grapher/economic-damage-from-natural-disasters?time=1922..2024" > EM-DAT Economic Data by Natural Disaster Type</a>
+         With major processing by Our World in Data. Licensed 
+        <a href = "https://creativecommons.org/licenses/by/4.0/"> CC BY</a>.
+    </text>
     </section>
     </body>
 </html>
